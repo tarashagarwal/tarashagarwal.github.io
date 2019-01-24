@@ -2,6 +2,7 @@
 layout: post
 title:  "Hello World"
 date:   2018-07-08 02:19:00 +0530
+categories: Random Update
 description: Hi there, I am going to start a lot of short personal project. Please help me discovering new technologies, dont know what turns intpo something big.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
