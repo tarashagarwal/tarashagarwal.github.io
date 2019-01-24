@@ -1,7 +1,7 @@
----
+ ---
 layout: page
 title: About
 permalink: /about/
 ---
 
-This Page is under construction
+Architecting complex systems is what I call my dopmine dose. After conquering web stack I am now searching for another field to dig in. 
