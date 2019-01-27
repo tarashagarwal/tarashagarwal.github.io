@@ -6,7 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Tarash Agarwal
+title: Tarash Agarwas
+firstname: Tarash
+lastname: Agarwal
 email: tarash.agarwal@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Lets build a new world on a click!
