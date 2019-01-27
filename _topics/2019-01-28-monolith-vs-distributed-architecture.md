@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: topic
 title: "Moving from Monolith to Microservice"
 date: 2019-01-28
 ---

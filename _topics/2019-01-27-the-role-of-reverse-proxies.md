@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: topic
 title: "All About Caching and Proxies"
 date: 2019-01-27
 ---
