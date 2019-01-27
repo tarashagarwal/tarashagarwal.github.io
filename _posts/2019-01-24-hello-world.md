@@ -1,5 +1,5 @@
 ---
-layout: topic
+layout: post
 title: "The Database Scaling Problem"
 date: 2019-01-26
 ---
