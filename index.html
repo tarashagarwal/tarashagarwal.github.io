@@ -4,18 +4,18 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Topics</h1>
+  <h1 class="page-heading">Topics:</h1>
 
   <ul class="topic-list">
     {% for topic in site.topics %}
       <li>
-        <span class="topic-meta">Topic: </span>
+        <span class="topic-meta">Topic</span>
         <h2>
           <a class="topic-link" href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a>
         </h2>
-        <p>
+       <!--  <p>
           {{topic.description}}
-        </p>
+        </p> -->
       </li>
     {% endfor %}
   </ul>
