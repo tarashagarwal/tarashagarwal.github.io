@@ -4,17 +4,17 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">topics</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <ul class="topic-list">
+    {% for topic in site.topics %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="topic-meta">Topic: </span>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="topic-link" href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a>
         </h2>
         <p>
-          {{post.description}}
+          {{topic.description}}
         </p>
       </li>
     {% endfor %}
