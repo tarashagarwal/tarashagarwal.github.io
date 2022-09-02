@@ -21,14 +21,14 @@ The Database Scaling Problem
 ======
 The larger the data on a relational database becomes the slower the queries get. The b+tree has then best time complexity of log(n) and it could not be better than this. What to do when number of records i.e., 'n' in a table is very large. Though portioning and splitting of a table is one of the solutions. Implementing it is quite hard and many open-source app libraries that we use do not have a support of such a database managing technique. So, what is the best solution for scaling? Well for now truncating such records in the database is the quickest solution. Other solution can be using a hybrid approach of using Relation Database along side Non-relational databases depending upon the data being queried more frequently.
 
-Getting started
+<!-- Getting started
 ======
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
 1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
 1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
 1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
 1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+1. Check status by going to the repository settings, in the "GitHub pages" section -->
 
 <!-- Site-wide configuration
 ------
