@@ -22,3 +22,6 @@ main:
   #   url: /markdown/
   - title: "Leadership"
     url: /leadership/
+
+  - skills:
+    url: /skills/
