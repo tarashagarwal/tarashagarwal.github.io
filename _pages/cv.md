@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.Tech in Electronics and Communication Engineering, JIIT, 2017
-* M.S. in Applied Computer Science, Dalhousie University, 2023
+* B.Tech in Electronics and Communication Engineering, JIIT Noida, 2017.
+* M.S. in Applied Computer Science, Dalhousie University, 2023.
 
 Work experience
 ======
@@ -60,4 +60,4 @@ Teaching
    -->
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Acting Technical Lead Voylla Fashions Pvt. Ltd.
