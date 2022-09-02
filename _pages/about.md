@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Dont depend on a Single Stack: Adopt \"The Mixed Stack\""
+title: "Don't depend on a Single Stack: Adopt \"The Mixed Stack\""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
