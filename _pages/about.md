@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Dont depend on a Single Stack: Adopt \"The Mixed Stack\""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+Most of the software is open source today and companies managing the open-source code have a business model based on providing support to these products. Companies often open source a product to leverage the development support provided by the community and so that the software gets adapted by most of the small-scale technology businesses. This ultimately helps to increase the popularity of the product within the whole community and well as businesses. As the adoption of the software increases, more it gets tested, more bugs get reported, more bugs are fixed by the community and finally more the stable product gets evolved over time.
+
+So open sourcing a software product can be very beneficial to the company. Also, they often manage to generate revenues by providing support for that product or by selling a different distribution of the same software with some additional features on the top. Open source does not necessarily mean that it is free to be used. Companies often add commercial license terms to their official distribution (binaries), and they do this companies increase the revenue once the software is well adopted. Buy it or leave it. The same thing happened when Chef Software, Inc decided to add licence terms to its premier product “chef” with its release version 15 back in 2019 ( https://www.chef.io/pricing/subscription-model-faq ). This is something that can severely affect any project’s business model or may even be a reason for its sunset especially if the business model is based on the product that is solely build upon that free software as the base component.  There could be many solutions to reduce such a risk while designing a product with open-source software:
+
+1.  Factor in the licencing cost while setting up the economics of the product.
+2.  Developing a product using two different technologies/stacks.
+3.  Taking a fork of the existing open-source code have your own distribution and dedicated team for that technology.
+
 
 A data-driven personal website
 ======
