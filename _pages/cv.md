@@ -16,15 +16,11 @@ Education
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Software Developer Kyndryl Canada
+* Software Developer Kyndryl India
+* Software Developer IBM India
+* Sr. Software Engineer Voylla Fashions
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
   
 Skills
 ======
