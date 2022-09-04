@@ -8,12 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-In the new age of software development that has been inspired by the Agile Manifesto, there is no time to complain about the continuous changing requirements and priorities during a software iteration. Clients are dumb (not literally!) and have no idea about the software development process. Their aim is to annoy the Devs. This should be accepted, and the Devs should be ready for any challenges tossed by the clients at them. Tools and systems to solve the clients might not be available and might fail anytime. The Dev is the person who despite all these challenges can deliver something useful to the client and is able to continuously press onwards to meet the client requirements which are continuously changing, and these requirements are never met. There are infinite number of bugs in the code, if you could not find any you are not searching hard enough.
+In the new age of software development that has been inspired by the Agile Manifesto, there is no time to complain about the continuous changing requirements and priorities during a software iteration. Clients are dumb (not literally!) and have no idea about the software development process. Their aim is to annoy the Devs. This should be accepted, and the Devs should be ready for any challenges tossed by the clients at them. Tools and systems to solve the clients might not be available and might fail anytime. The Dev is the person who despite all these challenges can deliver something useful to the client and is able to continuously press onwards to meet the client requirements that are continuously changing and are never met 100%. There are infinite number of bugs in the code, if you could not find any, you are not searching hard enough.
 
 Other things that should be assumed:
 *  Your code has a bug that has not been discovered yet.
 *  You code can fail at any stage, don’t assume that if it works on dev, test, or pre-prod that it will certainly work on production. 
-*  Don’t assume that if it is working now, it will work a day, hour or minute later. 
+*  Don’t assume that if it is working now, it will work a day, hour or even a minute later. 
 *  Client has got it all wrong, it is just the matter of time that they issue the change in requirement. 
 *  What you have planned is of no use, you will have to take a U-turn in the planning process and that also at the last moment.
 *  Your code will fail at the last moment, just before the final build; it is okay…. relax.
@@ -21,7 +21,7 @@ Other things that should be assumed:
 *  Developers are highly ignorant, extremely lazy, and noxiously crazy; they will do the minimal work to complete the requirement as soon as possible. If you think they will do that, no they won’t and if you think they won’t do that, they certainly will. 
 *  Dev’s work using the principal of hit and trial because “using brain” goes against the principle of being lazy.  
 * Test team thinks that Devs have probably taken care of all bugs and Devs think that Test team will certainly report all the bugs in the code IF ANY. 
-* Manager wants everything done by Monday.
+* Manager wants everything to be completed by Monday.
 
 
 
