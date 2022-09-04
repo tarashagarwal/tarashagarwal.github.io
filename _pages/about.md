@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-In the new age of software development that has been inspired by the Agile Manifesto, there is no time to complain about the continuous changing requirements and priorities during a software iteration. Clients are dumb (not literally!) and have no idea about the software development process. Their aim is to annoy the Devs. This should be accepted, and the Devs should be ready for any challenges tossed by the clients at them. Tools and systems to solve the clients might not be available and might fail anytime. The Dev is the person who despite all these challenges can deliver something useful to the client and is able to continuously press onwards to meet the client requirements that are continuously changing and are never met 100%. There are infinite number of bugs in the code, if you could not find any, you are not searching hard enough.
+In the new age of software development that has been inspired by the Agile Manifesto, there is no time to complain about the continuous changing requirements and priorities during a software iteration. Clients are dumb (not literally!) and have no idea about the software development process. Their aim is to annoy the Devs. This should be accepted, and the Devs should be ready for any challenges tossed by the clients at them. Tools and systems to solve the clients might not be available and might fail anytime. The Dev is the person who despite all these challenges can deliver something useful to the client and is able to continuously press onwards to meet the client requirements. These requirments might continuously change and thus cannot be actaully met. There are infinite number of bugs in the code, if you could not find any, you are not searching hard enough.
 
 Other things that should be assumed:
 *  Your code has a bug that has not been discovered yet.
@@ -21,7 +21,7 @@ Other things that should be assumed:
 *  Developers are highly ignorant, extremely lazy, and noxiously crazy; they will do the minimal work to complete the requirement as soon as possible. If you think they will do that, no they won’t and if you think they won’t do that, they certainly will. 
 *  Dev’s work using the principal of hit and trial because “using brain” goes against the principle of being lazy.  
 * Test team thinks that Devs have probably taken care of all bugs and Devs think that Test team will certainly report all the bugs in the code IF ANY. 
-* Manager wants everything to be completed by Monday and Devs procastinate work till Friday.
+* Manager wants everything to be completed by Monday and Devs do procastinate work till Friday.
 
 
 
