@@ -16,7 +16,7 @@ Other things that should be assumed:
 *  Don’t assume that if it is working now, it will work a day, hour or even a minute later. 
 *  Client has got it all wrong, it is just the matter of time that they issue the change in requirement. 
 *  What you have planned is of no use, you will have to take a U-turn in the planning process and that also at the last moment.
-*  Your code will fail at the last moment, just before the final build; it is okay…. relax.
+*  Your code will fail at the last moment, just before the final build and probably on Friday night; it is okay…. relax.
 *  You code will never be perfect, perfect code never exists; all software systems are having a trade-off of one or more parameters.
 *  Developers are highly ignorant, extremely lazy, and noxiously crazy; they will do the minimal work to complete the requirement as soon as possible. If you think they will do that, no they won’t and if you think they won’t do that, they certainly will. 
 *  Dev’s work using the principal of hit and trial because “using brain” goes against the principle of being lazy.  
