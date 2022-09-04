@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Tarash Agarwal | Software Engineer | Dalhousie University"
+title                    : "Software Engineer | Dalhousie University"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
