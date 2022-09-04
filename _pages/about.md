@@ -11,17 +11,17 @@ redirect_from:
 In the new age of software development that has been inspired by the Agile Manifesto, there is no time to complain about the continuous changing requirements and priorities during a software iteration. Clients are dumb (not literally!) and have no idea about the software development process. Their aim is to annoy the Devs. This should be accepted, and the Devs should be ready for any challenges tossed by the clients at them. Tools and systems to solve the clients might not be available and might fail anytime. The Dev is the person who despite all these challenges can deliver something useful to the client and is able to continuously press onwards to meet the client requirements which are continuously changing, and these requirements are never met. There are infinite number of bugs in the code, if you could not find any you are not searching hard enough.
 
 Other things that should be assumed:
-1.  Your code has a bug that has not been discovered yet.
-2.  You code can fail at any stage, don’t assume that if it works on dev, test, or pre-prod that it will certainly work on production. 
-3.  Don’t assume that if it is working now, it will work a day, hour or minute later. 
-4.  Client has got it all wrong, it is just the matter of time that they issue the change in requirement. 
-5.  What you have planned is of no use, you will have to take a U-turn in the planning process and that also at the last moment.
-6.  Your code will fail at the last moment, just before the final build; it is okay…. relax.
-7.  You code will never be perfect, perfect code never exists; all software systems are having a trade-off of one or more parameters.
-8.  Developers are highly ignorant, extremely lazy, and noxiously crazy; they will do the minimal work to complete the requirement as soon as possible. If you think they will do that, no they won’t and if you think they won’t do that, they certainly will. 
-9.  Dev’s work using the principal of hit and trial because “using brain” goes against the principle of being lazy.  
-10. Test team thinks that Devs have probably taken care of all bugs and Devs think that Test team will certainly report all the bugs in the code IF ANY. 
-11. Manager wants everything done by Monday.
+*  Your code has a bug that has not been discovered yet.
+*  You code can fail at any stage, don’t assume that if it works on dev, test, or pre-prod that it will certainly work on production. 
+*  Don’t assume that if it is working now, it will work a day, hour or minute later. 
+*  Client has got it all wrong, it is just the matter of time that they issue the change in requirement. 
+*  What you have planned is of no use, you will have to take a U-turn in the planning process and that also at the last moment.
+*  Your code will fail at the last moment, just before the final build; it is okay…. relax.
+*  You code will never be perfect, perfect code never exists; all software systems are having a trade-off of one or more parameters.
+*  Developers are highly ignorant, extremely lazy, and noxiously crazy; they will do the minimal work to complete the requirement as soon as possible. If you think they will do that, no they won’t and if you think they won’t do that, they certainly will. 
+*  Dev’s work using the principal of hit and trial because “using brain” goes against the principle of being lazy.  
+* Test team thinks that Devs have probably taken care of all bugs and Devs think that Test team will certainly report all the bugs in the code IF ANY. 
+* Manager wants everything done by Monday.
 
 
 
