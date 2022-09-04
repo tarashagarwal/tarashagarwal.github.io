@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "What I have learned till now about software development"
+title: "What I have learned till now about software development.."
 excerpt: "About me"
 author_profile: true
 redirect_from: 
