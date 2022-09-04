@@ -1,6 +1,6 @@
 ---
 title: 'Don’t depend on a Single Stack: Adopt “The Mixed Stack”'
-date: 2199-01-01
+date: 2022-01-01
 permalink: /posts/2022/01/the-mixed-stack/
 tags:
   - chef
@@ -15,3 +15,7 @@ So open sourcing a software product can be very beneficial to the company. Also,
 Factor in the licencing cost while setting up the economics of the product.
 Developing a product using two different technologies/stacks.
 Taking a fork of the existing open-source code have your own distribution and dedicated team for that technology.
+
+1.  Factor in the licencing cost while setting up the economics of the product.
+2.  Developing a product using two different technologies/stacks.
+3.  Taking a fork of the existing open-source code have your own distribution and dedicated team for that technology.
