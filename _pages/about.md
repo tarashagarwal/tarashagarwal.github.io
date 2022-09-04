@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Don't depend on a Single Stack: Adopt \"The Mixed Stack\""
+title: "What I have learned till now about software development"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,13 +8,21 @@ redirect_from:
   - /about.html
 ---
 
-Most of the software is open source today and companies managing the open-source code have a business model based on providing support to these products. Companies often open source a product to leverage the development support provided by the community and so that the software gets adapted by most of the small-scale technology businesses. This ultimately helps to increase the popularity of the product within the whole community and well as businesses. As the adoption of the software increases, more it gets tested, more bugs get reported, more bugs are fixed by the community and finally more the stable product gets evolved over time.
+In the new age of software development that has been inspired by the Agile Manifesto, there is no time to complain about the continuous changing requirements and priorities during a software iteration. Clients are dumb (not literally!) and have no idea about the software development process. Their aim is to annoy the Devs. This should be accepted, and the Devs should be ready for any challenges tossed by the clients at them. Tools and systems to solve the clients might not be available and might fail anytime. The Dev is the person who despite all these challenges can deliver something useful to the client and is able to continuously press onwards to meet the client requirements which are continuously changing, and these requirements are never met. There are infinite number of bugs in the code, if you could not find any you are not searching hard enough.
 
-So open sourcing a software product can be very beneficial to the company. Also, they often manage to generate revenues by providing support for that product or by selling a different distribution of the same software with some additional features on the top. Open source does not necessarily mean that it is free to be used. Companies often add commercial license terms to their official distribution (binaries), and they do this companies increase the revenue once the software is well adopted. Buy it or leave it. The same thing happened when Chef Software, Inc decided to add licence terms to its premier product “chef” with its release version 15 back in 2019 ( https://www.chef.io/pricing/subscription-model-faq ). This is something that can severely affect any project’s business model or may even be a reason for its sunset especially if the business model is based on the product that is solely build upon that free software as the base component.  There could be many solutions to reduce such a risk while designing a product with open-source software:
+Other things that should be assumed:
+1.  Your code has a bug that has not been discovered yet.
+2.  You code can fail at any stage, don’t assume that if it works on dev, test, or pre-prod that it will certainly work on production. 
+3.  Don’t assume that if it is working now, it will work a day, hour or minute later. 
+4.  Client has got it all wrong, it is just the matter of time that they issue the change in requirement. 
+5.  What you have planned is of no use, you will have to take a U-turn in the planning process and that also at the last moment.
+6.  Your code will fail at the last moment, just before the final build; it is okay…. relax.
+7.  You code will never be perfect, perfect code never exists; all software systems are having a trade-off of one or more parameters.
+8.  Developers are highly ignorant, extremely lazy, and noxiously crazy; they will do the minimal work to complete the requirement as soon as possible. If you think they will do that, no they won’t and if you think they won’t do that, they certainly will. 
+9.  Dev’s work using the principal of hit and trial because “using brain” goes against the principle of being lazy.  
+10. Test team thinks that Devs have probably taken care of all bugs and Devs think that Test team will certainly report all the bugs in the code IF ANY. 
+11. Manager wants everything done by Monday.
 
-1.  Factor in the licencing cost while setting up the economics of the product.
-2.  Developing a product using two different technologies/stacks.
-3.  Taking a fork of the existing open-source code have your own distribution and dedicated team for that technology.
 
 
 The Database Scaling Problem
