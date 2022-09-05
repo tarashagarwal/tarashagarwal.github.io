@@ -7,6 +7,9 @@ redirect_from:
   - /wordpress/projects/
 ---
 
+
+
+
 KYNDRYL |SOFTWARE Developer (CONTRACTOR)|June 2022 – Present| Toronto, Canada.
 ======
 
