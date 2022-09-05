@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /projects/
-title: "Blog posts"
+title: "Projects Undertaken"
 author_profile: true
 redirect_from:
   - /wordpress/projects/
