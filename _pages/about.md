@@ -21,7 +21,8 @@ Other things that should be assumed:
 *  Developers are highly ignorant, extremely lazy, and noxiously crazy; they will do the minimal work to complete the requirement as soon as possible. If you think they will do that, no they won’t and if you think they won’t do that, they certainly will. 
 *  Dev’s work using the principal of hit and trial because “using brain” goes against the principle of being lazy.  
 * Test team thinks that Devs have probably taken care of all bugs and Devs think that Test team will certainly report all the bugs in the code IF ANY. 
-* Manager wants everything to be completed by Monday and Devs do procastinate work till Friday.
+* Devs will be working on a production issue on the coming weekend.
+* Manager wants everything to be completed by Monday.
 
 
 
