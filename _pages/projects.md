@@ -28,7 +28,7 @@ VOYLLA FASHIONS PVT LTD |Sr. SOFTWARE ENGINEER| Jun 2017–Jan 2020| Jaipur, Ind
 
 Tech. Stack: Ruby on Rails (Solidus Cart Functionality Gem), React.js, NodeJS, PostgreSQL, SOLR, AWS. 
 * Converting Online Store to a Marketplace  
-** Modified existing database schema to enable matching of products to their associated vendors and configured the Solr (search engine) to integrate this new entity-relation. 
+  * Modified existing database schema to enable matching of products to their associated vendors and configured the Solr (search engine) to integrate this new entity-relation. 
   * Refactored the entire existing products & images pipeline to facilitate processing of the new marketplace products. 
   * Set up microservices and developed secure API’s (Pub-Sub data sync method) for vendors to update product attributes such as price and inventory on the systems.
 * Designing Microservice Architecture (Linux, NodeJS, ExpressJS, ES6, BabelJS, PM2, Nginx, PostgreSQL, Memcached, AWS) 
