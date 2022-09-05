@@ -20,8 +20,7 @@ Tech. Stack:  Ruby on Rails, EmberJs, Ansible, Docker, PostgreSQL.
 * Continuous Compliance (SLA-CC)
 ** Developed Cookbooks for Chef (Infrastructure Automation Tool) to automatically    report and remediate the security tech-spec violations on client’s production servers. - Modified Chef Cookbooks ( IaC )  to  add  compatibility  fix for  RHEL 8.
 
-VOYLLA FASHIONS PVT LTD |Sr. SOFTWARE ENGINEER| Jun 2017–Jan 2020   |
-Jaipur, India.
+VOYLLA FASHIONS PVT LTD |Sr. SOFTWARE ENGINEER| Jun 2017–Jan 2020| Jaipur, India.
 ======
 
 Tech. Stack: Ruby on Rails (Solidus Cart Functionality Gem), React.js, NodeJS, PostgreSQL, SOLR, AWS. 
