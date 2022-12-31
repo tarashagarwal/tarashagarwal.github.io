@@ -1,12 +1,18 @@
 ---
 permalink: /
-title: "What I have learned till now about software development.."
+title: "Serious disconnect for Employers and Prospective Employees to find each other in Atlantic Canada"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+Even though there are high number of highly skilled students being graduated from the universities like Dalhousie and SMU each year. They are having a hard time to find jobs across Canada. Most of them are finding low paying jobs in an irrelevant field to their academic major probably because the Employers are not able to connect to them. There is an immediate need of a solution to solve this problem for Atlantic Canada.
+
+
+What I have learned till now about software development..
+======
 
 In the new age of software development that has been inspired by the Agile Manifesto, there is no time to complain about the continuous changing requirements and priorities during a software iteration. Clients are dumb (not literally!) and have no idea about the software development process. Their aim is to annoy the Devs. This should be accepted, and the Devs should be ready for any challenges tossed by the clients at them. Tools and systems to solve the clients might not be available and might fail anytime. The Dev is the person who despite all these challenges can deliver something useful to the client and is able to continuously press onwards to meet the client requirements. These requirments might continuously change and thus cannot be actaully met. There are infinite number of bugs in the code, if you could not find any, you are not searching hard enough.
 
@@ -23,12 +29,6 @@ Other things that should be assumed:
 * Test team thinks that Devs have probably taken care of all bugs and Devs think that Test team will certainly report all the bugs in the code IF ANY. 
 * Devs will be working on a production issue on the coming weekend.
 * Manager wants everything to be completed by Monday.
-
-
-
-The Database Scaling Problem
-======
-The larger the data on a relational database becomes the slower the queries get. The b+tree has then best time complexity of log(n) and it could not be better than this. What to do when number of records i.e., 'n' in a table is very large. Though portioning and splitting of a table is one of the solutions. Implementing it is quite hard and many open-source app libraries that we use do not have a support of such a database managing technique. So, what is the best solution for scaling? Well for now truncating such records in the database is the quickest solution. Other solution can be using a hybrid approach of using Relation Database along side Non-relational databases depending upon the data being queried more frequently.
 
 <!-- Getting started
 ======
