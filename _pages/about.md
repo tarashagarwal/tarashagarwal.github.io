@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-Even though there are high number of highly skilled students being graduated from the universities like Dalhousie and SMU each year. They are having a hard time to find jobs across Canada. Most of them are finding low paying jobs in an irrelevant field to their academic major probably because the Employers are not able to connect to them. There is an immediate need of a solution to solve this problem for Atlantic Canada.
+Even though there are high number of highly skilled students being graduated from the universities like Dalhousie and SMU each year. They are having a hard time to find jobs across Canada. Most of them are finding low paying jobs in an irrelevant field to their academic major probably because the Employers are not able to connect to them. The same is true for expericed as well as new workers who are immigrating to Canada every year. There is an immediate need of a solution to solve this problem for Atlantic Canada.
+
 
 
 What I have learned till now about software development..
