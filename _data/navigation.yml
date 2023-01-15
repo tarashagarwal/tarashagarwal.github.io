@@ -1,24 +1,16 @@
-# main links links
-main:
-  # - title: "Publications"
-  #   url: /publications/
+# Sample site navigation bar links
 
-  # - title: "Talks"
-  #   url: /talks/    
-
-  # - title: "Teaching"
-  #   url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  # - title: "Guide"
-  #   url: /markdown/
-  - title: "Projects"
-    url: /projects/
+- title: Home
+  url: /
+# - title: Posts
+#   url: /posts/
+# - title: Categories
+#   url: /categories/
+# - title: Tags
+#   url: /tags/
+# - title: Recipes
+#   url: /recipes/
+# - title: Search
+#   url: /search/
+# - title: External Page
+#   url: https://the-page.com/you-want-to-link-to.html
