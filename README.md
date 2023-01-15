@@ -1,51 +1,56 @@
-# Jekyll Theme - Mundana by WowThemes.net
+# Scriptor
+> Scriptor is a simple, minimal, clean & responsive Jekyll theme for writers.
 
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[Download](https://github.com/wowthemesnet/mundana-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; 
-[Buy me a coffe](https://www.wowthemes.net/donate/) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/mundana-theme-jekyll/) &nbsp; | &nbsp; 
-[WordPress version](https://www.wowthemes.net/themes/mundana-wordpress/) 
+[Live Demo][demo] &nbsp; | &nbsp; [Download](https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme/archive/master.zip) &nbsp;
 
-![mundana jekyll theme screenshot](assets/images/screenshot.jpg)
+[![Theme preview image](/images/scriptor-jekyll.png)][demo]
 
-### Documentation
+[demo]: https://scriptor-jekyll.netlify.app/
 
-[How to install & use](https://bootstrapstarter.com/bootstrap-templates/mundana-theme-jekyll/)
+## Features
 
-### Contribute to Mundana repository
+- Responsive design
+- Archive organized by [tags](https://scriptor-jekyll.netlify.com/tags/)
+- Disqus Comments
+- Accent color options
+- [Prism](https://prismjs.com/) syntax highlighter
 
-1. In the top-right corner of this page, click **Fork**.
+## Local Installation
 
-2. Clone a copy of your fork on your local, replacing *YOUR-USERNAME* with your Github username.
+How to set up and run this theme locally in a Jekyll site.
 
-   `git clone https://github.com/YOUR-USERNAME/mundana-theme-jekyll.git`
+_Note: This theme cannot be configured and installed as a theme, however you can still use this repo as a theme with your own content in it._
 
-3. **Create a branch**: 
+Clone the repo or fork.
 
-   `git checkout -b <my-new-feature-or-fix>`
+Set up Jekyll -please follow the official documentation that can be found on the [Jekyll docs](https://jekyllrb.com/docs/).
 
-4. **Make necessary changes and commit those changes**:
+Navigate to the repo and run `bundle install` to install the dependencies.
 
-   `git add .`
+Then run `bundle exec jekyll serve` to start the Jekyll server.
 
-   `git commit -m "new feature or fix"`
+## Deployment
 
-5. **Push changes**, replacing `<add-your-branch-name>` with the name of the branch you created earlier at step #3. :
+### Local Instalation
 
-   `git push origin <add-your-branch-name>`
+To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.
 
-6. Submit your changes for review. Go to your repository on GitHub, you'll see a **Compare & pull request** button. Click on that button. Now submit the pull request.
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server.
 
-That's it! Soon I'll be merging your changes into the master branch of this project. You will get a notification email once the changes have been merged. Thank you for your contribution.
+### Manual Deployment
 
+Jekyll outputs your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 
-### Copyright
+### Netlify
 
-Copyright (C) 2019 WowThemes.net.
+This theme is prepared to be hosted on [Netlify](https://www.netlify.com/). All you need to do is create a new private repository on GitHub or GitLab. Upload the theme to the repository and link your repo to Netlify. Please check [this link](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#step-2-link-to-your-github) with the step-by-step guidelines.
 
-Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under MIT license. 
+### Amazon S3
 
-<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+If you want to host your site on Amazon S3, you can do so by using the [s3_website application](https://github.com/laurilehmijoki/s3_website). It will push your site to Amazon S3, where it can be served like any web server, dynamically scaling to almost unlimited traffic.
 
-### Live Demo
+Also, please check the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
-[Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)
+## Licenses
+
+All files and directories are licensed under the [MIT](https://opensource.org/licenses/mit-license.php) unless explicitly stated.
