@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Software Engineer | Dalhousie University"
+title                    : "Software Engineer"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
