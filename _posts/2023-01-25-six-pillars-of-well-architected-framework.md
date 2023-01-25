@@ -1,6 +1,6 @@
 ---
-title: 'Don’t depend on a Single Stack: Adopt “The Mixed Stack”'
-date: 2022-01-01
+title: 'Six Pillars of well architected framework'
+date: 2023-01-25
 permalink: /posts/2022/01/six-pillars-of-well-architected-framework/
 tags:
   - cloud-computing
