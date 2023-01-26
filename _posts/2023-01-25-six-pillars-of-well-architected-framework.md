@@ -18,4 +18,4 @@ The following are the six pillars using which we can impove the overall quality 
 3. Reliability
 4. Performance Efficiency
 5. Cost Optimization
-6. Suustainability
+6. Sustainability
