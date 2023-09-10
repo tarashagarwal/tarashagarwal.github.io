@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Software and Cloud Engineer"
+title                    : "Tarash Agarwal's Portfolio"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Tarash Agarwal"
   avatar           : "profile.jpeg"
-  bio              : "Tarash is a Software and Cloud Infrastructure Architect"
-  location         : "Halifax, Nova Scotia"
+  bio              : "Tarash is a Full Stack Web Developer"
+  location         : "Canada"
   employer         :
   pubmed           : 
   googlescholar    : 
@@ -102,14 +102,14 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : ""
+  linkedin         : "tarash-agarwal"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "tarashagarwal"
+  twitter          : 
   vine             :
   weibo            :
   xing             :

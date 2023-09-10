@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Serious disconnect for Employers and Prospective Employees to find each other in Atlantic Canada"
+title: "Hi Everyone, this is Tarash Agarwal. Thanks for visiting my Portfolio Page."
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Even though there are high number of highly skilled students being graduated from the universities like Dalhousie and SMU each year. They are having a hard time to find jobs across Canada. Most of them are finding low paying jobs in an irrelevant field to their academic major probably because the Employers are not able to connect to them. The same is true for expericed as well as new workers who are immigrating to Canada every year. There is an immediate need of a solution to solve this problem for Atlantic Canada.
-
+I am a Full Stack We Developer. Looking for Opportunities.
 
 
 What I have learned till now about software development..
