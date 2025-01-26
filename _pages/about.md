@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi Everyone, this is Tarash Agarwal. Thanks for visiting my Portfolio Page."
+title: "Whats up Fam!! This is Tarash Thanks for Visiting"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Full Stack We Developer. Looking for Opportunities.
-
+I can get you team boosted up!!
 
 What I have learned till now about software development..
 ======
