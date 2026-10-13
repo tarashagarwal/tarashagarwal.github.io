@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" role="img" aria-labelledby="title desc"><title id="title">Six pillars of a cloud workload</title><desc id="desc">Operations, security, reliability, performance, cost, and sustainability are complementary review perspectives.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#63f4dd"/></marker></defs>
+<rect width="900" height="480" rx="12" fill="#0c182b"/>
+<rect x="340" y="190" width="220" height="90" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="450.0" y="233.0" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Cloud workload</text>
+<text x="450.0" y="258.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">One system to review</text>
+<rect x="340" y="25" width="220" height="65" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="450.0" y="63.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Operations</text>
+<path d="M450 57L450 180" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="635" y="100" width="220" height="65" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="745.0" y="138.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Security</text>
+<path d="M745 132L570 235" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="635" y="300" width="220" height="65" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="745.0" y="338.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Reliability</text>
+<path d="M745 332L570 235" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="340" y="380" width="220" height="65" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="450.0" y="418.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Performance</text>
+<path d="M450 412L450 290" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="35" y="300" width="220" height="65" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="145.0" y="338.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Cost</text>
+<path d="M145 332L330 235" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="35" y="100" width="220" height="65" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="145.0" y="138.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Sustainability</text>
+<path d="M145 132L330 235" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+</svg>

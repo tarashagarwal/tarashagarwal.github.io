@@ -81,9 +81,9 @@ The README describes the query/API layer as future work; the project is presente
 
 ## AI messaging, backed by cloud infrastructure
 
-**AI Intern · San Francisco, USA · September 2025–present**
+**AI Intern · San Francisco, USA · Started September 2025**
 
-Contribute to a personalized communication AI MVP that profiles customers for tailored messaging. Work spans the Flask/Next.js application, enhancements to AWS-hosted infrastructure, and deployment orchestration with Terraform.
+Contributed to a personalized communication AI MVP that profiles customers for tailored messaging. Work spans the Flask/Next.js application, enhancements to AWS-hosted infrastructure, and deployment orchestration with Terraform.
 
 <div class="tags"><span>Flask</span><span>Next.js</span><span>AWS</span><span>Terraform</span><span>Personalized AI</span></div>
 </div>

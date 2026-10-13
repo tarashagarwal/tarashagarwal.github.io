@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 /* Sci-fi skin: the portfolio content and routes stay in the Jekyll layer. */
 :root {
   color-scheme: dark;
@@ -163,3 +164,69 @@ body.motion-paused { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal-pending { opacity: 1; transform: none; }
 }
+
+/* Identity stays visible before visitors reach the project grid. */
+h1,h2,h3{font-family:'Space Grotesk','Manrope',sans-serif}
+.profile-brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.profile-brand>img{width:48px;height:48px;object-fit:cover;object-position:center 28%;border-radius:12px;border:1px solid #63f4dd99;box-shadow:0 0 18px #63f4dd19}
+.profile-brand>span{display:flex;flex-direction:column;gap:3px}
+.profile-brand strong{font-family:'Space Grotesk','Manrope',sans-serif;font-size:20px;line-height:1.2;letter-spacing:-.6px}
+.profile-brand .brand-dot{color:var(--cyan)}
+.profile-brand small{font:8px Consolas,monospace;letter-spacing:1.5px;color:var(--muted)}
+.hero{padding-top:55px;padding-bottom:65px;gap:65px}
+.hero-copy::before{content:'[ PERSONAL INTERFACE / 001 ]';color:#a2acd0;margin-bottom:20px}
+.hero .profile-name{font-size:clamp(62px,7.6vw,106px);line-height:.99;letter-spacing:-5px;margin:24px 0}
+.profile-name em{background:linear-gradient(100deg,#63f4dd 15%,#99e9ff 55%,#b8a2ff);background-clip:text;-webkit-background-clip:text;color:transparent;text-shadow:none}
+.profile-role{font-family:'Space Grotesk',sans-serif;font-size:23px;color:#e0eaff;margin:0 0 9px;font-weight:500}
+.profile-tagline{color:var(--cyan);font-family:Consolas,monospace;font-size:12px;letter-spacing:.3px;margin:0}
+.hero-description{margin:20px 0 28px;font-size:16px}
+.profile-console{position:relative;background:linear-gradient(145deg,#14243cbb,#111426ee);border:1px solid #6576a477;border-radius:16px;padding:20px;box-shadow:0 0 70px #9d73ee15,inset 0 0 35px #17355933;overflow:hidden}
+.profile-console-top{display:flex;align-items:center;gap:10px;font:9px Consolas,monospace;letter-spacing:1px;color:#b9cdea;padding-bottom:18px}
+.profile-console-top .status-dot{margin:0;width:6px;height:6px;flex-shrink:0}
+.console-coordinates{margin-left:auto;color:var(--violet);white-space:nowrap}
+.profile-image-stage{position:relative;isolation:isolate;aspect-ratio:1/1.03;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse,#1e445344,transparent 70%);overflow:hidden}
+.hero-portrait{position:relative;z-index:1;width:80%;height:94%;object-fit:cover;object-position:center 25%;border:1px solid #9ce1dc88;border-radius:100px 100px 14px 14px;box-shadow:0 0 40px #63f4dd18;filter:contrast(1.04);animation:portrait-arrive 1s ease-out both}
+.profile-ring{position:absolute;inset:4%;border:1px dashed #63f4dd88;border-radius:50%;animation:orbit-spin 60s linear infinite}
+.profile-ring::after{content:'';position:absolute;top:13%;left:13%;width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 18px var(--cyan)}
+.profile-ring-inner{inset:13%;border-color:#a78bfa88;animation-direction:reverse;animation-duration:40s}
+.profile-ring-inner::after{background:var(--violet);box-shadow:0 0 18px var(--violet)}
+.portrait-scan{position:absolute;left:9%;right:9%;height:45px;top:-45px;z-index:2;pointer-events:none;background:linear-gradient(transparent,#63f4dd12);border-bottom:1px solid #63f4dd55;animation:portrait-scan 10s linear infinite}
+.portrait-corner{position:absolute;z-index:3;width:25px;height:25px;border:solid var(--cyan);pointer-events:none}
+.corner-tl{top:4%;left:3%;border-width:1px 0 0 1px}
+.corner-tr{top:4%;right:3%;border-width:1px 1px 0 0}
+.corner-bl{bottom:4%;left:3%;border-width:0 0 1px 1px}
+.corner-br{bottom:4%;right:3%;border-width:0 1px 1px 0}
+.profile-console-bottom{display:flex;justify-content:space-between;gap:10px;font:8px Consolas,monospace;color:#bcd0ea;letter-spacing:.6px;padding:18px 0;border-bottom:1px solid #384c6a}
+.profile-system{display:flex;justify-content:space-between;align-items:center;font:9px Consolas,monospace;padding:18px 6px 0;color:#cfddf5;gap:8px}
+.profile-system span{animation:profile-signal 6s ease-in-out infinite}
+.profile-system span:nth-of-type(2){animation-delay:2s}
+.profile-system span:nth-of-type(3){animation-delay:4s}
+.profile-system i{font-style:normal;color:var(--violet)}
+@keyframes portrait-scan{0%{top:-45px;opacity:0}8%{opacity:1}70%{top:100%;opacity:.7}80%,100%{top:100%;opacity:0}}
+@keyframes portrait-arrive{from{opacity:0;transform:scale(.98)}to{opacity:1;transform:scale(1)}}
+@keyframes profile-signal{0%,100%{color:#cfddf5}30%{color:var(--cyan);text-shadow:0 0 14px #63f4dd88}}
+@media(max-width:1050px){.site-header nav{gap:20px}.header-contact{display:none}.hero{gap:35px}.profile-brand strong{font-size:18px}.profile-console{padding:16px}.console-coordinates{display:none}}
+@media(max-width:760px){.site-header{flex-wrap:wrap;justify-content:center;gap:18px;padding:20px 0}.profile-brand{width:100%;justify-content:center}.profile-brand strong{font-size:21px}.site-header nav{width:100%;justify-content:center;gap:28px}.hero{padding-top:35px;gap:30px}.hero .profile-name{font-size:clamp(64px,14vw,90px);letter-spacing:-3px}.hero-copy::before{font-size:9px;margin-bottom:18px}.profile-role{font-size:21px}.hero .eyebrow{font-size:9px;letter-spacing:1px}.profile-console{width:100%;max-width:460px;margin:auto}.profile-console-top{font-size:8px}.profile-console-bottom{font-size:7px}.profile-system{font-size:8px}.hero-portrait{animation:none}}
+@media(prefers-reduced-motion:reduce){.hero-portrait{opacity:1;transform:none;animation:none}}
+
+/* Atmospheric nebula clouds and canvas shockwaves sit behind the content. */
+.nebula{position:fixed;inset:0;overflow:hidden;z-index:-1;pointer-events:none;opacity:.7}
+.nebula-cloud{position:absolute;width:70vw;height:75vh;border-radius:50%;filter:blur(35px);mix-blend-mode:screen;will-change:transform;animation:nebula-drift 25s ease-in-out infinite alternate}
+.nebula-violet{top:-20vh;right:-15vw;background:radial-gradient(ellipse,#8139c64d, #5f39bd1a 42%,transparent 70%)}
+.nebula-cyan{top:36vh;left:-25vw;background:radial-gradient(ellipse,#1598aa38,#12629415 45%,transparent 70%);animation-duration:32s;animation-delay:-8s}
+.nebula-rose{bottom:-40vh;right:-10vw;background:radial-gradient(ellipse,#b24c9833,#592c8511 45%,transparent 70%);animation-duration:29s;animation-delay:-15s}
+@keyframes nebula-drift{from{transform:translate3d(-3%,2%,0) scale(.92) rotate(-8deg)}to{transform:translate3d(8%,-5%,0) scale(1.15) rotate(10deg)}}
+.article-meta{display:flex;gap:18px;flex-wrap:wrap;font:11px Consolas,monospace;color:var(--muted);margin:25px 0}
+.article-summary{max-width:900px;background:#142939cc;border:1px solid #63f4dd55;border-left:3px solid var(--cyan);padding:24px;border-radius:8px;margin:30px 0}
+.article-summary p{color:#ccdef0;margin:12px 0 0;font-size:16px}
+.article-toc{display:flex;gap:12px 22px;flex-wrap:wrap;max-width:900px;margin:28px 0 40px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.article-toc>.eyebrow{width:100%}.article-toc>a{font-size:13px;color:#c2d7f0}.article-toc>a:hover{color:var(--cyan)}
+.article-body{max-width:900px}.article-body h2{scroll-margin-top:35px}.article-body p{line-height:1.85}
+.article-body figure{margin:32px 0;background:#0c182b;border:1px solid #354c68;border-radius:10px;padding:16px;overflow:hidden}
+.article-body figure img{width:100%;height:auto}.article-body figcaption{font-size:12px;color:#aebed5;margin-top:16px;line-height:1.6}
+.article-body pre{font-size:13px;line-height:1.7}.article-back{display:inline-block;margin-top:32px}
+.current-employer{display:inline-flex;align-items:center;gap:9px;padding:9px 14px;margin:0 0 16px;background:#15313299;border:1px solid #63f4dd44;border-radius:5px;font:11px Consolas,monospace;color:#caf5ea}
+@media(max-width:760px){.nebula-cloud{filter:blur(20px);width:110vw}.article-summary{padding:20px}.article-body figure{padding:8px}.article-meta{gap:10px 18px}}
+@media(prefers-reduced-motion:reduce){.nebula-cloud{animation:none;will-change:auto}}
+
+body.motion-paused .hero-portrait{opacity:1;transform:none;animation:none!important}

@@ -23,6 +23,7 @@ document.querySelectorAll('[data-year-filter]').forEach(function(button) {
   var width = 0;
   var height = 0;
   var stars = [];
+  var nebulaTime = 0;
   var pointer = { x: 0, y: 0 };
   var finePointer = window.matchMedia('(pointer: fine)');
 
@@ -45,6 +46,28 @@ document.querySelectorAll('[data-year-filter]').forEach(function(button) {
   function draw(delta) {
     if (!context) return;
     context.clearRect(0, 0, width, height);
+    // Expanding, soft shockwaves: slow nebula bursts rather than a bright flash.
+    nebulaTime += delta * 16.67;
+    if (!reducedMotion.matches) {
+      var cycle = (nebulaTime % 14000) / 14000;
+      var wave = cycle / .72;
+      if (wave < 1) {
+        var radius = 60 + wave * Math.max(width, height) * .7;
+        var fade = Math.sin(wave * Math.PI) * .2;
+        var centerX = width * .78;
+        var centerY = height * .28;
+        context.save();
+        context.globalCompositeOperation = 'screen';
+        var glow = context.createRadialGradient(centerX, centerY, Math.max(0, radius - 110), centerX, centerY, radius + 100);
+        glow.addColorStop(0, 'rgba(93,54,186,0)');
+        glow.addColorStop(.45, 'rgba(161,93,255,' + fade + ')');
+        glow.addColorStop(.58, 'rgba(91,222,237,' + fade * .65 + ')');
+        glow.addColorStop(1, 'rgba(91,222,237,0)');
+        context.fillStyle = glow;
+        context.fillRect(0, 0, width, height);
+        context.restore();
+      }
+    }
     stars.forEach(function (star) {
       star.y -= star.speed * delta;
       if (star.y < -5) star.y = height + 5;

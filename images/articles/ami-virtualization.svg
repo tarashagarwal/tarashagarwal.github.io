@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" role="img" aria-labelledby="title desc"><title id="title">AMI virtualization compatibility</title><desc id="desc">HVM supports current-generation EC2; PV applies to selected previous-generation instances. Architecture and storage checks remain separate.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#63f4dd"/></marker></defs>
+<rect width="900" height="350" rx="12" fill="#0c182b"/>
+<rect x="55" y="35" width="355" height="75" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="232.5" y="70.5" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">HVM AMI</text>
+<text x="232.5" y="95.5" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Hardware virtual machine</text>
+<path d="M232 110L232 150" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="55" y="160" width="355" height="65" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="232.5" y="198.5" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Current-generation EC2</text>
+<rect x="490" y="35" width="355" height="75" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="667.5" y="70.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Legacy PV AMI</text>
+<text x="667.5" y="95.5" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Paravirtualized guest</text>
+<path d="M667 110L667 150" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="490" y="160" width="355" height="65" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="667.5" y="198.5" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Selected older EC2 types</text>
+<text x="450" y="283" fill="#b5c7df" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Also check: CPU architecture · boot support · root storage · publisher</text>
+</svg>

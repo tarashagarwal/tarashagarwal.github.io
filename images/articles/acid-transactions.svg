@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" role="img" aria-labelledby="title desc"><title id="title">Transaction commit and rollback</title><desc id="desc">Grouped inventory and reservation changes commit together; failure before commit rolls back the transaction.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#63f4dd"/></marker></defs>
+<rect width="900" height="350" rx="12" fill="#0c182b"/>
+<rect x="20" y="65" width="190" height="90" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="115.0" y="108.0" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Begin</text>
+<text x="115.0" y="133.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Transaction starts</text>
+<path d="M210 110L230 110" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="240" y="65" width="190" height="90" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="335.0" y="108.0" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Reserve stock</text>
+<text x="335.0" y="133.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Validate availability</text>
+<path d="M430 110L450 110" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="460" y="65" width="190" height="90" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="555.0" y="108.0" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Create reservation</text>
+<text x="555.0" y="133.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Use reserved result</text>
+<path d="M650 110L670 110" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="690" y="65" width="190" height="90" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="785.0" y="108.0" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Commit</text>
+<text x="785.0" y="133.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Persist together</text>
+<path d="M335 155V230H555" fill="none" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="565" y="205" width="290" height="70" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="710.0" y="246.0" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Rollback on failure</text>
+<text x="300" y="278" fill="#b5c7df" font-size="16" font-family="Arial,sans-serif" text-anchor="middle">No partial database changes</text>
+</svg>

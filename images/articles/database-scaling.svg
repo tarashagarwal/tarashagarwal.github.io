@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" role="img" aria-labelledby="title desc"><title id="title">Database scaling feedback loop</title><desc id="desc">Measure, inspect the plan, optimize, evaluate architecture, then measure the result.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#63f4dd"/></marker></defs>
+<rect width="900" height="350" rx="12" fill="#0c182b"/>
+<rect x="30" y="90" width="165" height="95" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="112.5" y="135.5" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Measure</text>
+<text x="112.5" y="160.5" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Latency + workload</text>
+<path d="M195 138L243 138" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="255" y="90" width="165" height="95" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="337.5" y="135.5" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Inspect plan</text>
+<text x="337.5" y="160.5" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Rows + operations</text>
+<path d="M420 138L468 138" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="480" y="90" width="165" height="95" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="562.5" y="135.5" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Optimize</text>
+<text x="562.5" y="160.5" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Queries + indexes</text>
+<path d="M645 138L693 138" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="705" y="90" width="165" height="95" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="787.5" y="135.5" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Scale boundary</text>
+<text x="787.5" y="160.5" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Partition or derive</text>
+<path d="M788 196V260H112V196" fill="none" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="450" y="292" fill="#b5c7df" font-size="16" font-family="Arial,sans-serif" text-anchor="middle">Verify the result against the same representative workload</text>
+</svg>

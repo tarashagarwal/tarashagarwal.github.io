@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" role="img" aria-labelledby="title desc"><title id="title">Component cohesion boundaries</title><desc id="desc">Planning, retrieval, and export components each own related code and publish an explicit interface.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#63f4dd"/></marker></defs>
+<rect width="900" height="350" rx="12" fill="#0c182b"/>
+<rect x="320" y="20" width="260" height="65" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="450.0" y="58.5" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Hiring application</text>
+<path d="M450 85L150 140" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="30" y="150" width="240" height="145" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="150.0" y="228.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle"></text>
+<text x="150" y="185" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Planning</text>
+<text x="150" y="235" fill="#b5c7df" font-size="14" font-family="Arial,sans-serif" text-anchor="middle">Prompt templates</text>
+<text x="150" y="265" fill="#b5c7df" font-size="14" font-family="Arial,sans-serif" text-anchor="middle">Checklist rules</text>
+<path d="M450 85L450 140" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="330" y="150" width="240" height="145" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="450.0" y="228.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle"></text>
+<text x="450" y="185" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Retrieval</text>
+<text x="450" y="235" fill="#b5c7df" font-size="14" font-family="Arial,sans-serif" text-anchor="middle">Index lookup</text>
+<text x="450" y="265" fill="#b5c7df" font-size="14" font-family="Arial,sans-serif" text-anchor="middle">Ranking contract</text>
+<path d="M450 85L750 140" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="630" y="150" width="240" height="145" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="750.0" y="228.5" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle"></text>
+<text x="750" y="185" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Export</text>
+<text x="750" y="235" fill="#b5c7df" font-size="14" font-family="Arial,sans-serif" text-anchor="middle">Document layout</text>
+<text x="750" y="265" fill="#b5c7df" font-size="14" font-family="Arial,sans-serif" text-anchor="middle">File generation</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" role="img" aria-labelledby="title desc"><title id="title">Mixed stack boundaries</title><desc id="desc">A core application delegates specific workloads through adapters to independent data services.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#63f4dd"/></marker></defs>
+<rect width="900" height="350" rx="12" fill="#0c182b"/>
+<rect x="30" y="135" width="180" height="80" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="120.0" y="173.0" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Application core</text>
+<text x="120.0" y="198.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Business behavior</text>
+<rect x="290" y="135" width="210" height="80" rx="9" fill="#14263d" stroke="#63f4dd" stroke-opacity=".8"/>
+<text x="395.0" y="173.0" fill="#63f4dd" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Stable adapters</text>
+<text x="395.0" y="198.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Product-facing contracts</text>
+<path d="M210 175L280 175" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="650" y="25" width="220" height="80" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="760.0" y="63.0" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Transactions</text>
+<text x="760.0" y="88.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Relational database</text>
+<path d="M500 175L640 65" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="650" y="135" width="220" height="80" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="760.0" y="173.0" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Discovery</text>
+<text x="760.0" y="198.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Search index</text>
+<path d="M500 175L640 175" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="650" y="245" width="220" height="80" rx="9" fill="#14263d" stroke="#a78bfa" stroke-opacity=".8"/>
+<text x="760.0" y="283.0" fill="#a78bfa" font-size="17" font-family="Arial,sans-serif" text-anchor="middle">Retrieval</text>
+<text x="760.0" y="308.0" fill="#b5c7df" font-size="13" font-family="Arial,sans-serif" text-anchor="middle">Vector store</text>
+<path d="M500 175L640 285" stroke="#63f4dd" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+</svg>

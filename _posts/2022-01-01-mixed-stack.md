@@ -1,21 +1,52 @@
 ---
-title: 'Don’t depend on a Single Stack: Adopt “The Mixed Stack”'
+layout: portfolio-modern
+article: true
+title: "A mixed stack without the maintenance spiral"
 date: 2022-01-01
+updated: 2026-10-13
+excerpt: "How to choose technology boundaries that preserve flexibility without multiplying operational complexity."
+summary: "A mixed stack is useful when different workloads have different needs. Keep the core simple, isolate vendor dependencies behind stable interfaces, and budget for the operational work that each extra technology introduces."
+kicker: "ENGINEERING NOTES / FIELD GUIDE"
 permalink: /posts/2022/01/the-mixed-stack/
-tags:
-  - chef
-  - opensource
-  - mixedstack
+tags: ["architecture", "open-source", "mixed-stack"]
+sections:
+  - id: why-diversify
+    title: "Why diversify?"
+  - id: the-boundary
+    title: "The boundary"
+  - id: a-worked-example
+    title: "Worked example"
+  - id: a-decision-checklist
+    title: "Decision checklist"
 ---
+## Why diversify?
 
-Most of the software is open source today and companies managing the open-source code have a business model based on providing support to these products. Companies often open source a product to leverage the development support provided by the community and so that the software gets adapted by most of the small-scale technology businesses. This ultimately helps to increase the popularity of the product within the whole community and well as businesses. As the adoption of the software increases, more it gets tested, more bugs get reported, more bugs are fixed by the community and finally more the stable product gets evolved over time.
+A product rarely lives inside one technology forever. A transactional application may need a search engine, an event processor, or an AI retrieval service. Different workloads can justify different tools, but adding a language or database also adds deployment, monitoring, and support work.
 
-So open sourcing a software product can be very beneficial to the company. Also, they often manage to generate revenues by providing support for that product or by selling a different distribution of the same software with some additional features on the top. Open source does not necessarily mean that it is free to be used. Companies often add commercial license terms to their official distribution (binaries), and they do this companies increase the revenue once the software is well adopted. Buy it or leave it. The same thing happened when Chef Software, Inc decided to add licence terms to its premier product “chef” with its release version 15 back in 2019 ( https://www.chef.io/pricing/subscription-model-faq ). This is something that can severely affect any project’s business model or may even be a reason for its sunset especially if the business model is based on the product that is solely build upon that free software as the base component. There could be many solutions to reduce such a risk while designing a product with open-source software:
+Licensing is a separate question from architecture. The Open Source Initiative’s definition allows commercial use; a vendor’s hosted service or packaged distribution can have its own terms. Chef’s documentation distinguishes its Apache-licensed source from commercial distributions. Check the specific artifact you deploy rather than assuming that source availability determines every cost. [Open Source Definition](https://opensource.org/osd), [Chef licensing](https://docs.chef.io/licensing/).
 
-Factor in the licencing cost while setting up the economics of the product.
-Developing a product using two different technologies/stacks.
-Taking a fork of the existing open-source code have your own distribution and dedicated team for that technology.
+## The boundary
 
-1.  Factor in the licencing cost while setting up the economics of the product.
-2.  Developing a product using two different technologies/stacks.
-3.  Taking a fork of the existing open-source code have your own distribution and dedicated team for that technology.
+Put application behavior behind interfaces that describe what the product needs. A search adapter should expose operations such as `find_products(query)`, rather than leaking a vendor-specific query language into every controller.
+
+{% include article-diagram.html image="/images/articles/mixed-stack.svg" alt="Application core connects through stable adapters to a transactional database, a search service, and an AI retrieval service." caption="Use a shared application boundary while allowing specialized services to evolve independently." %}
+
+This makes a replacement possible. It does not make replacements free: ranking behavior, consistency, authentication, and operational guarantees still differ between implementations.
+
+## A worked example
+
+Imagine a catalog application whose purchases live in PostgreSQL. Search and recommendations are separate workloads. Keep checkout inside the transactional boundary, send catalog-change events to a search index, and let a retrieval service build embeddings asynchronously.
+
+| Workload | Illustrative choice | Boundary to keep explicit |
+| --- | --- | --- |
+| Purchases | Relational database | Transactions and business invariants |
+| Catalog discovery | Search index | Ranking and index freshness |
+| Semantic retrieval | Vector store | Embedding version and retrieval quality |
+
+Start with one implementation per interface. A tested migration path is usually more manageable than operating two interchangeable stacks indefinitely. Document what happens when a downstream service is unavailable; checkout should not depend on a recommendation response.
+
+## A decision checklist
+
+Before introducing another component, write down its workload, owner, deployment process, and recovery path. Estimate infrastructure and maintenance costs alongside license or subscription costs. Test exporting data and rebuilding derived indexes.
+
+The architectural goal is a deliberate boundary that keeps future changes understandable. Choose diversity where it solves a measured problem, then keep the surrounding product as simple as possible.

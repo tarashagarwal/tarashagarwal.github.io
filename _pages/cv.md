@@ -11,7 +11,7 @@ redirect_from:
 
 I’ve built a conversational hiring planner with **LangGraph**, OpenAI function calls, and session memory, and a persona simulation agent using **RAG**, **FAISS**, and **KMeans**. My work includes prompt and context engineering, NLP, and collecting dynamic web content for ML datasets. I’m also developing **Mnemosyne MCP**, an evolving project for persistent AI knowledge and memory using Airflow ingestion pipelines.
 
-At **ImpacterAI**, I contribute to a personalized communication AI MVP and the infrastructure that supports it.
+I currently work at **HarmonEyes**. My earlier work at **ImpacterAI** includes a personalized communication AI MVP and its supporting infrastructure.
 
 [Explore my AI projects →]({{ '/projects/' | relative_url }}#hr-agent)
 
@@ -31,11 +31,16 @@ At **ImpacterAI**, I contribute to a personalized communication AI MVP and the i
 
 ## Experience
 
-### ImpacterAI · AI Intern
-**San Francisco, USA · September 2025–present**
+### HarmonEyes
+**Current employer · United States**
 
-- Contribute to the MVP of a personalized communication AI tool that profiles customers for tailored messaging, using Flask and Next.js.
-- Enhance AWS-hosted infrastructure and orchestrate deployments with Terraform.
+I currently work at HarmonEyes. [View my experience on LinkedIn ↗](https://www.linkedin.com/in/tarash-agarwal/)
+
+### ImpacterAI · AI Intern
+**San Francisco, USA · Started September 2025**
+
+- Contributed to the MVP of a personalized communication AI tool that profiles customers for tailored messaging, using Flask and Next.js.
+- Enhanced AWS-hosted infrastructure and orchestrate deployments with Terraform.
 
 ### Brokerlift Inc. · Software Developer
 **Toronto, Canada · May 2023–August 2024**
