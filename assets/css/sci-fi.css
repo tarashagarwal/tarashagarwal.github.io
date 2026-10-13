@@ -230,3 +230,17 @@ h1,h2,h3{font-family:'Space Grotesk','Manrope',sans-serif}
 @media(prefers-reduced-motion:reduce){.nebula-cloud{animation:none;will-change:auto}}
 
 body.motion-paused .hero-portrait{opacity:1;transform:none;animation:none!important}
+
+/* Concrete career results are part of the opening profile, not buried in projects. */
+.hero-achievements{margin:0 0 26px}
+.hero-achievements h2.eyebrow{font:10px Consolas,monospace;letter-spacing:1.3px;color:#b7c8df;margin:0 0 12px}
+.achievement-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.achievement-grid li{min-width:0}
+.achievement-grid a{display:flex;flex-direction:column;height:100%;padding:14px 12px;border:1px solid #42627c;background:linear-gradient(150deg,#16333dcc,#101c31cc);border-radius:7px;transition:border-color .2s,transform .2s}
+.achievement-grid a:hover{border-color:var(--cyan);transform:translateY(-3px)}
+.achievement-grid strong{font-family:'Space Grotesk',sans-serif;font-size:29px;line-height:1.2;letter-spacing:-1px;color:var(--cyan);white-space:nowrap}
+.achievement-grid a>span{font-size:11px;color:#d2e2f6;line-height:1.5;margin:8px 0}
+.achievement-grid small{font:8px/1.5 Consolas,monospace;color:#a7bad6;margin-top:auto}
+.achievement-grid small span{color:var(--violet)}
+@media(max-width:760px){.hero-achievements{margin-bottom:24px}.achievement-grid{gap:8px}.achievement-grid a{padding:12px 9px}.achievement-grid strong{font-size:25px}.achievement-grid small{font-size:7px}}
+@media(max-width:360px){.achievement-grid{grid-template-columns:1fr}.achievement-grid a{display:grid;grid-template-columns:80px 1fr;column-gap:10px;align-items:center}.achievement-grid strong{grid-row:span 2}.achievement-grid a>span{margin:0 0 4px}.achievement-grid small{margin:0}}

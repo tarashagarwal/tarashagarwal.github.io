@@ -32,7 +32,7 @@ I currently work at **HarmonEyes**. My earlier work at **ImpacterAI** includes a
 ## Experience
 
 ### HarmonEyes
-**Current employer · United States**
+**January 2026–present · United States**
 
 I currently work at HarmonEyes. [View my experience on LinkedIn ↗](https://www.linkedin.com/in/tarash-agarwal/)
 
