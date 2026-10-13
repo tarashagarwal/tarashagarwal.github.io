@@ -1,0 +1,48 @@
+- id: hr-agent
+  title: "Conversational HR AI Agent"
+  eyebrow: "LANGGRAPH / TOOL-CALLING AGENT"
+  caption: "CONVERSATION / PLANNING / ACTION"
+  visual: "visual-commerce"
+  description: "An HR hiring planner that gathers budget, skills, and timelines, then generates two job descriptions and a 10-step hiring checklist."
+  note: "Prototype shipped in 5 days · Session memory + function calls"
+  tags: [LangGraph, Flask, Next.js, RAG]
+  steps:
+    - { label: BRIEF, symbol: "≋" }
+    - { label: AGENT, symbol: "✳" }
+    - { label: PLAN, symbol: "✓" }
+- id: toneweave
+  title: "ToneWeave AI Agent"
+  eyebrow: "PERSONA SIMULATION / RETRIEVAL"
+  caption: "PERSONA / CONTEXT / RESPONSE"
+  visual: "visual-automation"
+  description: "A Gen-Z persona simulation agent that retrieves relevant emotions and traits from four persona-specific FAISS indexes to generate tailored reactions."
+  note: "KMeans clustering · FAISS retrieval · GPT-4.1-mini"
+  tags: [Python, FAISS, RAG, NLP]
+  steps:
+    - { label: INPUT, symbol: "↔" }
+    - { label: CONTEXT, symbol: "▤" }
+    - { label: REPLY, symbol: "✳" }
+- id: intelli-scraper
+  title: "Intelli-Scraper"
+  eyebrow: "DATA COLLECTION / ML DATASETS"
+  caption: "DYNAMIC WEB / STRUCTURED DATA"
+  visual: "visual-scraper"
+  description: "A concurrent crawler for hidden and event-triggered content that standard crawlers can miss, built to collect datasets for machine learning."
+  note: "Multi-worker crawling · Filtering · Quick & stealth modes"
+  tags: [Python, Playwright, Flask, HTML2Text]
+  steps:
+    - { label: CRAWL, symbol: "⌘" }
+    - { label: FILTER, symbol: "≋" }
+    - { label: DATA, symbol: "▤" }
+- id: mnemosyne
+  title: "Mnemosyne MCP"
+  eyebrow: "AI MEMORY / INGESTION PIPELINES"
+  caption: "INGEST / ENRICH / REMEMBER"
+  visual: "visual-memory"
+  description: "An evolving knowledge and memory project using Airflow pipelines to ingest documents and web data and organize persistent context for AI systems."
+  note: "Python + Airflow · Shared knowledge · Retrieval architecture"
+  tags: [Python, Airflow, AI memory, MCP]
+  steps:
+    - { label: INGEST, symbol: "↓" }
+    - { label: ENRICH, symbol: "✳" }
+    - { label: STORE, symbol: "▤" }

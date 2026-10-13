@@ -1,49 +1,89 @@
 ---
 layout: portfolio-modern
-title: "A systems thinker. A builder."
+title: "AI agents. Full stack. Real systems."
 kicker: "ABOUT / BACKGROUND"
 permalink: /cv/
-excerpt: "I’m Tarash Agarwal, a full stack developer based in Canada with experience across web applications, cloud infrastructure, and automation."
+excerpt: "I’m Tarash Agarwal, a software engineer focused on AI and platforms, based in the United States. I build agents, retrieval workflows, web applications, and cloud infrastructure."
 redirect_from:
   - /resume
 ---
+## AI agents & applied AI
+
+I’ve built a conversational hiring planner with **LangGraph**, OpenAI function calls, and session memory, and a persona simulation agent using **RAG**, **FAISS**, and **KMeans**. My work includes prompt and context engineering, NLP, and collecting dynamic web content for ML datasets. I’m also developing **Mnemosyne MCP**, an evolving project for persistent AI knowledge and memory using Airflow ingestion pipelines.
+
+At **ImpacterAI**, I contribute to a personalized communication AI MVP and the infrastructure that supports it.
+
+[Explore my AI projects →]({{ '/projects/' | relative_url }}#hr-agent)
+
 ## My toolkit
 
 | Area | Technologies & focus |
 | --- | --- |
-| Backend | Ruby on Rails, Node.js, Spring Boot |
-| Frontend | React, Ember, JavaScript, UI/UX |
-| Data & search | PostgreSQL, Apache Solr |
-| Cloud & operations | AWS, Ansible, Chef, Docker |
-| Architecture | Microservices, APIs, deployment automation |
+| AI & agents | LangGraph, AI agents, RAG, prompt engineering, context engineering, NLP |
+| AI knowledge infrastructure | Apache Airflow, ingestion pipelines, persistent context, MCP architecture |
+| Retrieval & ML | FAISS, Scikit-learn, KMeans, persona-specific retrieval |
+| Languages | Python, JavaScript, TypeScript, SQL |
+| Applications | React, Next.js, Node.js, Django, FastAPI, Flask |
+| Data & messaging | SQL / NoSQL, PostgreSQL, DynamoDB, Kafka |
+| Cloud | AWS, GCP, Azure, serverless architecture |
+| Infrastructure & delivery | Terraform, CloudFormation, Docker, Ansible, Jenkins, GitHub Actions |
+| Testing & data collection | Cypress, BDD workflows, Playwright, HTML2Text |
 
 ## Experience
 
-### Kyndryl · Software Developer
-Canada and India. Enterprise application development, deployment automation, continuous patching, and compliance workflows.
+### ImpacterAI · AI Intern
+**San Francisco, USA · September 2025–present**
 
-### IBM India · Software Developer
-Rails and Ember applications, infrastructure modernization, and automation.
+- Contribute to the MVP of a personalized communication AI tool that profiles customers for tailored messaging, using Flask and Next.js.
+- Enhance AWS-hosted infrastructure and orchestrate deployments with Terraform.
+
+### Brokerlift Inc. · Software Developer
+**Toronto, Canada · May 2023–August 2024**
+
+- Implemented optimistic locking across 10+ Node.js APIs, reducing incident tickets from 10 to 1 in a week.
+- Added 100+ Cypress tests in three months, bringing coverage to approximately 85% and reducing post-deployment bugs by 50%.
+- Built Python jobs in Jenkins to refresh Gmail tokens for BDD tests, reducing CI/CD upkeep by approximately 20%.
+
+### IBM · Software Developer
+**Bangalore, India · January 2020–December 2021**
+
+- Built a React account-switching feature, cutting login steps by 70% and login time by 80%.
+- Tuned 10+ PostgreSQL queries, reducing average API runtime by 3–4%.
+- Rewrote Ansible-run installation scripts from Bash to Python, reducing install time by approximately 10%.
+- Containerized Python scripts to resolve Red Hat compatibility issues and delivered a production-ready fix in 24 hours.
+- Resolved Kafka partition and consumer mismatches by adjusting partitions, brokers, and replication.
 
 ### Voylla Fashions · Senior Software Engineer
-Marketplace development, microservice architecture, search improvements, and performance optimization. Also served as Acting Technical Lead.
+**Jaipur, India · May 2017–December 2019**
 
-[Explore the projects behind these roles →]({{ '/projects/' | relative_url }})
+- Converted the cart application into a multi-vendor marketplace in six months, rebuilding pipelines and migrating 50+ APIs.
+- Designed the first Django notification microservice, reducing average order completion time by 3–4%.
+- Halved build time and doubled image throughput to 600 images per day with parallel Python processing.
+- Built an SNS/SQS notification system delivering 50,000 messages per day across SMS and WhatsApp.
+
+## Leadership
+
+**ACM Student Chapter at UIUC · Lead, Infrastructure & Core API**
+
+Led infrastructure and core API work within a team of 10 developers. With five developers, integrated a link shortener into ACM core and built a SIGLead management system using Azure AD, DynamoDB, React, and Node.js. The management system reduced sign-up time by 90%.
 
 ## Education
 
-**M.S. in Applied Computer Science**
+### Gies College of Business · University of Illinois Urbana-Champaign
+**Master’s in Technology Management · August 2024–August 2025 · GPA 3.98**
 
-Dalhousie University · 2023
+Big Data (Cloud) Infrastructures, Information Systems Development, Data Science & Analytics.
 
-**B.Tech in Electronics and Communication Engineering**
+### Dalhousie University
+**Master’s in Computer Science · January 2022–September 2023 · GPA 3.87**
 
-JIIT Noida · 2017
+Data Warehousing, Advanced Software Development, Cloud Computing, Serverless Computing.
 
-## How I approach engineering
+### Jaypee Institute of Information Technology
+**Bachelor’s in Electronics and Communication Engineering · August 2013–May 2017**
 
-Requirements evolve. Systems encounter unexpected conditions. Good engineering means adapting thoughtfully, testing assumptions, and delivering useful improvements one iteration at a time.
+Object Oriented Programming, Data Structures, UNIX Programming.
 
-I value clear interfaces, practical trade-offs, and software that stays understandable as it grows.
+## Let’s connect
 
-[Connect on LinkedIn ↗](https://www.linkedin.com/in/tarash-agarwal/) · [Explore my GitHub ↗](https://github.com/tarashagarwal)
+[Email me](mailto:tarasha2@illinois.edu) · [LinkedIn ↗](https://www.linkedin.com/in/tarash-agarwal/) · [GitHub ↗](https://github.com/tarashagarwal)
