@@ -1,63 +1,22 @@
 ---
+layout: portfolio-modern
 permalink: /
 title: "Whats up Fam!! This is Tarash Thanks for Visiting"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+excerpt: "Tarash Agarwal — full stack development, cloud architecture, and thoughtful software engineering."
+home: true
+redirect_from:
   - /about/
   - /about.html
 ---
-
-I can get you team boosted up!!
-
-What I have learned till now about software development..
-======
-
-In the new age of software development that has been inspired by the Agile Manifesto, there is no time to complain about the continuous changing requirements and priorities during a software iteration. Clients are dumb (not literally!) and have no idea about the software development process. Their aim is to annoy the Devs. This should be accepted, and the Devs should be ready for any challenges tossed by the clients at them. Tools and systems to solve the clients might not be available and might fail anytime. The Dev is the person who despite all these challenges can deliver something useful to the client and is able to continuously press onwards to meet the client requirements. These requirments might continuously change and thus cannot be actaully met. There are infinite number of bugs in the code, if you could not find any, you are not searching hard enough.
-
-Other things that should be assumed:
-*  Your code has a bug that has not been discovered yet.
-*  You code can fail at any stage, don’t assume that if it works on dev, test, or pre-prod that it will certainly work on production. 
-*  Don’t assume that if it is working now, it will work a day, hour or even a minute later. 
-*  Client has got it all wrong, it is just the matter of time that they issue the change in requirement. 
-*  What you have planned is of no use, you will have to take a U-turn in the planning process and that also at the last moment.
-*  Your code will fail at the last moment, just before the final build and probably on Friday night; it is okay…. relax.
-*  You code will never be perfect, perfect code never exists; all software systems are having a trade-off of one or more parameters.
-*  Developers are highly ignorant, extremely lazy, and noxiously crazy; they will do the minimal work to complete the requirement as soon as possible. If you think they will do that, no they won’t and if you think they won’t do that, they certainly will. 
-*  Dev’s work using the principal of hit and trial because “using brain” goes against the principle of being lazy.  
-* Test team thinks that Devs have probably taken care of all bugs and Devs think that Test team will certainly report all the bugs in the code IF ANY. 
-* Devs will be working on a production issue on the coming weekend.
-* Manager wants everything to be completed by Monday.
-
-<!-- Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section -->
-
-<!-- Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
-
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+<section class="hero wrap">
+<div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> FULL STACK DEVELOPER · CANADA</p><h1>Good ideas.<br>Thoughtful code.<br><em>Real impact.</em></h1><p class="hero-description">I’m Tarash Agarwal. I build web experiences and the systems behind them — connecting thoughtful interfaces with dependable architecture. I can help your team turn ideas into useful software.</p><div class="actions"><a class="button" href="{{ '/projects/' | relative_url }}">Explore my work <span>↗</span></a><a class="text-link" href="{{ '/cv/' | relative_url }}">A little about me <span>→</span></a></div></div>
+<div class="hero-art" role="img" aria-label="Illustration of connected interface, API, and database layers">
+<div class="art-grid"></div><span class="art-label">FROM INTERFACE TO INFRASTRUCTURE</span><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="system-window"><div class="window-top"><i></i><i></i><i></i><span>the bigger picture</span></div><div class="window-body"><span class="code-mark">&lt;/&gt;</span><div class="mock-lines"><b></b><b></b><b></b></div><div class="mock-panels"><span></span><span></span><span></span></div></div></div><div class="node node-api"><span>↔</span><b>API</b><small>Connecting the dots</small></div><div class="node node-data"><span>▤</span><b>DATA</b><small>A solid foundation</small></div><div class="art-badge">Built to work.<br><strong>Designed to matter.</strong></div><span class="art-spark">✳</span></div>
+</section>
+<div class="stack-band"><div class="wrap"><span>MY TOOLKIT</span><b>Ruby on Rails</b><i>✳</i><b>React</b><i>✳</i><b>Node.js</b><i>✳</i><b>PostgreSQL</b><i>✳</i><b>AWS</b><i>✳</i><b>Ansible</b></div></div>
+<section class="wrap section" id="work"><div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Solving the interesting problems.</h2></div><a class="text-link" href="{{ '/projects/' | relative_url }}">All work <span>↗</span></a></div>
+<div class="project-grid"><a class="project-card" href="{{ '/projects/' | relative_url }}#commerce"><div class="project-visual visual-commerce"><span class="visual-caption">COMMERCE / PERFORMANCE</span><div class="bar-chart"><div><span>Before</span><b style="--bar:100%">250 ms</b></div><div><span>After</span><b style="--bar:20%">50 ms</b></div></div><span class="visual-note">Order API response time</span></div><div class="project-info"><span class="eyebrow">VOYLLA · MICROSERVICES</span><h3>A faster path to checkout <span>↗</span></h3><p>Moving messaging and email into a dedicated service reduced average order API response time by 200 ms.</p><div class="tags"><span>Node.js</span><span>AWS</span><span>PostgreSQL</span></div></div></a>
+<a class="project-card" href="{{ '/projects/' | relative_url }}#automation"><div class="project-visual visual-automation"><span class="visual-caption">INFRASTRUCTURE / AUTOMATION</span><div class="pipeline"><span>CODE<br><b>⌘</b></span><i>→</i><span>DEPLOY<br><b>↗</b></span><i>→</i><span>COMPLY<br><b>✓</b></span></div><span class="visual-note">Less manual work. More repeatability.</span></div><div class="project-info"><span class="eyebrow">IBM / KYNDRYL · SYSTEMS</span><h3>Making operations repeatable <span>↗</span></h3><p>Deployment migration, Rails upgrades, and infrastructure automation for patching and compliance workflows.</p><div class="tags"><span>Rails</span><span>Ansible</span><span>Chef</span></div></div></a></div></section>
+<section class="about-section"><div class="wrap about-grid"><div class="portrait-composition"><img src="{{ '/images/profile.jpeg' | relative_url }}" alt="Tarash Agarwal" loading="lazy" width="420" height="460"><span class="portrait-note">Curious by nature.<br>Engineer by craft.</span><span class="portrait-star" aria-hidden="true">✳</span></div><div><p class="eyebrow">02 / THE PERSON BEHIND THE CODE</p><h2>I care about how it looks.<br><em>And how it works.</em></h2><p>My work spans full stack applications, marketplace platforms, and cloud infrastructure. I enjoy taking a complex problem apart and turning it into something useful.</p><p>With a background in electronics and a master’s in applied computer science, I bring a systems perspective to the details — from an interface interaction to the services underneath.</p><div class="expertise"><div><span>01</span><b>Full stack development</b><small>Rails, React, Ember & Node.js</small></div><div><span>02</span><b>Systems & cloud</b><small>Microservices, AWS & automation</small></div><div><span>03</span><b>Practical engineering</b><small>Performance, reliability & iteration</small></div></div><a class="text-link" href="{{ '/cv/' | relative_url }}">Explore my background →</a></div></div></section>
+<section class="wrap section"><div class="section-heading"><div><p class="eyebrow">03 / NOTES & IDEAS</p><h2>Thinking out loud.</h2></div><a class="text-link" href="{{ '/year-archive/' | relative_url }}">All writing ↗</a></div><div class="writing-grid">{% for post in site.posts limit:3 %}<a class="writing-card" href="{{ post.url | relative_url }}"><span class="eyebrow">{{ post.date | date: '%b %d, %Y' }}</span><h3>{{ post.title }}</h3><p>{{ post.excerpt | strip_html | truncate: 130 }}</p><span class="text-link">Read the story ↗</span></a>{% endfor %}</div></section>
+<section class="wrap contact-section"><div><p class="eyebrow">LET’S MAKE SOMETHING USEFUL</p><h2>A good conversation<br>can start <em>something great.</em></h2></div><a class="button" href="https://www.linkedin.com/in/tarash-agarwal/">Connect on LinkedIn ↗</a><span class="contact-star" aria-hidden="true">✳</span></section>

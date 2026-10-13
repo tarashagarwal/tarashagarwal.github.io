@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio-modern
 title: "ACID properties, not for anything beyond Relation Database and its Data"
 date: 2022-03-25
 ---
