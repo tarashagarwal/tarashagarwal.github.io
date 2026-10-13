@@ -1,19 +1,31 @@
 ---
 layout: portfolio-modern
-title: "AI agents. Full stack. Real systems."
+title: "AI, platforms & full stack development."
 kicker: "ABOUT / BACKGROUND"
 permalink: /cv/
-excerpt: "I’m Tarash Agarwal, a software engineer focused on AI and platforms, based in the United States. I build agents, retrieval workflows, web applications, and cloud infrastructure."
+excerpt: "I’m Tarash Agarwal, a software engineer focused on AI, platforms, and full stack development, based in the United States. I build agents, retrieval workflows, web applications, and cloud infrastructure."
 redirect_from:
   - /resume
 ---
-## AI agents & applied AI
+## AI engineering
 
 I’ve built a conversational hiring planner with **LangGraph**, OpenAI function calls, and session memory, and a persona simulation agent using **RAG**, **FAISS**, and **KMeans**. My work includes prompt and context engineering, NLP, and collecting dynamic web content for ML datasets. I’m also developing **Mnemosyne MCP**, an evolving project for persistent AI knowledge and memory using Airflow ingestion pipelines.
 
 I currently work at **HarmonEyes**. My earlier work at **ImpacterAI** includes a personalized communication AI MVP and its supporting infrastructure.
 
 [Explore my AI projects →]({{ '/projects/' | relative_url }}#hr-agent)
+
+## Platform engineering
+
+I build cloud infrastructure and data workflows that support applications and AI. This includes Airflow ingestion pipelines for Mnemosyne MCP, AWS infrastructure and Terraform deployments at ImpacterAI, and a multicloud serverless platform built with a team of four.
+
+[Explore platform work →]({{ '/projects/' | relative_url }}#mnemosyne)
+
+## Full stack development
+
+My experience spans React and Next.js interfaces, Node.js and Python services, APIs, and databases. At Brokerlift, I improved API concurrency and test coverage. At ACM UIUC, I led infrastructure and core API work across React, Node.js, DynamoDB, and Azure AD.
+
+[Explore full stack work →]({{ '/projects/' | relative_url }}#brokerlift)
 
 ## My toolkit
 
@@ -40,7 +52,7 @@ I currently work at HarmonEyes. [View my experience on LinkedIn ↗](https://www
 **San Francisco, USA · Started September 2025**
 
 - Contributed to the MVP of a personalized communication AI tool that profiles customers for tailored messaging, using Flask and Next.js.
-- Enhanced AWS-hosted infrastructure and orchestrate deployments with Terraform.
+- Enhanced AWS-hosted infrastructure and orchestrated deployments with Terraform.
 
 ### Brokerlift Inc. · Software Developer
 **Toronto, Canada · May 2023–August 2024**

@@ -1,0 +1,12 @@
+- id: ai
+  title: "AI engineering"
+  description: "Agents that plan, retrieve context, and turn conversations into useful actions."
+  technologies: "LangGraph · RAG · FAISS · Python"
+- id: platform
+  title: "Platform engineering"
+  description: "Cloud infrastructure, ingestion pipelines, and dependable systems for applications and AI."
+  technologies: "AWS · Airflow · Terraform · Docker"
+- id: full-stack
+  title: "Full stack development"
+  description: "Interfaces, APIs, and data workflows backed by testing and practical performance improvements."
+  technologies: "React · Next.js · Node.js · PostgreSQL"

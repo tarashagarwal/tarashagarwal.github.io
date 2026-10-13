@@ -1,4 +1,5 @@
 - id: hr-agent
+  focus: ai
   title: "Conversational HR AI Agent"
   eyebrow: "LANGGRAPH / TOOL-CALLING AGENT"
   caption: "CONVERSATION / PLANNING / ACTION"
@@ -11,6 +12,7 @@
     - { label: AGENT, symbol: "✳" }
     - { label: PLAN, symbol: "✓" }
 - id: toneweave
+  focus: ai
   title: "ToneWeave AI Agent"
   eyebrow: "PERSONA SIMULATION / RETRIEVAL"
   caption: "PERSONA / CONTEXT / RESPONSE"
@@ -23,6 +25,7 @@
     - { label: CONTEXT, symbol: "▤" }
     - { label: REPLY, symbol: "✳" }
 - id: intelli-scraper
+  focus: ai
   title: "Intelli-Scraper"
   eyebrow: "DATA COLLECTION / ML DATASETS"
   caption: "DYNAMIC WEB / STRUCTURED DATA"
@@ -35,6 +38,7 @@
     - { label: FILTER, symbol: "≋" }
     - { label: DATA, symbol: "▤" }
 - id: mnemosyne
+  focus: platform
   title: "Mnemosyne MCP"
   eyebrow: "AI MEMORY / INGESTION PIPELINES"
   caption: "INGEST / ENRICH / REMEMBER"
@@ -46,3 +50,42 @@
     - { label: INGEST, symbol: "↓" }
     - { label: ENRICH, symbol: "✳" }
     - { label: STORE, symbol: "▤" }
+- id: halifax-foodie
+  focus: platform
+  title: "Halifax Foodie"
+  eyebrow: "SERVERLESS / MULTICLOUD"
+  caption: "SERVICES / EVENTS / INSIGHT"
+  visual: "visual-scraper"
+  description: "Led a team of four to deliver a serverless food delivery platform with user management, support chat, NLP feedback analysis, and real-time visualization."
+  note: "Delivered in one month · AWS + GCP + Firebase"
+  tags: [AWS, GCP, Serverless, Firebase]
+  steps:
+    - { label: REQUEST, symbol: "↔" }
+    - { label: EVENT, symbol: "✳" }
+    - { label: PROCESS, symbol: "✓" }
+- id: brokerlift
+  focus: full-stack
+  title: "Reliable APIs & releases"
+  eyebrow: "BROKERLIFT / APPLICATION ENGINEERING"
+  caption: "API / TEST / RELEASE"
+  visual: "visual-commerce"
+  description: "Implemented optimistic locking across 10+ Node.js APIs, added 100+ Cypress tests, and automated BDD test token refresh with Python and Jenkins."
+  note: "10 → 1 incident tickets · ~85% test coverage"
+  tags: [Node.js, Cypress, Python, Jenkins]
+  steps:
+    - { label: BUILD, symbol: "⌘" }
+    - { label: TEST, symbol: "✓" }
+    - { label: SHIP, symbol: "↗" }
+- id: acm
+  focus: full-stack
+  title: "ACM core & SIGLead"
+  eyebrow: "UIUC / FULL STACK & LEADERSHIP"
+  caption: "IDENTITY / WORKFLOWS / DATA"
+  visual: "visual-automation"
+  description: "Led infrastructure and core API work, integrating a link shortener and building centralized SIGLead workflows with React, Node.js, DynamoDB, and Azure AD."
+  note: "90% reduction in sign-up time · Team of 10 developers"
+  tags: [React, Node.js, DynamoDB, Azure AD]
+  steps:
+    - { label: SIGN IN, symbol: "⌘" }
+    - { label: MANAGE, symbol: "↔" }
+    - { label: SYNC, symbol: "▤" }

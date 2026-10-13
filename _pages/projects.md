@@ -2,8 +2,8 @@
 layout: portfolio-modern
 permalink: /projects/
 title: "Agents, applications & impact."
-kicker: "AI PROJECTS / ENGINEERING EXPERIENCE"
-excerpt: "Conversational agents, persona-based retrieval, ML data collection, and the full stack systems that make them useful."
+kicker: "AI / PLATFORM / FULL STACK"
+excerpt: "AI agents and retrieval, cloud platforms and pipelines, and full stack applications — with results from each."
 redirect_from:
   - /wordpress/projects/
 ---
