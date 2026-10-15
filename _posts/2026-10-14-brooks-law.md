@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Brooks’s law: why adding people can delay a late software project"
+title: "Brooks’s law for AI agents: more builders can overwhelm review"
 date: 2026-10-14 21:25:10 -0500
 updated: 2026-10-14
-excerpt: "New people bring capacity and also require onboarding, coordination, and integration. A late project benefits only when added help can relieve its actual bottleneck in time."
-summary: "New people bring capacity and also require onboarding, coordination, and integration. A late project benefits only when added help can relieve its actual bottleneck in time."
-kicker: "ENGINEERING LAWS / 10 OF 20 / PROJECT MANAGEMENT OBSERVATION"
-cover_image: /images/articles/engineering-laws/brooks-law.svg
+excerpt: "Adding people late can increase onboarding and integration work. Parallel coding agents raise a related review-capacity question, but Brooks’s observation does not supply a numerical law for AI productivity."
+summary: "Adding people late can increase onboarding and integration work. Parallel coding agents raise a related review-capacity question, but Brooks’s observation does not supply a numerical law for AI productivity."
+kicker: "DESIGNING AI AGENTS / RULE 10 OF 20 / PROJECT MANAGEMENT OBSERVATION"
+cover_image: /images/articles/engineering-laws/agents/brooks-law.svg
 permalink: /posts/2026/10/brooks-law/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 10
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 10 / 20 · Project management observation</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 10 / 20 · Project management observation</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/brooks-law.svg" alt="Four engineers have six possible communication pairs; eight have 28. Those counts illustrate coordination growth, not a formula for project duration." caption="Four engineers have six possible communication pairs; eight have 28. Those counts illustrate coordination growth, not a formula for project duration." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/brooks-law.svg" alt="AI agent design example: Many candidate patches: Parallel generation. Shared review queue: Finite reviewer capacity. Verified integration: Accepted changes create progress." caption="Before adding builders or coding-agent sessions, identify who can verify and integrate their output." height="470" %}
 
 ## What it means
 
@@ -32,21 +32,23 @@ Frederick Brooks warned that adding people to an already late software project c
 
 People and months are not interchangeable units when tasks depend on one another. A team cannot divide an unresolved architectural decision among ten people and assume it will finish in one tenth of the time.
 
-## Worked example
+## AI agent example
 
-Imagine four engineers trying to finish a release in two weeks. Four more join. If each newcomer needs six hours of focused mentoring from an existing engineer, the original group spends 24 hours of its scarce remaining time transferring context.
+A team is late delivering an agent feature. Its critical path is agreement on a tool contract and a reliable permission boundary. Adding four engineers creates useful future capacity, but experienced contributors must first explain the system and coordinate changes.
 
-Some of that investment will pay back later. Whether it helps this release depends on when the new contributors become productive and whether there are independent tasks available. If the critical path is one data migration design, adding parallel feature work may not move the release date at all.
+Now consider a related automation decision: ten coding-agent sessions generate ten candidate patches. If one engineer owns review and every patch changes the same tool interface, the candidate count can rise while integrated progress stalls.
 
-The number of possible pairwise communication links rises from **4 × 3 / 2 = 6** to **8 × 7 / 2 = 28**. This is a combinatorial illustration, not a prediction that meetings or delivery time will rise by the same ratio.
+The automation example is an analogy about shared constraints, not evidence that Brooks’s law quantitatively predicts coding-agent output. A candidate patch may be fast to generate and still expensive to verify, reconcile, and deploy.
 
-## Put it to work
+Additional help works best when it relieves the actual constraint: isolated evaluation fixtures, a self-contained adapter, or a reproducible environment task may free the contract owner to finish the critical decision.
 
-Identify the constraint before staffing it. If experienced engineers are blocked by repetitive test setup, documentation, or an isolated adapter, additional help with a clear interface may free them for the critical path. If the obstacle is a disputed requirement, resolve the decision first.
+## Before you build
 
-Reduce onboarding cost with a working development setup, concise architectural notes, small initial changes, and a named mentor. Protect uninterrupted time for the people resolving the hardest dependency. Track integrated, verified progress rather than the number of simultaneous branches.
+Measure time to a correct integrated change, not generated code volume. Identify ownership, review capacity, conflicting edits, and required domain knowledge before parallelizing implementation.
 
-Coding agents change some mechanics but not the underlying need for review and integration. Generating more patches can increase a reviewer queue. Give each task a bounded scope and an acceptance criterion, and measure how quickly correct changes reach the shared system.
+Give human and automated contributors bounded tasks with clear interfaces and acceptance criteria. Reserve time for integration and evaluation. Resolve a disputed requirement directly instead of multiplying implementation branches around an unresolved decision.
+
+**Design decision:** Before adding builders or coding-agent sessions, identify who can verify and integrate their output.
 
 ## Limits and misuses
 

@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Wirth’s law: why faster hardware can still feel slower"
+title: "Wirth’s law for AI agents: stop extra layers consuming every speed gain"
 date: 2026-10-14 21:25:12 -0500
 updated: 2026-10-14
-excerpt: "Software growth can consume hardware gains. Track the work required for a user task, establish performance budgets, and spend extra capacity on useful functionality deliberately."
-summary: "Software growth can consume hardware gains. Track the work required for a user task, establish performance budgets, and spend extra capacity on useful functionality deliberately."
-kicker: "ENGINEERING LAWS / 12 OF 20 / SOFTWARE EFFICIENCY OBSERVATION"
-cover_image: /images/articles/engineering-laws/wirths-law.svg
+excerpt: "Faster inference can be offset by more model calls, larger context, and redundant retrieval. Measure the full user task and require each added stage to justify its cost."
+summary: "Faster inference can be offset by more model calls, larger context, and redundant retrieval. Measure the full user task and require each added stage to justify its cost."
+kicker: "DESIGNING AI AGENTS / RULE 12 OF 20 / SOFTWARE EFFICIENCY OBSERVATION"
+cover_image: /images/articles/engineering-laws/agents/wirths-law.svg
 permalink: /posts/2026/10/wirths-law/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 12
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 12 / 20 · Software efficiency observation</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 12 / 20 · Software efficiency observation</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/wirths-law.svg" alt="If a machine becomes twice as fast but a page requires three times the CPU work, its CPU-bound task takes 1.5 times as long under the simplified model." caption="If a machine becomes twice as fast but a page requires three times the CPU work, its CPU-bound task takes 1.5 times as long under the simplified model." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/wirths-law.svg" alt="AI agent design example: Faster inference: Assume 2× throughput. 3× computation added: Repeated planning + retrieval. End-to-end task slows: Simplified ratio: 3 / 2 = 1.5×." caption="Before adding another agent stage, measure what it improves and what it costs across the complete task." height="470" %}
 
 ## What it means
 
@@ -32,21 +32,21 @@ The observation commonly called Wirth’s law warns that software can become slo
 
 Faster machines create room for useful capabilities. They can also conceal unnecessary work until users encounter an older phone, a constrained container, or a large dataset.
 
-## Worked example
+## AI agent example
 
-Assume a CPU-bound page task needs 100 units of computation on an old device. A newer device processes those units twice as fast. If the page now performs 300 units because of extra dependencies and repeated rendering, its relative runtime is **3 / 2 = 1.5** times the original.
+Suppose an illustrative agent task requires two units of model computation. An inference improvement doubles throughput for that same work. If the product now adds three times as much computation through repeated planning, critique, and rewriting, the CPU-like simplified comparison becomes **3 / 2 = 1.5×** the original time.
 
-This invented arithmetic isolates CPU work; actual page performance also depends on networking, storage, scheduling, and interaction design. The point is that a hardware improvement does not guarantee an improved user experience when the workload changes.
+Actual model services are not simple constant-throughput machines. Context, output length, batching, provider behavior, and networking all matter. The arithmetic illustrates how workload growth can consume a speed gain; it is not a forecast for a particular model.
 
-A similar issue appears in backend services. A larger instance can temporarily hide an unnecessary query inside a loop. As request volume grows, that extra work returns as latency, database load, and operating cost.
+A practical example is an assistant that retrieves the same documents separately in planning, drafting, and checking. Reusing authorized, sufficiently fresh results within the run may reduce redundant work. Measure quality before removing a stage: some checks provide important value even when they add latency.
 
-## Put it to work
+## Before you build
 
-Choose budgets for a meaningful user task: time until a page responds to input, transferred bytes, memory at steady state, and CPU time per successful operation. Measure on representative devices or instance sizes, not only a developer’s newest machine.
+Set budgets for successful task latency, model calls, input and output volume, retrieval work, and cost. Compare candidate pipelines on the same task set and quality criteria.
 
-Review new dependencies for the work they add to the critical path. Load optional functionality when needed, avoid repeated transformations of unchanged data, and profile before optimizing a small function that contributes little to total time.
+Trace repeated work before switching to a larger machine or a faster provider. Keep stages that improve the outcome or enforce required guarantees, and simplify stages that add cost without useful evidence. Report end-to-end performance instead of only the fastest individual call.
 
-Agent systems have an equivalent resource budget. Additional retrieval passes, unnecessary model calls, and oversized context can consume latency and money without improving answer quality. Compare the quality gained with the extra work using a fixed evaluation set. A more elaborate pipeline should earn its cost.
+**Design decision:** Before adding another agent stage, measure what it improves and what it costs across the complete task.
 
 ## Limits and misuses
 

@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Conway’s law: architecture follows the paths people use to communicate"
+title: "Conway’s law for AI agents: design ownership as carefully as orchestration"
 date: 2026-10-14 21:25:06 -0500
 updated: 2026-10-14
-excerpt: "System boundaries tend to reflect organizational communication boundaries. Improve ownership and collaboration alongside APIs; changing a diagram alone rarely fixes a handoff problem."
-summary: "System boundaries tend to reflect organizational communication boundaries. Improve ownership and collaboration alongside APIs; changing a diagram alone rarely fixes a handoff problem."
-kicker: "ENGINEERING LAWS / 06 OF 20 / ORGANIZATIONAL OBSERVATION"
-cover_image: /images/articles/engineering-laws/conways-law.svg
+excerpt: "An agent crosses product, platform, and domain-tool boundaries. Clear ownership of contracts, permissions, evaluations, and incidents matters as much as the orchestration diagram."
+summary: "An agent crosses product, platform, and domain-tool boundaries. Clear ownership of contracts, permissions, evaluations, and incidents matters as much as the orchestration diagram."
+kicker: "DESIGNING AI AGENTS / RULE 06 OF 20 / ORGANIZATIONAL OBSERVATION"
+cover_image: /images/articles/engineering-laws/agents/conways-law.svg
 permalink: /posts/2026/10/conways-law/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 6
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 06 / 20 · Organizational observation</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 06 / 20 · Organizational observation</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/conways-law.svg" alt="A checkout change that crosses frontend, backend, and database queues can be redesigned around a team owning the complete customer capability." caption="A checkout change that crosses frontend, backend, and database queues can be redesigned around a team owning the complete customer capability." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/conways-law.svg" alt="AI agent design example: Product owner: Outcome + conversation. Agent platform: Runtime + traces + identity. Domain-tool owner: Business rules + committed result." caption="Before drawing agent roles, assign owners for the real interfaces and decisions those roles depend on." height="470" %}
 
 ## What it means
 
@@ -32,21 +32,23 @@ Melvin Conway’s original essay argues that the communication structure of a de
 
 In practical terms, a boundary that requires constant cross-team approval can become a slow integration point. An organization chart is not a deployment diagram, but it affects which changes are easy to coordinate and which local compromises survive.
 
-## Worked example
+## AI agent example
 
-Consider a fictional checkout feature: let a customer choose a delivery slot before payment. A frontend team owns the screen, an API team owns orchestration, and a database team owns schema changes. Each team has its own queue and release date.
+Imagine a customer-support agent. The product team owns conversation behavior, a platform team owns model routing and runtime, and the orders team owns refunds. The agent needs all three to complete one customer request.
 
-The customer sees one feature, while the organization sees three tickets. A late discovery that reservation and payment need a shared state transition now crosses all three queues. The resulting design may mirror those handoffs with fragile integration code.
+If nobody owns the complete refund outcome, disagreements can land in a prompt: the product asks for a helpful answer while the tool service returns a vague failure. A model is then expected to improvise around an organizational gap.
 
-One alternative is a team that owns the checkout capability from interface through persistence, using shared platform services where appropriate. It can negotiate one clear reservation contract with the delivery domain. This is an illustrative organizational choice, not proof that every layered team structure fails.
+Define a refund contract with explicit eligibility, authorization, completion, and uncertain-result states. The orders team owns its business semantics; the platform owns reliable execution and traceability; the product team owns how users understand the result.
 
-## Put it to work
+Review a failed refund as one workflow. That exposes handoffs and missing decisions more clearly than three separate dashboards that each report local success.
 
-Map a real change from idea to production. Mark ownership changes, waiting periods, and decisions that require several groups to agree. Then compare that map with synchronous calls and deployment dependencies in the system.
+## Before you build
 
-Write down who owns an API’s behavior, on-call response, migrations, and deprecation. A published schema without someone responsible for its lifecycle is an incomplete interface. Shared documentation, early design reviews, and stable contracts can reduce avoidable negotiation.
+Map ownership across retrieval, model access, memory, tool execution, and user-visible confirmation. Name who changes each contract and who responds when it fails.
 
-For an agent product, clarify the boundary between the product team defining tool behavior and the platform team providing execution, identity, and observability. The agent should not become an unowned integration layer that absorbs every disagreement about business rules.
+Use shared examples and evaluation cases during contract changes. Give one team responsibility for the end-to-end customer outcome while retaining appropriate domain ownership. Creating more named sub-agents does not resolve unclear human responsibilities.
+
+**Design decision:** Before drawing agent roles, assign owners for the real interfaces and decisions those roles depend on.
 
 ## Limits and misuses
 

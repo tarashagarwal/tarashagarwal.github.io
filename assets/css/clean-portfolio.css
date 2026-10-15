@@ -97,6 +97,9 @@ h1 em,h2 em{text-shadow:none}
 .recent-thoughts-grid>article{min-width:0}
 .recent-thought-card{display:flex;height:100%;border:1px solid #3a5165;border-radius:10px;background:#111d2beb;overflow:hidden;transition:border-color .2s,background .2s}
 .recent-thought-card:hover{border-color:#73b8ad;background:#142332}
+.recent-thought-card--illustrated{flex-direction:column}
+.recent-thought-image{width:100%;height:auto;aspect-ratio:90/47;object-fit:contain;background:#090f1b;border-bottom:1px solid #3a5165}
+.recent-thought-card--illustrated .recent-thought-copy{flex:1}
 .recent-thought-copy{display:flex;flex-direction:column;padding:25px 28px;min-width:0}
 .recent-thought-meta{display:flex;gap:16px;align-items:center;flex-wrap:wrap;font:10px Consolas,monospace;color:#a9bed1;margin-bottom:13px}
 .recent-thought-meta>span{color:var(--cyan)}
@@ -113,6 +116,12 @@ h1 em,h2 em{text-shadow:none}
 .recent-series-link a,.writing-series-link a{color:#a8e7dd;text-decoration:underline;text-underline-offset:4px}
 .series-intro{max-width:760px;margin-bottom:32px}
 .series-intro p:last-child{font-size:13px;color:#a9bed1}
+.series-jump{font-size:14px;margin:0 0 20px}
+#agent-rules{scroll-margin-top:30px}
+.series-cover{margin:0 0 34px;padding:12px;border:1px solid #3a5165;border-radius:10px;background:#090f1b}
+.series-cover img{width:100%;height:auto;border-radius:7px}
+.series-cover figcaption{font-size:12px;color:#afc0d3;line-height:1.7;margin:12px 4px 2px}
+.engineering-series-card .series-card-image{width:100%;height:auto;aspect-ratio:90/47;object-fit:contain;margin:18px 0 4px;border-radius:7px;background:#090f1b}
 .prose .engineering-series-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .prose .engineering-series-list>li{padding:0;margin:0;min-width:0}
 .prose a.engineering-series-card{display:flex;flex-direction:column;height:100%;padding:26px;border:1px solid #3a5165;border-radius:10px;background:#111d2beb;color:#edf4ff;text-decoration:none;transition:border-color .2s,background .2s}

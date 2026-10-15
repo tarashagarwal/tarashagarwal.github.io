@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">20 rules to know before designing AI agents</title><desc id="desc">A user goal reaches an agent loop that plans, acts, and checks results. Tools execute behind validation and authorization. State, budgets, contracts, and recovery support the full workflow.</desc><rect width="900" height="470" rx="16" fill="#090f1b"/>
+<text x="34" y="35" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">A PRACTICAL FIELD GUIDE  /  20 RULES</text>
+<text x="34" y="79" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#ecf4ff" stroke="none" text-anchor="start">Design the agent. Engineer the system.</text>
+<text x="34" y="111" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#b1c4d9" stroke="none" text-anchor="start">The model reasons. Your system owns the execution boundary.</text>
+<rect x="34" y="154" width="252" height="142" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="52" y="187" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#73e8d1" stroke="none" text-anchor="start">User goal</text>
+<text x="52" y="226" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ecf4ff" stroke="none" text-anchor="start">A useful outcome</text>
+<text x="52" y="252" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ecf4ff" stroke="none" text-anchor="start">A clear finish line</text>
+<rect x="324" y="154" width="252" height="142" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="342" y="187" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#b6a0f3" stroke="none" text-anchor="start">Agent loop</text>
+<text x="342" y="226" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ecf4ff" stroke="none" text-anchor="start">Plan → act → observe</text>
+<text x="342" y="252" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ecf4ff" stroke="none" text-anchor="start">Check evidence + progress</text>
+<rect x="614" y="154" width="252" height="142" rx="10" fill="#111e30" stroke="#f2cb87"/>
+<text x="632" y="187" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#f2cb87" stroke="none" text-anchor="start">Authorized tools</text>
+<text x="632" y="226" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ecf4ff" stroke="none" text-anchor="start">Validate every action</text>
+<text x="632" y="252" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ecf4ff" stroke="none" text-anchor="start">Return authoritative result</text>
+<line x1="290" y1="226" x2="318" y2="226" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="318.0,226.0 309.0,230.3 309.0,221.7" fill="#73e8d1"/>
+<line x1="580" y1="226" x2="608" y2="226" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="608.0,226.0 599.0,230.3 599.0,221.7" fill="#73e8d1"/>
+<line x1="740" y1="297" x2="740" y2="316" stroke="#b6a0f3" stroke-width="2"/>
+<line x1="740" y1="316" x2="450" y2="316" stroke="#b6a0f3" stroke-width="2"/>
+<line x1="450" y1="316" x2="450" y2="298" stroke="#b6a0f3" stroke-width="2"/>
+<polygon points="450,298 446,307 454,307" fill="#b6a0f3"/>
+<text x="590" y="311" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#b1c4d9" text-anchor="middle">Tool result</text>
+<rect x="34" y="333" width="200" height="78" rx="10" fill="#111e30" stroke="#3a5165"/>
+<text x="48" y="361" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">State</text>
+<text x="48" y="389" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Consistency + memory</text>
+<rect x="252" y="333" width="200" height="78" rx="10" fill="#111e30" stroke="#3a5165"/>
+<text x="266" y="361" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Budgets</text>
+<text x="266" y="389" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Latency + concurrency</text>
+<rect x="470" y="333" width="200" height="78" rx="10" fill="#111e30" stroke="#3a5165"/>
+<text x="484" y="361" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Contracts</text>
+<text x="484" y="389" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Permissions + semantics</text>
+<rect x="688" y="333" width="200" height="78" rx="10" fill="#111e30" stroke="#3a5165"/>
+<text x="702" y="361" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Recovery</text>
+<text x="702" y="389" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Retries + uncertainty</text>
+<line x1="34" y1="431" x2="866" y2="431" stroke="#3a5165" stroke-width="2"/>
+<text x="34" y="452" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#b1c4d9" stroke="none" text-anchor="start">WORKED EXAMPLES  /  DIAGRAMS  /  DESIGN DECISIONS  /  Tarash Agarwal</text>
+</svg>

@@ -90,7 +90,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_1">
-      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="139.025455" y="289.462281" transform="rotate(-0 139.025455 289.462281)">Leak</text>
+      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="139.025455" y="289.462281" transform="rotate(-0 139.025455 289.462281)">Tool schema</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -100,7 +100,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_2">
-      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="234.752727" y="289.462281" transform="rotate(-0 234.752727 289.462281)">Retry loop</text>
+      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="234.752727" y="289.462281" transform="rotate(-0 234.752727 289.462281)">Retrieval</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -110,7 +110,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_3">
-      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="330.48" y="289.462281" transform="rotate(-0 330.48 289.462281)">Config</text>
+      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="330.48" y="289.462281" transform="rotate(-0 330.48 289.462281)">Timeout</text>
      </g>
     </g>
     <g id="xtick_4">
@@ -120,7 +120,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_4">
-      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="426.207273" y="289.462281" transform="rotate(-0 426.207273 289.462281)">Credentials</text>
+      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="426.207273" y="289.462281" transform="rotate(-0 426.207273 289.462281)">Authorization</text>
      </g>
     </g>
     <g id="xtick_5">
@@ -130,7 +130,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_5">
-      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="521.934545" y="289.462281" transform="rotate(-0 521.934545 289.462281)">Parsing</text>
+      <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="521.934545" y="289.462281" transform="rotate(-0 521.934545 289.462281)">Other</text>
      </g>
     </g>
    </g>
@@ -201,7 +201,7 @@ L -3.5 0
      </g>
     </g>
     <g id="text_12">
-     <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="50.474844" y="192.888" transform="rotate(-90 50.474844 192.888)">Incidents (out of 100)</text>
+     <text style="fill: #b1c4d9; font: 11px Arial, Helvetica, sans-serif; text-anchor: middle" x="50.474844" y="192.888" transform="rotate(-90 50.474844 192.888)">Failed tasks (out of 100)</text>
     </g>
    </g>
    <g id="patch_8">
@@ -237,7 +237,7 @@ L 583.2 274.104
    <text style="fill: #ecf4ff; font: 700 22px Arial, Helvetica, sans-serif; text-anchor: start" x="25.92" y="54.144" transform="rotate(-0 25.92 54.144)">Pareto principle</text>
   </g>
   <g id="text_20">
-   <text style="fill: #b6a0f3; font: 12px Arial, Helvetica, sans-serif; text-anchor: start" x="25.92" y="82.908" transform="rotate(-0 25.92 82.908)">Illustrative incident counts: prioritize the observed distribution</text>
+   <text style="fill: #b6a0f3; font: 12px Arial, Helvetica, sans-serif; text-anchor: start" x="25.92" y="82.908" transform="rotate(-0 25.92 82.908)">Illustrative agent failure counts: prioritize the observed distribution</text>
   </g>
   <g id="text_21">
    <text style="fill: #b1c4d9; font: 9px Arial, Helvetica, sans-serif; text-anchor: start" x="25.92" y="319.788" transform="rotate(-0 25.92 319.788)">First two causes: 80% of incidents, 40% of categories. The ratio is not prescribed.</text>

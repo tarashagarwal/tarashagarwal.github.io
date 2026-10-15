@@ -7,7 +7,8 @@
   <div class="recent-thoughts-grid">
     {% for thought in site.posts limit:3 %}
     <article>
-      <a class="recent-thought-card recent-thought-card--text" href="{{ thought.url | relative_url }}" aria-labelledby="recent-thought-title-{{ forloop.index }}">
+      <a class="recent-thought-card {% if thought.series == 'engineering-laws' %}recent-thought-card--illustrated{% else %}recent-thought-card--text{% endif %}" href="{{ thought.url | relative_url }}" aria-labelledby="recent-thought-title-{{ forloop.index }}">
+        {% if thought.series == 'engineering-laws' %}<img class="recent-thought-image" src="{{ thought.cover_image | relative_url }}" alt="" width="900" height="470" loading="lazy">{% endif %}
         <div class="recent-thought-copy">
           <div class="recent-thought-meta"><span>{% if forloop.first %}Latest article{% else %}Article{% endif %}</span><time datetime="{{ thought.date | date: '%Y-%m-%d' }}">{{ thought.date | date: '%B %d, %Y' }}</time></div>
           <h3 id="recent-thought-title-{{ forloop.index }}">{{ thought.title | escape }}</h3>
@@ -18,6 +19,6 @@
     </article>
     {% endfor %}
   </div>
-  <p class="recent-series-link"><a href="{{ '/engineering-laws/' | relative_url }}">Explore the new series: 20 engineering laws, with examples and diagrams <span aria-hidden="true">↗</span></a></p>
+  <p class="recent-series-link"><a href="{{ '/engineering-laws/' | relative_url }}">20 rules to know before designing AI agents — examples and illustrated workflows <span aria-hidden="true">↗</span></a></p>
 </section>
 {% endif %}

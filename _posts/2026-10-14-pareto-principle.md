@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "The Pareto principle: prioritize from evidence, not an automatic 80/20 split"
+title: "The Pareto principle for AI agents: fix the failures your evaluations reveal"
 date: 2026-10-14 21:25:14 -0500
 updated: 2026-10-14
-excerpt: "A small number of causes often account for a large share of an outcome. Measure the actual distribution, prioritize high-impact work, and keep rare but severe risks visible."
-summary: "A small number of causes often account for a large share of an outcome. Measure the actual distribution, prioritize high-impact work, and keep rare but severe risks visible."
-kicker: "ENGINEERING LAWS / 14 OF 20 / PRIORITIZATION HEURISTIC"
-cover_image: /images/articles/engineering-laws/pareto-principle.svg
+excerpt: "Prioritize agent improvements from measured failure categories. A few causes may dominate, but rare authorization or side-effect failures still deserve attention because severity matters."
+summary: "Prioritize agent improvements from measured failure categories. A few causes may dominate, but rare authorization or side-effect failures still deserve attention because severity matters."
+kicker: "DESIGNING AI AGENTS / RULE 14 OF 20 / PRIORITIZATION HEURISTIC"
+cover_image: /images/articles/engineering-laws/agents/pareto-principle.svg
 permalink: /posts/2026/10/pareto-principle/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 14
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 14 / 20 · Prioritization heuristic</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 14 / 20 · Prioritization heuristic</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/pareto-principle.svg" alt="In an invented incident sample, five causes contribute 50, 30, 10, 6, and 4 incidents. The first two explain 80%, although they are 40% of the causes." caption="In an invented incident sample, five causes contribute 50, 30, 10, 6, and 4 incidents. The first two explain 80%, although they are 40% of the causes." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/pareto-principle.svg" alt="AI agent design example: 100 failed tasks: Classified evaluation sample. 50 schema + 30 retrieval: 80% from two of five causes. Prioritize + check severity: Rare permission failures still matter." caption="Before rewriting an agent, inspect the largest actionable failure groups while keeping high-severity failures visible." height="470" %}
 
 ## What it means
 
@@ -32,21 +32,25 @@ The Pareto principle encourages attention to the relatively few causes responsib
 
 This makes it useful for performance and reliability work: a complete list of possible improvements is less helpful than understanding which ones explain most of a measured problem.
 
-## Worked example
+{% include article-diagram.html image="/images/articles/engineering-laws/pareto-principle.svg" alt="An illustrative agent evaluation sample has 50 tool-schema failures, 30 retrieval misses, ten timeouts, six authorization failures, and four other errors. Two of five categories account for 80% of the failures." caption="An illustrative agent evaluation sample has 50 tool-schema failures, 30 retrieval misses, ten timeouts, six authorization failures, and four other errors. Two of five categories account for 80% of the failures." height="470" %}
 
-Consider 100 fictional incidents classified into five causes: a connection leak causes 50, a retry loop 30, a deployment configuration error 10, stale credentials six, and an uncommon parsing bug four.
+## AI agent example
 
-The first two causes explain **80 incidents**, or 80% of the total. They represent **two of five categories**, or 40%, rather than 20%. The useful result is the concentration of impact, not whether the data conforms to the slogan.
+An illustrative evaluation set contains 100 failed support-agent tasks: 50 tool-schema mistakes, 30 retrieval misses, ten timeouts, six authorization failures, and four other errors.
 
-Fixing the connection leak may be an excellent first investment. But incident count is only one metric. If the four parsing incidents corrupted important records, their severity may justify earlier attention. A frequency chart should not erase consequences.
+The first two categories account for 80% of failures, but they are two of five categories: **40%, not 20%**. The distribution identifies promising improvement work without needing to match the slogan exactly.
 
-## Put it to work
+Better tool descriptions and retrieval evaluation may outperform a broad rewrite of the whole agent. However, the six authorization failures must be examined immediately for impact. A small frequency can still represent a serious boundary failure.
 
-Start with a clear outcome and a representative time window. Decide whether you are prioritizing error count, customer minutes lost, compute cost, or support effort. Keep categories meaningful and avoid counting the same event several times.
+Review traces to establish cause. A schema error might be downstream of an ambiguous tool name, and a retrieval miss might reflect a permissions filter working correctly. Categorization starts an investigation; it does not establish the fix by itself.
 
-Sort causes by contribution, calculate a cumulative share, and investigate the largest actionable items. After a change, measure again. Removing one bottleneck changes the distribution; yesterday’s dominant cause may no longer deserve the same priority.
+## Before you build
 
-For an agent service, classify failed tasks before redesigning the whole pipeline. If most failures come from a missing permission check or a brittle tool contract, another prompt rewrite may have little effect. Use examples from each failure group to evaluate whether the proposed fix addresses the actual cause.
+Build an evaluation taxonomy around user outcomes and actual failure modes. Record frequency, severity, affected users, and confidence in the diagnosis. Avoid double-counting one root cause under several labels.
+
+Choose a targeted change and evaluate it against both the affected category and the full task set. Recompute the distribution after the fix. The next dominant cause may differ, and a local improvement should not create new severe failures elsewhere.
+
+**Design decision:** Before rewriting an agent, inspect the largest actionable failure groups while keeping high-severity failures visible.
 
 ## Limits and misuses
 

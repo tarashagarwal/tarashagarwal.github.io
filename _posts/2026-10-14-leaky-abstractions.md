@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Leaky abstractions: the hidden layer returns when performance or failure matters"
+title: "Leaky abstractions in AI agents: trace what the framework hides"
 date: 2026-10-14 21:25:16 -0500
 updated: 2026-10-14
-excerpt: "Abstractions simplify ordinary work, but details beneath them can reappear through latency, failure, and semantics. Keep the abstraction and learn which underlying behaviors matter at its boundaries."
-summary: "Abstractions simplify ordinary work, but details beneath them can reappear through latency, failure, and semantics. Keep the abstraction and learn which underlying behaviors matter at its boundaries."
-kicker: "ENGINEERING LAWS / 16 OF 20 / SOFTWARE DESIGN OBSERVATION"
-cover_image: /images/articles/engineering-laws/leaky-abstractions.svg
+excerpt: "A convenient agent API can hide network calls, memory reads, retries, or private events. Trace the underlying behavior when latency, cost, permissions, and publication semantics matter."
+summary: "A convenient agent API can hide network calls, memory reads, retries, or private events. Trace the underlying behavior when latency, cost, permissions, and publication semantics matter."
+kicker: "DESIGNING AI AGENTS / RULE 16 OF 20 / SOFTWARE DESIGN OBSERVATION"
+cover_image: /images/articles/engineering-laws/agents/leaky-abstractions.svg
 permalink: /posts/2026/10/leaky-abstractions/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 16
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 16 / 20 · Software design observation</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 16 / 20 · Software design observation</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/leaky-abstractions.svg" alt="An ORM loop that loads one parent list and then 100 children creates 101 queries. At an assumed ten milliseconds per sequential round trip, that is about 1,010 milliseconds before other work." caption="An ORM loop that loads one parent list and then 100 children creates 101 queries. At an assumed ten milliseconds per sequential round trip, that is about 1,010 milliseconds before other work." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/leaky-abstractions.svg" alt="AI agent design example: One memory method: Convenient framework interface. 101 hidden queries: Illustrative round trips: 1,010 ms. Trace + load intentionally: Two-query component: 20 ms." caption="Before trusting an agent abstraction, inspect its hidden calls, resource costs, and failure semantics." height="470" %}
 
 ## What it means
 
@@ -32,21 +32,23 @@ Joel Spolsky’s law of leaky abstractions describes a familiar engineering prob
 
 An abstraction remains valuable even when it leaks. The design question is which assumptions it exposes, how it behaves at failure boundaries, and what a user must know to diagnose an unexpected result.
 
-## Worked example
+## AI agent example
 
-Suppose an ORM returns 100 orders. Rendering each order accesses a lazily loaded customer record. The code looks like an ordinary loop over objects, but it can issue one query for the orders and 100 more queries for the related records.
+An agent framework exposes a simple method that loads conversation memory. Internally, an ORM fetches 100 messages and lazily loads one related record for each message. That can produce one list query plus 100 additional queries.
 
-At an illustrative ten milliseconds per sequential database round trip, the round-trip component alone is **101 × 10 = 1,010 milliseconds**. If an appropriate eager-loading strategy uses two queries, the same simplified component becomes 20 milliseconds. Actual runtime also depends on query execution, row size, connection behavior, and application work.
+At an assumed ten milliseconds per sequential database round trip, this component alone takes **101 × 10 = 1,010 milliseconds**. An appropriate two-query loading strategy would contribute 20 milliseconds under the same simplified assumptions. Actual performance also includes query execution and application work.
 
-The object interface concealed the network boundary. Understanding SQL, query counts, and loading behavior makes the abstraction usable rather than requiring the team to abandon it.
+The agent developer sees one memory call; the user experiences the hidden network work. Tracing query counts and loading behavior makes the abstraction explainable.
 
-## Put it to work
+Streaming has a different leak: a framework iterator can mix user-facing text with tool events and private context. The application must know the event semantics before deciding what may reach the browser.
 
-Document the properties that matter beneath an interface: timeouts, consistency, ordering, resource ownership, and retry behavior. Add observability where logical operations cross network or storage boundaries.
+## Before you build
 
-Profile realistic workloads. An abstraction that behaves well with ten records may leak badly with ten thousand. Test failure as well as speed: a method called “save” may still leave uncertainty if the server commits and the connection drops before a response.
+Trace model requests, tool calls, memory access, retries, and publication events across the full run. Inspect what a convenience method actually emits and which side effects it can repeat.
 
-Agent orchestration frameworks provide another example. A convenient “stream” can contain model text, tool events, and status changes with different audiences. The application still needs to know which events are intended for the user and which require authorization or review. A shared iterator does not make their semantics identical.
+Keep the framework when it helps, while learning the layers that affect your guarantees. Add explicit boundaries for authorization and user-visible output. A single SDK method does not imply a single network operation or a single safe publication unit.
+
+**Design decision:** Before trusting an agent abstraction, inspect its hidden calls, resource costs, and failure semantics.
 
 ## Limits and misuses
 

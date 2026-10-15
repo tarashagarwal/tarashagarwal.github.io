@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Murphy’s law: turn a pessimistic slogan into a recovery plan"
+title: "Murphy’s law for AI agents: plan for the crash after the action"
 date: 2026-10-14 21:25:09 -0500
 updated: 2026-10-14
-excerpt: "Murphy’s law is a reminder to examine failure paths, not a probability theorem. Identify credible failures, limit their impact, and prove that recovery works."
-summary: "Murphy’s law is a reminder to examine failure paths, not a probability theorem. Identify credible failures, limit their impact, and prove that recovery works."
-kicker: "ENGINEERING LAWS / 09 OF 20 / ENGINEERING APHORISM"
-cover_image: /images/articles/engineering-laws/murphys-law.svg
+excerpt: "An agent can lose a response after a tool has committed. Design durable operation identities, uncertain-result handling, and recovery before enabling automatic retries."
+summary: "An agent can lose a response after a tool has committed. Design durable operation identities, uncertain-result handling, and recovery before enabling automatic retries."
+kicker: "DESIGNING AI AGENTS / RULE 09 OF 20 / ENGINEERING APHORISM"
+cover_image: /images/articles/engineering-laws/agents/murphys-law.svg
 permalink: /posts/2026/10/murphys-law/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 9
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 09 / 20 · Engineering aphorism</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 09 / 20 · Engineering aphorism</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/murphys-law.svg" alt="A worker writes an output and crashes before acknowledging the queue message. Redelivery must not create a duplicate customer charge or overwrite the wrong artifact." caption="A worker writes an output and crashes before acknowledging the queue message. Redelivery must not create a duplicate customer charge or overwrite the wrong artifact." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/murphys-law.svg" alt="AI agent design example: Booking commits: Stable business operation ID. Worker loses the reply: Chat state is incomplete. Resume + reconcile: Look up the existing result." caption="Before enabling retries, decide how a resumed agent distinguishes an unexecuted action from a committed action with a missing reply." height="470" %}
 
 ## What it means
 
@@ -34,21 +34,23 @@ A more useful question is: **what happens if this operation stops between any tw
 
 The following workflow is an application of that question, not a claim about the historical origin of the saying.
 
-## Worked example
+## AI agent example
 
-A report-generation worker receives a job, writes the finished report, and then acknowledges the queue message. It crashes after the write but before the acknowledgement. The queue later delivers the job again.
+A travel agent submits a reservation through a booking tool. The booking commits, but the worker crashes before saving the result in conversation state. When the run resumes, the chat history contains no confirmation.
 
-If the second worker assumes every delivery represents a new business request, it can publish another report, send another email, or charge the customer again. The failure is ordinary: a process stopped at an inconvenient point.
+Repeating the booking as a new request can create a second reservation. Instead, establish a stable business operation identity before the initial call. The tool service must define durable repeat-request behavior and let the application recover or reconcile the original outcome.
 
-Give the business request a stable identity. Record completion durably, make repeated execution return the existing result where appropriate, and use an atomic publication strategy for the artifact. These choices need careful transaction boundaries; adding a random request ID on each retry would defeat deduplication.
+The UI can show “confirmation pending” while the service checks the booking. It should not tell the user the reservation failed merely because the response was lost. A timeout describes an observation, not the authoritative business result.
 
-## Put it to work
+This fictional scenario is useful because the failure fits between ordinary workflow steps. The model can follow instructions perfectly while the surrounding system still mishandles recovery.
 
-List failures against the actual workflow: interrupted uploads, expired credentials, full disks, dependency timeouts, duplicate events, and lost acknowledgements. Rank them by likelihood and impact so the exercise remains focused.
+## Before you build
 
-For each important failure, define detection, containment, recovery, and an owner. A backup is useful only if restoration succeeds within the required time and produces usable data. Run a restore exercise rather than relying on a green “backup complete” message.
+Test interruptions before execution, after commit, after checkpointing, and before user notification. For each point, check both stored state and the user-visible result.
 
-An agent that executes tools needs explicit pending, succeeded, failed, and uncertain states. After a timeout on a side-effecting call, check the authoritative result before retrying. “No response” does not prove that nothing happened. Keep an audit trail that lets an operator reconcile what was attempted with what actually committed.
+Make recovery ownership explicit. Use bounded retries only where the operation’s semantics allow them, and query uncertain results before creating new side effects. Practice restoring a run from persisted state; a checkpoint is useful only if replay preserves the intended business operation.
+
+**Design decision:** Before enabling retries, decide how a resumed agent distinguishes an unexecuted action from a committed action with a missing reply.
 
 ## Limits and misuses
 

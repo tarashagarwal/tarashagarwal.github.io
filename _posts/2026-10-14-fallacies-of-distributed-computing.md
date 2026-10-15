@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Eight fallacies of distributed computing: design for the network you actually have"
+title: "Distributed computing fallacies for AI agents: a tool call is a network operation"
 date: 2026-10-14 21:25:20 -0500
 updated: 2026-10-14
-excerpt: "Distributed systems cannot assume reliable, instant, free, secure, or uniform communication. Treat the eight fallacies as a checklist for explicit failure handling and operational boundaries."
-summary: "Distributed systems cannot assume reliable, instant, free, secure, or uniform communication. Treat the eight fallacies as a checklist for explicit failure handling and operational boundaries."
-kicker: "ENGINEERING LAWS / 20 OF 20 / DISTRIBUTED SYSTEMS CHECKLIST"
-cover_image: /images/articles/engineering-laws/fallacies-of-distributed-computing.svg
+excerpt: "Agent tools inherit network failure, latency, versioning, ownership, and cost. A missing response does not establish that an action failed; explicit uncertainty and reconciliation belong in the runtime."
+summary: "Agent tools inherit network failure, latency, versioning, ownership, and cost. A missing response does not establish that an action failed; explicit uncertainty and reconciliation belong in the runtime."
+kicker: "DESIGNING AI AGENTS / RULE 20 OF 20 / DISTRIBUTED SYSTEMS CHECKLIST"
+cover_image: /images/articles/engineering-laws/agents/fallacies-of-distributed-computing.svg
 permalink: /posts/2026/10/fallacies-of-distributed-computing/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 20
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 20 / 20 · Distributed systems checklist</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 20 / 20 · Distributed systems checklist</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/fallacies-of-distributed-computing.svg" alt="Eight distributed-system concerns arranged in two rows: delivery, latency, capacity, security, topology, ownership, cost, and compatibility. Each is paired with a practical design consideration." caption="Question all eight assumptions. A timeout does not establish whether an operation committed." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/fallacies-of-distributed-computing.svg" alt="AI agent design example: Agent requests an order: Stable business operation ID. Order commits; reply lost: Timeout leaves an uncertain result. Reconcile before retry: Return the authoritative outcome." caption="Before giving an agent a remote action, define its behavior when execution and observation disagree." height="470" %}
 
 ## What it means
 
@@ -32,28 +32,32 @@ The **fallacies of distributed computing** are eight assumptions that break down
 
 The following table paraphrases the eight assumptions and turns each into a review question. The controls are design examples, not guarantees that one setting solves a distributed system.
 
-## Worked example
+## AI agent example
 
-| Misleading assumption | A practical question |
+A purchasing agent sends an order to a remote tool. The order commits, but the confirmation message is lost. The run sees a timeout and cannot tell whether the order exists.
+
+If the agent retries with a new business identity, it may place a duplicate order. Preserve an operation identity, use a tool contract with durable repeat-request semantics, and query or reconcile the original result. A chat transcript alone cannot establish the state of an external system.
+
+The eight assumptions below identify other boundaries to review before the tool becomes part of an autonomous workflow:
+
+| Misleading assumption | Agent design question |
 | --- | --- |
-| Communication always succeeds | What happens after loss, duplication, or disconnection? |
-| Messages arrive instantly | What is the end-to-end deadline and latency budget? |
-| Capacity is unlimited | Where are payload, concurrency, and queue bounds? |
-| The network is inherently safe | How are peers authenticated and actions authorized? |
-| Addresses and routes stay fixed | How do discovery, failover, and stale connections work? |
-| One authority controls everything | Who owns each dependency and coordinates incidents? |
-| Moving data has no cost | What are the bandwidth, compute, and operational costs? |
-| All machines speak identically | How are versions, encodings, and schemas reconciled? |
+| Communication always succeeds | Can the run handle lost replies and duplicate delivery? |
+| Messages arrive instantly | Are deadlines propagated across model and tool stages? |
+| Capacity is unlimited | Are context, payloads, queues, and concurrent calls bounded? |
+| The network is inherently safe | Which identity and permission authorize this tool action? |
+| Addresses and routes stay fixed | Can discovery and failover leave stale connections? |
+| One authority controls everything | Who owns each external tool and coordinates an incident? |
+| Moving data has no cost | What do context transfer, tool traffic, and retries consume? |
+| All machines speak identically | How are schema and tool-version changes handled? |
 
-Imagine a checkout service asking a payment service to charge an order. The payment commits, but the response is lost. The checkout timeout cannot distinguish “never charged” from “charged, acknowledgement missing.” An immediate retry with a new identity can charge twice. This invented example connects several fallacies: unreliable communication, nonzero latency, and differing views of state.
+## Before you build
 
-## Put it to work
+Represent pending, succeeded, failed, and uncertain results explicitly. Enforce authorization and business invariants in the executing system. Bound retries and use appropriate backoff, cancellation, and deadlines.
 
-Assign a stable business operation identity before the first attempt. The payment service needs durable deduplication semantics that return the prior outcome for a repeated operation, with clearly defined retention and transaction boundaries. The checkout service also needs a way to query or reconcile an uncertain result.
+Test lost acknowledgements, delayed responses, changed tool schemas, and unavailable dependencies. Check the actual committed outcome as well as the final answer. The agent should report what is known rather than translating every timeout into a definitive failure.
 
-Apply bounded retries only where semantics permit them. Use backoff and jitter, propagate deadlines, and prevent retries at several layers from multiplying load uncontrollably. A timeout should produce an explicit state instead of an invented assertion that the operation failed.
-
-For agent tools, preserve these distinctions in the tool result. An agent should not issue another purchase because it saw no reply. Authorization, idempotency, and reconciliation belong in the executing system, beyond the model’s natural-language reasoning.
+**Design decision:** Before giving an agent a remote action, define its behavior when execution and observation disagree.
 
 ## Limits and misuses
 

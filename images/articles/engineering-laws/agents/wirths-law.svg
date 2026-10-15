@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Wirth’s law for AI agents: stop extra layers consuming every speed gain</title><desc id="desc">AI agent design example: Faster inference: Assume 2× throughput. 3× computation added: Repeated planning + retrieval. End-to-end task slows: Simplified ratio: 3 / 2 = 1.5×.</desc><rect width="900" height="470" rx="16" fill="#090f1b"/>
+<text x="34" y="35" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">BEFORE YOU DESIGN AI AGENTS   /   RULE 12</text>
+<text x="34" y="78" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#ecf4ff" stroke="none" text-anchor="start">Wirth’s law</text>
+<text x="34" y="110" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#b1c4d9" stroke="none" text-anchor="start">stop extra layers consuming every speed gain</text>
+<rect x="34" y="160" width="252" height="173" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<circle cx="63" cy="189" r="13" fill="#111e30" stroke="#73e8d1" stroke-width="2"/>
+<text x="63" y="194" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="middle">1</text>
+<rect x="195" y="174" width="7" height="24" rx="10" fill="#73e8d1" stroke="#73e8d1"/>
+<rect x="208" y="186" width="7" height="12" rx="10" fill="#73e8d1" stroke="#73e8d1"/>
+<rect x="221" y="178" width="7" height="20" rx="10" fill="#73e8d1" stroke="#73e8d1"/>
+<rect x="234" y="190" width="7" height="8" rx="10" fill="#73e8d1" stroke="#73e8d1"/>
+<rect x="247" y="182" width="7" height="16" rx="10" fill="#73e8d1" stroke="#73e8d1"/>
+<text x="51" y="235" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#73e8d1" stroke="none" text-anchor="start">Faster inference</text>
+<text x="51" y="292" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Assume 2× throughput</text>
+<line x1="291" y1="250" x2="318" y2="250" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="318.0,250.0 309.0,254.3 309.0,245.7" fill="#73e8d1"/>
+<rect x="324" y="160" width="252" height="173" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<circle cx="353" cy="189" r="13" fill="#111e30" stroke="#b6a0f3" stroke-width="2"/>
+<text x="353" y="194" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b6a0f3" stroke="none" text-anchor="middle">2</text>
+<rect x="485" y="182" width="7" height="16" rx="10" fill="#b6a0f3" stroke="#b6a0f3"/>
+<rect x="498" y="174" width="7" height="24" rx="10" fill="#b6a0f3" stroke="#b6a0f3"/>
+<rect x="511" y="186" width="7" height="12" rx="10" fill="#b6a0f3" stroke="#b6a0f3"/>
+<rect x="524" y="178" width="7" height="20" rx="10" fill="#b6a0f3" stroke="#b6a0f3"/>
+<rect x="537" y="190" width="7" height="8" rx="10" fill="#b6a0f3" stroke="#b6a0f3"/>
+<text x="341" y="235" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#b6a0f3" stroke="none" text-anchor="start">3× computation added</text>
+<text x="341" y="292" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Repeated planning +</text>
+<text x="341" y="312" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">retrieval</text>
+<line x1="581" y1="250" x2="608" y2="250" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="608.0,250.0 599.0,254.3 599.0,245.7" fill="#73e8d1"/>
+<rect x="614" y="160" width="252" height="173" rx="10" fill="#111e30" stroke="#f2cb87"/>
+<circle cx="643" cy="189" r="13" fill="#111e30" stroke="#f2cb87" stroke-width="2"/>
+<text x="643" y="194" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#f2cb87" stroke="none" text-anchor="middle">3</text>
+<rect x="775" y="190" width="7" height="8" rx="10" fill="#f2cb87" stroke="#f2cb87"/>
+<rect x="788" y="182" width="7" height="16" rx="10" fill="#f2cb87" stroke="#f2cb87"/>
+<rect x="801" y="174" width="7" height="24" rx="10" fill="#f2cb87" stroke="#f2cb87"/>
+<rect x="814" y="186" width="7" height="12" rx="10" fill="#f2cb87" stroke="#f2cb87"/>
+<rect x="827" y="178" width="7" height="20" rx="10" fill="#f2cb87" stroke="#f2cb87"/>
+<text x="631" y="235" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#f2cb87" stroke="none" text-anchor="start">End-to-end task slows</text>
+<text x="631" y="292" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Simplified ratio: 3 / 2 =</text>
+<text x="631" y="312" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">1.5×</text>
+<text x="34" y="369" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#73e8d1" stroke="none" text-anchor="start">DESIGN DECISION</text>
+<text x="34" y="395" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ecf4ff" stroke="none" text-anchor="start">Before adding another agent stage, measure what it improves and what it costs across the complete</text>
+<text x="34" y="417" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ecf4ff" stroke="none" text-anchor="start">task.</text>
+<line x1="34" y1="431" x2="866" y2="431" stroke="#3a5165" stroke-width="2"/>
+<text x="34" y="452" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#b1c4d9" stroke="none" text-anchor="start">ILLUSTRATIVE SCENARIO  /  Tarash Agarwal  /  AI · PLATFORM · FULL STACK</text>
+</svg>

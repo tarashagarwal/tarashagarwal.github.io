@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Universal scalability law: when adding workers makes throughput worse"
+title: "The universal scalability law for AI agents: find the concurrency limit"
 date: 2026-10-14 21:25:05 -0500
 updated: 2026-10-14
-excerpt: "The USL models contention and coordination penalties as concurrency grows. Fit it to measurements, validate it, and use it to investigate a scaling limit rather than treating its name as a universal guarantee."
-summary: "The USL models contention and coordination penalties as concurrency grows. Fit it to measurements, validate it, and use it to investigate a scaling limit rather than treating its name as a universal guarantee."
-kicker: "ENGINEERING LAWS / 05 OF 20 / SCALABILITY MODEL"
-cover_image: /images/articles/engineering-laws/universal-scalability-law.svg
+excerpt: "An agent fleet can slow down as workers compete for shared state and coordination. Measure completed tasks, fit the scaling curve cautiously, and investigate the point where more concurrency stops helping."
+summary: "An agent fleet can slow down as workers compete for shared state and coordination. Measure completed tasks, fit the scaling curve cautiously, and investigate the point where more concurrency stops helping."
+kicker: "DESIGNING AI AGENTS / RULE 05 OF 20 / SCALABILITY MODEL"
+cover_image: /images/articles/engineering-laws/agents/universal-scalability-law.svg
 permalink: /posts/2026/10/universal-scalability-law/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 5
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 05 / 20 · Scalability model</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 05 / 20 · Scalability model</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/universal-scalability-law.svg" alt="With illustrative contention α = 0.02 and coordination β = 0.002, normalized throughput peaks near 22 workers and declines as concurrency grows further." caption="With illustrative contention α = 0.02 and coordination β = 0.002, normalized throughput peaks near 22 workers and declines as concurrency grows further." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/universal-scalability-law.svg" alt="AI agent design example: 8 workers: Model capacity: 6.39×. About 22 workers: Illustrative throughput peak. 64 workers: Model capacity: 6.20×." caption="Before adding more agent workers, verify that successful throughput still increases at the proposed concurrency." height="470" %}
 
 ## What it means
 
@@ -34,21 +34,25 @@ Amdahl’s ideal curve approaches a ceiling. Many production systems do somethin
 
 C is capacity normalized to one worker, α represents contention, and β represents a concurrency-dependent coordination penalty. A baseline throughput factor converts normalized capacity into throughput units. [Gunther, A General Theory of Computational Scalability Based on Rational Functions](https://arxiv.org/abs/0808.1431). These coefficients describe a fitted model; they do not independently prove a physical cause.
 
-## Worked example
+{% include article-diagram.html image="/images/articles/engineering-laws/universal-scalability-law.svg" alt="With illustrative contention α = 0.02 and coordination β = 0.002, normalized throughput peaks near 22 workers and declines as concurrency grows further." caption="With illustrative contention α = 0.02 and coordination β = 0.002, normalized throughput peaks near 22 workers and declines as concurrency grows further." height="470" %}
 
-Take invented coefficients α = 0.02 and β = 0.002. The model predicts about **6.39×** one-worker throughput at eight workers, **8.88×** at 32, and only **6.20×** at 64. Its continuous maximum is near **sqrt((1 − α)/β) ≈ 22.14 workers**.
+## AI agent example
 
-Suppose a task service adds consumers to reduce queueing. Initially the extra workers help. Eventually they spend more time coordinating shared state or competing for a hot resource. The queue can worsen even though more processes are running.
+Suppose an agent-job service adds workers while every run reads shared memory and writes checkpoints through the same service. More workers help initially. Later, contention and coordination consume an increasing part of the run.
 
-This example is a mathematical illustration, not a load test or a recommendation to use 22 workers. The peak belongs to these coefficients and this model.
+With the illustrative USL coefficients α = 0.02 and β = 0.002, normalized throughput is **6.39×** at eight workers, peaks near 22 workers, reaches **8.88×** at 32, and falls to **6.20×** at 64. These are model outputs, not measurements of an agent provider or framework.
 
-## Put it to work
+If completed tasks decline as the fleet grows, investigate the checkpoint store, shared locks, hot keys, connection pools, and upstream admission limits. A retry storm can make attempted calls rise while useful completions fall.
 
-Sweep concurrency under a repeatable workload. Hold dataset mix and hardware conditions steady, allow warm-up, and record completed work per second alongside latency and errors. Fit several points, inspect residuals, and reserve other measurements to check the fit.
+Do not infer a specific physical bottleneck from a fitted coefficient alone. The curve helps choose experiments; traces and controlled changes establish which resource is actually responsible.
 
-If the curve turns down, investigate shared locks, cache-line traffic, connection pools, metadata coordination, and downstream saturation. Reducing shared work or partitioning a hot key may be more effective than another autoscaling rule.
+## Before you build
 
-For an agent job queue, also separate worker concurrency from provider admission limits. Workers blocked on a rate limit are not doing useful extra work. Record retries and successful completions so repeated attempts cannot inflate the reported throughput.
+Sweep agent-run concurrency using the same task mix, model configuration, and deployment resources. Record successful completions, latency, rate-limit responses, checkpoint delays, and cost. Reserve measurements to validate any fitted curve.
+
+Bound retries and in-flight work. Consider reducing shared writes or partitioning state when evidence supports it. Keep the operating point below saturation with room for bursts, rather than autoscaling solely from queue depth.
+
+**Design decision:** Before adding more agent workers, verify that successful throughput still increases at the proposed concurrency.
 
 ## Limits and misuses
 

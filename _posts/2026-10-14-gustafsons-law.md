@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Gustafson’s law: use more compute to solve a larger problem"
+title: "Gustafson’s law for AI agents: evaluate more within the same deadline"
 date: 2026-10-14 21:25:04 -0500
 updated: 2026-10-14
-excerpt: "Gustafson holds elapsed time roughly fixed while the parallel workload grows. S = N − α(N − 1), where α is the serial fraction measured on the parallel run, describes that different scaling question."
-summary: "Gustafson holds elapsed time roughly fixed while the parallel workload grows. S = N − α(N − 1), where α is the serial fraction measured on the parallel run, describes that different scaling question."
-kicker: "ENGINEERING LAWS / 04 OF 20 / SCALED SPEEDUP MODEL"
-cover_image: /images/articles/engineering-laws/gustafsons-law.svg
+excerpt: "More workers can expand an agent evaluation or research workload within a fixed time budget. That is a different goal from making one unchanged conversation faster."
+summary: "More workers can expand an agent evaluation or research workload within a fixed time budget. That is a different goal from making one unchanged conversation faster."
+kicker: "DESIGNING AI AGENTS / RULE 04 OF 20 / SCALED SPEEDUP MODEL"
+cover_image: /images/articles/engineering-laws/agents/gustafsons-law.svg
 permalink: /posts/2026/10/gustafsons-law/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 4
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 04 / 20 · Scaled speedup model</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 04 / 20 · Scaled speedup model</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/gustafsons-law.svg" alt="In a normalized one-hour run on 32 workers, 5% serial time and 95% parallel time correspond to 30.45 hours of ideal one-worker work." caption="In a normalized one-hour run on 32 workers, 5% serial time and 95% parallel time correspond to 30.45 hours of ideal one-worker work." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/gustafsons-law.svg" alt="AI agent design example: One-hour budget: 5% serial preparation. 32 evaluation workers: 95% parallel execution. 30.45× scaled work: Ideal model, excluding overhead." caption="Before scaling an agent pipeline, decide whether success means lower latency or more useful work within a fixed window." height="470" %}
 
 ## What it means
 
@@ -34,21 +34,25 @@ Sometimes success means doing more work within a deadline rather than finishing 
 
 Here α is the serial fraction of the **parallel execution time**. It is not the same parameter as the parallel fraction of a one-worker baseline in Amdahl’s formula. Sun and Ni study these fixed-time and fixed-size models together. [Scalable problems and memory bounded speedup](https://ntrs.nasa.gov/citations/19930007365).
 
-## Worked example
+{% include article-diagram.html image="/images/articles/engineering-laws/gustafsons-law.svg" alt="In a normalized one-hour run on 32 workers, 5% serial time and 95% parallel time correspond to 30.45 hours of ideal one-worker work." caption="In a normalized one-hour run on 32 workers, 5% serial time and 95% parallel time correspond to 30.45 hours of ideal one-worker work." height="470" %}
 
-Imagine a simulation on 32 workers with a one-hour budget. The run uses 0.05 hours for serial setup and 0.95 hours for perfectly parallel computation. Running that exact enlarged computation on one worker would take **0.05 + 32 × 0.95 = 30.45 hours**, ignoring overhead.
+## AI agent example
 
-The scaled speedup is therefore 30.45×. That does not mean the original small simulation became 30.45 times faster. It means the enlarged run contains that much ideal one-worker work while remaining inside the hour.
+Imagine an agent evaluation pipeline with a one-hour release window. On 32 workers, serial preparation and aggregation take 0.05 hours. Independent test cases occupy the remaining 0.95 hours.
 
-A product equivalent is an offline evaluation service. More workers could evaluate more independent examples before a morning release meeting, even if a single evaluation has not become faster. The valuable output is broader coverage within the same wall-clock window.
+Under the ideal model, one worker would need **0.05 + 32 × 0.95 = 30.45 hours** for that enlarged workload. The scaled speedup is 30.45×. The product benefit is broader evaluation coverage before the release decision, rather than a claim that every chat answer is 30.45 times faster.
 
-## Put it to work
+The team might cover more tool-failure scenarios, longer conversations, or additional retrieval collections. It should preserve the scoring method so increased case volume does not become a substitute for meaningful coverage.
 
-Define the scaling objective before benchmarking. State whether the dataset stays fixed, grows with worker count, or grows subject to a memory budget. For an evaluation pipeline, report evaluated examples, completed runs, cost, and wall time together.
+If aggregation now needs to read a much larger trace archive, the serial fraction may grow. Measure that change instead of assuming the one-hour budget remains achievable at every scale.
 
-Check that the supposedly serial setup remains close to constant as the dataset grows. Loading a larger manifest, merging results, or writing one shared report can quietly become the new bottleneck. A design that scales independent computation can still run into a central database or storage limit.
+## Before you build
 
-Use enough work per worker to make distribution worthwhile, then verify result equivalence. Increasing the volume of low-quality evaluations is not an improvement merely because the cluster stays busy.
+State the objective explicitly: faster answers for a fixed task, more completed cases before a deadline, or more coverage under a cost cap. Report wall time, completed valid cases, cost, and failure distribution together.
+
+Keep evaluation cases independent where possible, and define how partial completion affects the release decision. A batch that silently drops hard cases can appear to scale while producing less trustworthy evidence.
+
+**Design decision:** Before scaling an agent pipeline, decide whether success means lower latency or more useful work within a fixed window.
 
 ## Limits and misuses
 

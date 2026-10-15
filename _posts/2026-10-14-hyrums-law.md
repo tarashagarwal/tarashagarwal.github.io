@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Hyrum’s law: your undocumented behavior may already be someone’s API"
+title: "Hyrum’s law for AI agents: tool changes can break learned expectations"
 date: 2026-10-14 21:25:07 -0500
 updated: 2026-10-14
-excerpt: "At sufficient scale, consumers can depend on observable behavior beyond the documented contract. Discover those dependencies before changing an implementation, and make compatibility a deliberate product decision."
-summary: "At sufficient scale, consumers can depend on observable behavior beyond the documented contract. Discover those dependencies before changing an implementation, and make compatibility a deliberate product decision."
-kicker: "ENGINEERING LAWS / 07 OF 20 / COMPATIBILITY OBSERVATION"
-cover_image: /images/articles/engineering-laws/hyrums-law.svg
+excerpt: "Prompts and downstream clients can depend on tool ordering, defaults, or error wording. Evaluate existing agent workflows when those observable behaviors change."
+summary: "Prompts and downstream clients can depend on tool ordering, defaults, or error wording. Evaluate existing agent workflows when those observable behaviors change."
+kicker: "DESIGNING AI AGENTS / RULE 07 OF 20 / COMPATIBILITY OBSERVATION"
+cover_image: /images/articles/engineering-laws/agents/hyrums-law.svg
 permalink: /posts/2026/10/hyrums-law/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 7
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 07 / 20 · Compatibility observation</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 07 / 20 · Compatibility observation</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/hyrums-law.svg" alt="A documented API contract is surrounded by observable error wording, response order, timing, and implicit defaults. Each can become a consumer dependency." caption="Observable behavior extends beyond the intended contract." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/hyrums-law.svg" alt="AI agent design example: Search tool changes: Newest-first becomes unsorted. Schema still passes: Fields remain unchanged. Agent picks wrong order: Make selection semantics explicit." caption="Before changing a tool implementation, test the agent decisions that depend on its observable behavior." height="470" %}
 
 ## What it means
 
@@ -32,21 +32,23 @@ Hyrum Wright’s formulation warns that enough users will make surprising depend
 
 The lesson is about compatibility risk, not a guarantee that every detail is currently used. An implementation change can be internally correct and still disrupt a consumer that learned a different, accidental contract.
 
-## Worked example
+## AI agent example
 
-Suppose an endpoint returns a JSON object with customer fields. A consumer stores the response as a raw string and compares it with a previous string to detect changes. An optimization changes key order while preserving every documented field and value.
+A support agent calls an order-search tool. Its prompt examples show the newest order first, so the agent routinely chooses the first result when a user says “my recent order.” The tool’s documentation never promised a sort order.
 
-The consumer now reports false updates. The server team can reasonably say that key order was not promised, but the customer still experiences a regression. The missing step was discovering and managing the dependency before a broad rollout.
+A backend optimization changes the returned order. Every field still satisfies the schema, but the agent now selects an older purchase. This hypothetical regression lives in an observable behavior outside the intended contract.
 
-A second example is a monitoring script that recognizes one English error message instead of a stable error code. Rewording that message for clarity can disable the alert. Both examples are hypothetical and illustrate why behavior extends beyond a type signature.
+Make sorting explicit in the tool request or response contract. Require the agent to inspect the relevant timestamp or selected order identity instead of relying on position. Test ambiguous references such as “latest,” “previous,” and “the one I just bought.”
 
-## Put it to work
+Error wording can create similar dependencies. A stable machine-readable status is easier to evolve deliberately than a prompt that has learned to recognize one English sentence.
 
-Identify observable surfaces during reviews: wire format, ordering, pagination, default values, errors, retries, and timing-sensitive workflows. Add stable machine-readable fields where clients currently have to infer meaning from prose.
+## Before you build
 
-Sample real consumer behavior where privacy and access rules permit it. Use integration tests for known consumers, release notes, canary rollouts, and a migration window for risky changes. Measure failures and support reports during rollout rather than treating successful server tests as the whole compatibility story.
+Version important tool semantics, preserve representative traces, and run regression evaluations before broad rollout. Include output order, missing fields, pagination, defaults, and errors in contract reviews.
 
-Agent tools need the same discipline. A prompt may have learned an error phrase or a field’s implicit meaning. Keep tool contracts explicit, evaluate existing workflows after changes, and version behavior when a semantic change cannot be made safely in place.
+Observe whether a model or client has learned an accidental convention. Provide a migration path where practical, and enforce important selection rules in the application. Repeating a desired behavior in the prompt is weaker than establishing it in an authoritative contract.
+
+**Design decision:** Before changing a tool implementation, test the agent decisions that depend on its observable behavior.
 
 ## Limits and misuses
 

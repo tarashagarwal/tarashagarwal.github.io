@@ -1,19 +1,24 @@
 ---
 layout: portfolio-modern
 permalink: /engineering-laws/
-title: "20 engineering laws, explained."
-kicker: "A FIELD GUIDE / SOFTWARE & SYSTEMS"
-excerpt: "One article per rule. Explore the ideas behind scalability, distributed systems, team structure, network effects, and the complexity of building useful software."
+title: "20 rules to know before designing AI agents"
+kicker: "AI AGENT DESIGN / A PRACTICAL FIELD GUIDE"
+excerpt: "Before choosing a model or an orchestration framework, understand the system you are building. Twenty engineering rules, each explained through an AI agent example, a diagram, and a concrete design decision."
 ---
+<p class="series-jump"><a href="#agent-rules">Explore the 20 rules <span aria-hidden="true">↓</span></a></p>
+<figure class="series-cover"><img src="{{ '/images/articles/engineering-laws/ai-agent-design-map.svg' | relative_url }}" alt="An agent design map connects a user goal to an agent loop and authorized tools, supported by state, budgets, contracts, and recovery." width="900" height="470"><figcaption>Design the complete agent system: the reasoning loop, the execution boundary, and the operational guarantees around both.</figcaption></figure>
 <div class="series-intro">
-  <p>These rules are different kinds of ideas: some are mathematical results, some are models, and others are practical observations or jokes. Each article explains the distinction, works through an example, includes a diagram, and shows where the rule stops being useful.</p>
+  <p>An agent plans, retrieves context, uses tools, remembers state, and reports a result. Each step brings ordinary engineering constraints: latency, shared state, permissions, cost, failures, and ownership. These are twenty rules worth knowing before you design that system.</p>
+  <p>Every article connects one rule to a worked agent scenario, an illustrated workflow, and a <strong>“Before you build”</strong> decision. The scenarios are hypothetical design examples. The series distinguishes mathematical results from models, observations, and humorous warnings; these ideas were not all invented for AI.</p>
   <p>Published October 14, 2026 · By Tarash Agarwal · Read in order or choose the problem you are working on.</p>
 </div>
-<ol class="engineering-series-list" aria-label="All twenty engineering articles">
+
+<ol id="agent-rules" class="engineering-series-list" aria-label="Twenty rules to know before designing AI agents">
 {% for rule in site.data.engineering_laws %}
   <li>
     <a class="engineering-series-card" href="{{ rule.url | relative_url }}">
       <span class="series-card-meta"><span class="series-number">{% if rule.number < 10 %}0{% endif %}{{ rule.number }}</span><span>{{ rule.kind }}</span></span>
+      <img class="series-card-image" src="{{ rule.image | relative_url }}" alt="" width="900" height="470" loading="lazy">
       <h2>{{ rule.name | escape }}</h2>
       <p>{{ rule.summary | escape }}</p>
       <span class="series-card-link">Read the article <span aria-hidden="true">↗</span></span>
@@ -21,3 +26,4 @@ excerpt: "One article per rule. Explore the ideas behind scalability, distribute
   </li>
 {% endfor %}
 </ol>
+<p>For related architectural guidance, see <a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic’s discussion of composable agent workflows</a>. The examples in this series explore the surrounding system decisions.</p>

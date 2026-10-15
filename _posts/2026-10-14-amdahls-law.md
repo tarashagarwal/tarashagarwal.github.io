@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "Amdahl’s law: why more workers stop making a fixed job faster"
+title: "Amdahl’s law for AI agents: parallelize the independent work"
 date: 2026-10-14 21:25:03 -0500
 updated: 2026-10-14
-excerpt: "For a fixed workload with parallel fraction p, ideal speedup is 1 / ((1 − p) + p/N). The serial portion creates a ceiling even before communication and scheduling overhead."
-summary: "For a fixed workload with parallel fraction p, ideal speedup is 1 / ((1 − p) + p/N). The serial portion creates a ceiling even before communication and scheduling overhead."
-kicker: "ENGINEERING LAWS / 03 OF 20 / PARALLEL SPEEDUP MODEL"
-cover_image: /images/articles/engineering-laws/amdahls-law.svg
+excerpt: "Parallel tools only accelerate the part of an agent run that can overlap. Planning, dependent actions, and final synthesis can remain on the critical path."
+summary: "Parallel tools only accelerate the part of an agent run that can overlap. Planning, dependent actions, and final synthesis can remain on the critical path."
+kicker: "DESIGNING AI AGENTS / RULE 03 OF 20 / PARALLEL SPEEDUP MODEL"
+cover_image: /images/articles/engineering-laws/agents/amdahls-law.svg
 permalink: /posts/2026/10/amdahls-law/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 3
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 03 / 20 · Parallel speedup model</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 03 / 20 · Parallel speedup model</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/amdahls-law.svg" alt="A 100-second job with 10 serial seconds and 90 parallel seconds takes an ideal 21.25 seconds on eight workers: a 4.71× speedup." caption="A 100-second job with 10 serial seconds and 90 parallel seconds takes an ideal 21.25 seconds on eight workers: a 4.71× speedup." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/amdahls-law.svg" alt="AI agent design example: Plan + synthesize: 1 second remains serial. Parallel retrieval: 9 seconds / 8 workers. Ideal total: 2.125 s: Speedup: 10 / 2.125 = 4.71×." caption="Before parallelizing an agent, identify the serial decisions and side effects that must preserve their order." height="470" %}
 
 ## What it means
 
@@ -34,21 +34,25 @@ Amdahl’s law asks how much faster the **same amount of work** can finish when 
 
 The fixed-size formulation and its relation to other scaling models are discussed in Sun and Ni’s primary research. [Scalable problems and memory bounded speedup](https://ntrs.nasa.gov/citations/19930007365). The formula assumes no extra overhead and an unchanged serial part.
 
-## Worked example
+{% include article-diagram.html image="/images/articles/engineering-laws/amdahls-law.svg" alt="Fixed-workload model with 90% parallel work: eight workers yield an ideal 4.71× speedup, with a 10× ceiling as the worker count grows." caption="Fixed-workload model with 90% parallel work: eight workers yield an ideal 4.71× speedup, with a 10× ceiling as the worker count grows." height="470" %}
 
-Consider a hypothetical data export that takes 100 seconds: 10 seconds to prepare a consistent snapshot and 90 seconds to transform independent records. Eight ideal workers reduce the transform stage to 90/8 = 11.25 seconds. Total time becomes **21.25 seconds**, giving **100/21.25 ≈ 4.71×** speedup.
+## AI agent example
 
-With infinitely fast parallel work, the job still needs its 10 serial seconds. The ceiling is 10×. Buying 80 workers instead of eight therefore cannot deliver an 80× improvement under these assumptions.
+Consider an illustrative ten-second research-agent run. Planning and final synthesis together consume one second. Nine seconds are independent retrieval work that can be divided perfectly among workers.
 
-Now imagine reducing snapshot preparation to two seconds while preserving the same 90-second transform work. On eight workers the revised job takes 13.25 seconds. Removing a serial bottleneck can beat adding a large number of workers to the unchanged design.
+With eight ideal workers, retrieval takes 9/8 = 1.125 seconds. Total runtime becomes **1 + 1.125 = 2.125 seconds**, or **4.71×** faster. Even infinitely fast retrieval leaves the one-second serial portion, so the model’s speedup ceiling is 10×.
 
-## Put it to work
+Real runs pay for scheduling, data transfer, provider limits, and result merging. If one tool needs an identifier returned by another, those calls are dependent and cannot be included in the perfectly parallel fraction.
 
-Profile the critical path before choosing a concurrency setting. Split time into stages that must happen in sequence and work that can actually overlap. Measure coordination, serialization, shared locks, and data movement separately; they are real time even when a dashboard labels them “overhead.”
+A booking agent illustrates the correctness limit: checking availability and committing the chosen reservation are not interchangeable parallel tasks. Launching them together can change behavior rather than reduce the runtime of the same correct workflow.
 
-In an agent workflow, independent retrieval calls may run together. A tool whose arguments depend on a previous tool result cannot simply be launched at the same time. Parallelizing dependent actions may change correctness rather than improve performance.
+## Before you build
 
-Run the same dataset and quality checks at one, two, four, and eight workers. Compare measured runtime with the ideal curve. The gap is useful evidence about contention or imbalance, rather than a reason to hide the baseline.
+Draw the dependency graph for a representative task. Mark steps that consume previous outputs and identify independent read operations. Measure the critical path before adding parallel branches.
+
+Run an unchanged evaluation set at several concurrency levels. Compare successful task latency, tool errors, and cost against the ideal model. Avoid counting speculative calls as a speed improvement if they introduce extra actions or lower answer quality.
+
+**Design decision:** Before parallelizing an agent, identify the serial decisions and side effects that must preserve their order.
 
 ## Limits and misuses
 

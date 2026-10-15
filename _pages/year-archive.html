@@ -7,6 +7,6 @@ excerpt: "Thoughts on software architecture, databases, cloud systems, and the c
 redirect_from:
   - /wordpress/blog-posts/
 ---
-<p class="writing-series-link"><a href="{{ '/engineering-laws/' | relative_url }}">Read the series: 20 engineering laws, explained <span aria-hidden="true">↗</span></a></p>
+<p class="writing-series-link"><a href="{{ '/engineering-laws/' | relative_url }}">Read the series: 20 rules to know before designing AI agents <span aria-hidden="true">↗</span></a></p>
 <div class="filters" hidden><button type="button" data-year-filter="all" aria-pressed="true">All notes</button>{% assign years = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}{% for year in years %}<button type="button" data-year-filter="{{ year.name }}" aria-pressed="false">{{ year.name }}</button>{% endfor %}</div>
 <div class="archive-list">{% for post in site.posts %}<article class="article-row" data-post-year="{{ post.date | date: '%Y' }}"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time><h2><a href="{{ post.url | relative_url }}">{{ post.title }} ↗</a></h2><p>{{ post.excerpt | strip_html | truncate: 200 }}</p></article>{% endfor %}</div>

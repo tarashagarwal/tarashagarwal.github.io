@@ -1,30 +1,30 @@
 ---
 layout: portfolio-modern
 article: true
-title: "CAP theorem: what a network partition forces you to choose"
+title: "CAP theorem for AI agents: what happens when shared state splits?"
 date: 2026-10-14 21:25:01 -0500
 updated: 2026-10-14
-excerpt: "During a network partition, a distributed read/write system cannot guarantee both linearizable consistency and a response for every request. Make the choice for each operation, using the business consequence of stale data or refusal."
-summary: "During a network partition, a distributed read/write system cannot guarantee both linearizable consistency and a response for every request. Make the choice for each operation, using the business consequence of stale data or refusal."
-kicker: "ENGINEERING LAWS / 01 OF 20 / THEOREM"
-cover_image: /images/articles/engineering-laws/cap-theorem.svg
+excerpt: "Before an agent confirms a booking or spends a shared budget, decide what it should do when replicas cannot agree. A confident model response cannot establish that an action committed."
+summary: "Before an agent confirms a booking or spends a shared budget, decide what it should do when replicas cannot agree. A confident model response cannot establish that an action committed."
+kicker: "DESIGNING AI AGENTS / RULE 01 OF 20 / THEOREM"
+cover_image: /images/articles/engineering-laws/agents/cap-theorem.svg
 permalink: /posts/2026/10/cap-theorem/
-tags: [engineering laws, software architecture, systems design]
+tags: [AI agents, agent architecture, engineering laws, systems design]
 series: engineering-laws
 series_order: 1
 sections:
   - id: what-it-means
     title: "What it means"
-  - id: worked-example
-    title: "Worked example"
-  - id: put-it-to-work
-    title: "Put it to work"
+  - id: ai-agent-example
+    title: "AI agent example"
+  - id: before-you-build
+    title: "Before you build"
   - id: limits-and-misuses
     title: "Limits and misuses"
 ---
-<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← All 20 engineering laws</a><span>Article 01 / 20 · Theorem</span></nav>
+<nav class="series-trail" aria-label="Engineering laws series"><a href="{{ '/engineering-laws/' | relative_url }}">← 20 rules before designing AI agents</a><span>Article 01 / 20 · Theorem</span></nav>
 
-{% include article-diagram.html image="/images/articles/engineering-laws/cap-theorem.svg" alt="Two replicas lose contact. Refusing an uncertain write protects a single order; accepting independent writes preserves responses but can create conflicting state." caption="Two replicas lose contact. Refusing an uncertain write protects a single order; accepting independent writes preserves responses but can create conflicting state." height="470" %}
+{% include article-diagram.html image="/images/articles/engineering-laws/agents/cap-theorem.svg" alt="AI agent design example: Two agent runs: Competing reservation requests. Partitioned state: Regions cannot coordinate. One booking slot: Confirm only with authority." caption="Before adding a write tool, define what the agent may promise when authoritative state is unreachable." height="470" %}
 
 ## What it means
 
@@ -32,21 +32,23 @@ CAP is a statement about guarantees in a distributed system, rather than a shopp
 
 The useful design question is what an isolated replica should do when it cannot establish the latest state. “Pick any two” hides that decision. Partition tolerance is not an optional feature when the deployment can experience a partition.
 
-## Worked example
+## AI agent example
 
-Imagine a ticket service with one seat left. Two regions initially agree that it is available. Their connection fails, and each region receives a purchase request.
+Imagine a booking agent deployed in two regions. Both replicas show one available appointment. Their connection fails, and two users ask their local agent to reserve that slot.
 
-If both confirm a sale independently, customers receive immediate answers, but the system can oversell. If one region requires coordination before confirming, its request may wait or fail while the partition lasts. That sacrifices CAP availability for that operation, rather than promising both customers the same exclusive seat.
+If both tool services independently confirm the reservation, the system can double-book. A conversation that sounds successful has hidden a shared-state conflict. Requiring coordination for the reservation protects exclusivity, but an isolated region may have to leave the request pending or refuse it.
 
-A browsing endpoint can make a different choice: show cached seat availability with a freshness label, then require stronger coordination at purchase time. These are illustrative product decisions, not guarantees supplied by a particular database name.
+The agent can still explain options using a cached schedule, provided it communicates the freshness limit. It should say that the reservation is unconfirmed until the authoritative booking service confirms it. Reading suggestions and committing a booking need different guarantees.
 
-## Put it to work
+This is a hypothetical design example. The important boundary is the state-changing tool: an LLM’s wording cannot repair an inconsistent reservation protocol.
 
-Write a small decision table for each important operation: what invariant must hold, how stale may a read be, and what happens when quorum or the authoritative owner is unreachable? Test a partition between regions, not just the failure of one process. Those failures expose different behavior.
+## Before you build
 
-For an agent platform, a search result might tolerate a slightly old index. A tool that transfers ownership or spends a limited budget needs a more explicit decision about coordination and refusal. The model should receive an honest “not confirmed” result rather than inventing success from a timeout.
+Classify each tool as a read, an advisory calculation, or a state-changing operation. Document which operations require coordination and which can tolerate stale results. Keep confirmation semantics in the tool service, and pass explicit pending or unavailable states back to the agent.
 
-Give the UI distinct states for unavailable, pending, and confirmed. Reconnection also needs a plan for conflict resolution and reconciliation.
+Test a partition while two agent runs compete for one resource. Check the stored booking and both user-visible outcomes. Also plan reconciliation after reconnection; simply resuming chat does not resolve conflicting state.
+
+**Design decision:** Before adding a write tool, define what the agent may promise when authoritative state is unreachable.
 
 ## Limits and misuses
 
