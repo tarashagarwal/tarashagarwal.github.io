@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" role="img" aria-labelledby="title desc"><title id="title">Illustrative latency by delivery policy</title><desc id="desc">Hypothetical times: first provider text at 0.8 seconds, first reviewed unit at 1.4 seconds, and a fully reviewed answer at 4.2 seconds. These are not benchmark results.</desc>
+<defs><linearGradient id="wash" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#16373e"/><stop offset="1" stop-color="#241c3b"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="#acbed4"/></marker></defs>
+<rect width="900" height="440" rx="16" fill="#090f1b"/>
+<text stroke="none" x="32" y="43" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" text-anchor="start">Measure first approved text.</text>
+<text stroke="none" x="32" y="75" fill="#f2cb87" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="start">HYPOTHETICAL TIMINGS / NOT AN API BENCHMARK</text>
+<path d="M247 115L247 330" fill="none" stroke="#26394f" stroke-width="2"/>
+<text stroke="none" x="247" y="105" fill="#acbed4" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="middle">0s</text>
+<path d="M379 115L379 330" fill="none" stroke="#26394f" stroke-width="2"/>
+<text stroke="none" x="379" y="105" fill="#acbed4" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="middle">1s</text>
+<path d="M511 115L511 330" fill="none" stroke="#26394f" stroke-width="2"/>
+<text stroke="none" x="511" y="105" fill="#acbed4" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="middle">2s</text>
+<path d="M643 115L643 330" fill="none" stroke="#26394f" stroke-width="2"/>
+<text stroke="none" x="643" y="105" fill="#acbed4" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="middle">3s</text>
+<path d="M775 115L775 330" fill="none" stroke="#26394f" stroke-width="2"/>
+<text stroke="none" x="775" y="105" fill="#acbed4" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="middle">4s</text>
+<text stroke="none" x="32" y="159" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">Direct stream</text>
+<path d="M247 153L814.6 153" fill="none" stroke="#334960" stroke-width="2"/>
+<rect x="247" y="144" width="105.60000000000001" height="18" rx="3" fill="#f1a5b9" stroke="none"/>
+<text stroke="none" x="364.6" y="137" fill="#f1a5b9" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="400" text-anchor="start">0.8s · provisional</text>
+<text stroke="none" x="32" y="234" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">Reviewed unit</text>
+<path d="M247 228L814.6 228" fill="none" stroke="#334960" stroke-width="2"/>
+<rect x="247" y="219" width="184.79999999999998" height="18" rx="3" fill="#b6a0f3" stroke="none"/>
+<text stroke="none" x="443.79999999999995" y="212" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="400" text-anchor="start">1.4s · first unit approved</text>
+<text stroke="none" x="32" y="309" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">Full-answer review</text>
+<path d="M247 303L814.6 303" fill="none" stroke="#334960" stroke-width="2"/>
+<rect x="247" y="294" width="554.4" height="18" rx="3" fill="#73e8d1" stroke="none"/>
+<text stroke="none" x="813.4" y="287" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="400" text-anchor="end">4.2s · full answer reviewed</text>
+<text stroke="none" x="32" y="366" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">An earlier acknowledgement is useful feedback, but is not answer text.</text>
+<path d="M32 395L868 395" fill="none" stroke="#334960" stroke-width="2"/>
+<text stroke="none" x="32" y="420" fill="#acbed4" font-family="Consolas,monospace" font-size="11" font-weight="400" text-anchor="start">GENERATION FINISHES AT 4.0s / FULL REVIEW ADDS 0.2s IN THIS EXAMPLE</text>
+<text stroke="none" x="868" y="420" fill="#acbed4" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="end">TARASH AGARWAL / 14 OCT 2026</text>
+</svg>

@@ -39,6 +39,7 @@ redirect_from:
 <li><a href="{{ '/projects/' | relative_url }}#acm"><strong>90%</strong><span>Reduction in sign-up time</span><small>Team leadership · ACM UIUC <span aria-hidden="true">↗</span></small></a></li>
 </ul>
 </section>
+{% include recent-thoughts.html %}
 <section class="wrap focus-section" aria-labelledby="focus-title">
 <div class="section-heading"><div><p class="eyebrow">WHAT I BUILD</p><h2 id="focus-title">Three strengths. One connected approach.</h2></div></div>
 <div class="focus-grid">{% for focus in site.data.expertise %}<a class="focus-card" href="#{{ focus.id }}-work"><span class="focus-number" aria-hidden="true">0{{ forloop.index }}</span><h3>{{ focus.title }}</h3><p>{{ focus.description }}</p><span class="focus-technologies">{{ focus.technologies }}</span><span class="focus-link">Explore work <span aria-hidden="true">↗</span></span></a>{% endfor %}</div>

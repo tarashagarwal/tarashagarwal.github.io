@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc"><title id="title">Real-time AI agents: speed, control, and the publication boundary</title><desc id="desc">Landscape poster for a case study by Tarash Agarwal. Stream generation; make publication a deliberate policy decision. Deleting text later cannot undo exposure.</desc>
+<defs><linearGradient id="wash" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#16373e"/><stop offset="1" stop-color="#241c3b"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="#acbed4"/></marker></defs>
+<rect width="1600" height="900" rx="16" fill="#090f1b"/>
+<rect x="920" y="-80" width="760" height="1100" rx="0" fill="url(#wash)" stroke="none"/>
+<path d="M970 0L970 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1025 0L1025 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1080 0L1080 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1135 0L1135 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1190 0L1190 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1245 0L1245 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1300 0L1300 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1355 0L1355 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1410 0L1410 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1465 0L1465 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1520 0L1520 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<path d="M1575 0L1575 900" fill="none" stroke="#b6a0f310" stroke-width="2"/>
+<text stroke="none" x="78" y="85" fill="#73e8d1" font-family="Consolas,monospace" font-size="19" font-weight="400" text-anchor="start">PRODUCT × ENGINEERING / CASE STUDY</text>
+<text stroke="none" x="72" y="205" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="116" font-weight="700" text-anchor="start">Real-time</text>
+<text stroke="none" x="72" y="330" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="116" font-weight="700" text-anchor="start">AI agents.</text>
+<text stroke="none" x="78" y="505" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="400" text-anchor="start">Speed. Control.</text>
+<text stroke="none" x="78" y="558" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="400" text-anchor="start">The moment an answer</text>
+<text stroke="none" x="78" y="611" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="400" text-anchor="start">becomes visible.</text>
+<text stroke="none" x="78" y="753" fill="#73e8d1" font-family="Consolas,monospace" font-size="23" font-weight="600" text-anchor="start">STREAM GENERATION.</text>
+<text stroke="none" x="78" y="793" fill="#73e8d1" font-family="Consolas,monospace" font-size="23" font-weight="600" text-anchor="start">MAKE PUBLICATION DELIBERATE.</text>
+<rect x="1000" y="190" width="500" height="126" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="1016" y="229" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="600" text-anchor="start">01 / GENERATE</text>
+<text stroke="none" x="1016" y="269" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400" text-anchor="start">The provider produces incremental output.</text>
+<path d="M1250 325L1250 375" fill="none" stroke="#acbed4" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1000" y="390" width="500" height="126" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="1016" y="429" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="600" text-anchor="start">02 / REVIEW</text>
+<text stroke="none" x="1016" y="469" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400" text-anchor="start">Your backend applies its publication policy.</text>
+<path d="M1250 525L1250 575" fill="none" stroke="#acbed4" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1000" y="590" width="500" height="126" rx="10" fill="#111e30" stroke="#ecf4ff"/>
+<text stroke="none" x="1016" y="629" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="600" text-anchor="start">03 / RELEASE</text>
+<text stroke="none" x="1016" y="669" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="400" text-anchor="start">The user can now read the released text.</text>
+<text stroke="none" x="1000" y="770" fill="#f1a5b9" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start">Once disclosed, text cannot be made unseen.</text>
+<path d="M32 855L1568 855" fill="none" stroke="#334960" stroke-width="2"/>
+<text stroke="none" x="32" y="880" fill="#acbed4" font-family="Consolas,monospace" font-size="11" font-weight="400" text-anchor="start">TARASHAGARWAL.GITHUB.IO / AI · PLATFORM · FULL STACK</text>
+<text stroke="none" x="1568" y="880" fill="#acbed4" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="end">TARASH AGARWAL / 14 OCT 2026</text>
+</svg>

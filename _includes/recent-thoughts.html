@@ -1,0 +1,20 @@
+{% assign latest_thought = site.posts.first %}
+{% if latest_thought %}
+<section class="recent-thoughts wrap" aria-labelledby="recent-thoughts-title">
+  <div class="recent-thoughts-heading">
+    <h2 id="recent-thoughts-title">Recent thoughts</h2>
+    <a class="text-link" href="{{ '/year-archive/' | relative_url }}">All writing <span aria-hidden="true">↗</span></a>
+  </div>
+  <article>
+    <a class="recent-thought-card{% unless latest_thought.cover_image %} recent-thought-card--text{% endunless %}" href="{{ latest_thought.url | relative_url }}" aria-labelledby="recent-thought-title">
+      {% if latest_thought.cover_image %}<div class="recent-thought-cover"><img src="{{ latest_thought.cover_image | relative_url }}" alt="" width="480" height="270" loading="lazy"></div>{% endif %}
+      <div class="recent-thought-copy">
+        <div class="recent-thought-meta"><span>Latest article</span><time datetime="{{ latest_thought.date | date: '%Y-%m-%d' }}">{{ latest_thought.date | date: '%B %d, %Y' }}</time></div>
+        <h3 id="recent-thought-title">{{ latest_thought.title | escape }}</h3>
+        <p>{{ latest_thought.excerpt | default: latest_thought.summary | strip_html | truncate: 180 }}</p>
+        <span class="recent-thought-link">Read the article <span aria-hidden="true">↗</span></span>
+      </div>
+    </a>
+  </article>
+</section>
+{% endif %}

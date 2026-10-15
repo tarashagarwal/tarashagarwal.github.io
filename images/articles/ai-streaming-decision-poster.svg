@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc"><title id="title">Stream generation. Gate publication.</title><desc id="desc">A decision poster comparing full-answer review, reviewed units, and provisional streaming. No guardrail is perfect; deleting text cannot undo exposure. By Tarash Agarwal, October 14, 2026.</desc>
+<defs><linearGradient id="wash" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="#16373e"/><stop offset="1" stop-color="#241c3b"/></linearGradient><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="#acbed4"/></marker></defs>
+<rect width="1200" height="1500" rx="16" fill="#090f1b"/>
+<rect x="0" y="0" width="1200" height="420" rx="0" fill="url(#wash)" stroke="none"/>
+<text stroke="none" x="65" y="75" fill="#73e8d1" font-family="Consolas,monospace" font-size="18" font-weight="400" text-anchor="start">REAL-TIME AI / A PUBLICATION DECISION</text>
+<text stroke="none" x="60" y="167" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" text-anchor="start">Stream generation.</text>
+<text stroke="none" x="60" y="249" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="700" text-anchor="start">Gate publication.</text>
+<text stroke="none" x="65" y="363" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="400" text-anchor="start">The API streams. Your product decides what users see.</text>
+<path d="M65 425L1135 425" fill="none" stroke="#334960" stroke-width="2"/>
+<text stroke="none" x="65" y="472" fill="#73e8d1" font-family="Consolas,monospace" font-size="30" font-weight="600" text-anchor="start">01</text>
+<text stroke="none" x="147" y="467" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" text-anchor="start">REVIEW THE FULL ANSWER</text>
+<text stroke="none" x="147" y="515" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="400" text-anchor="start">Hold output on the server until generation</text>
+<text stroke="none" x="147" y="551" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="400" text-anchor="start">and the required full-answer checks finish.</text>
+<text stroke="none" x="147" y="605" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start">Useful when the policy needs complete context.</text>
+<text stroke="none" x="147" y="634" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start">Trade-off: a longer wait for substantive text.</text>
+<path d="M65 670L1135 670" fill="none" stroke="#334960" stroke-width="2"/>
+<text stroke="none" x="65" y="717" fill="#b6a0f3" font-family="Consolas,monospace" font-size="30" font-weight="600" text-anchor="start">02</text>
+<text stroke="none" x="147" y="712" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" text-anchor="start">RELEASE REVIEWED UNITS</text>
+<text stroke="none" x="147" y="760" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="400" text-anchor="start">Buffer meaningful units, review with context,</text>
+<text stroke="none" x="147" y="796" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="400" text-anchor="start">then release only the approved text.</text>
+<text stroke="none" x="147" y="850" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start">Earlier reading, plus a review delay.</text>
+<text stroke="none" x="147" y="879" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start">Does not guarantee full-answer compliance.</text>
+<path d="M65 915L1135 915" fill="none" stroke="#334960" stroke-width="2"/>
+<text stroke="none" x="65" y="962" fill="#f1a5b9" font-family="Consolas,monospace" font-size="30" font-weight="600" text-anchor="start">03</text>
+<text stroke="none" x="147" y="957" fill="#f1a5b9" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" text-anchor="start">ACCEPT PROVISIONAL OUTPUT</text>
+<text stroke="none" x="147" y="1005" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="400" text-anchor="start">Publish as text arrives and allow later</text>
+<text stroke="none" x="147" y="1041" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="400" text-anchor="start">checks to stop or correct the response.</text>
+<text stroke="none" x="147" y="1095" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start">A conscious exposure trade-off.</text>
+<text stroke="none" x="147" y="1124" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start">Do not promise approval before publication.</text>
+<rect x="65" y="1210" width="1070" height="133" rx="10" fill="#241d2e" stroke="#795064"/>
+<text stroke="none" x="95" y="1259" fill="#f1a5b9" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" text-anchor="start">DELETING TEXT DOES NOT UNDO DISCLOSURE.</text>
+<text stroke="none" x="95" y="1305" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="400" text-anchor="start">Keep unapproved text off the client when exposure is unacceptable.</text>
+<text stroke="none" x="65" y="1400" fill="#73e8d1" font-family="Consolas,monospace" font-size="14" font-weight="400" text-anchor="start">MEASURE</text>
+<text stroke="none" x="193" y="1400" fill="#acbed4" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" text-anchor="start">Acknowledgement · first visible text · first approved text · completion</text>
+<path d="M32 1455L1168 1455" fill="none" stroke="#334960" stroke-width="2"/>
+<text stroke="none" x="32" y="1480" fill="#acbed4" font-family="Consolas,monospace" font-size="11" font-weight="400" text-anchor="start">TARASHAGARWAL.GITHUB.IO / PRODUCT × ENGINEERING</text>
+<text stroke="none" x="1168" y="1480" fill="#acbed4" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="end">TARASH AGARWAL / 14 OCT 2026</text>
+</svg>
