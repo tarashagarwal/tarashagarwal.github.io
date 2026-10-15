@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-labelledby="title desc"><title id="title">A logical map of the retail data and AI architecture</title><desc id="desc">Sources feed bronze, silver, and gold datasets. Dimensional models expose shared metrics; graph representations follow an ontology. Domain ownership overlays the layers and applications choose an authorized query path.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="#b1c4d9"/></marker></defs>
+<rect width="900" height="650" rx="12" fill="#090f1b" stroke="none"/>
+<text stroke="none" x="32" y="43" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start">One product, several design dimensions.</text>
+<text stroke="none" x="32" y="76" fill="#73e8d1" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="start">ILLUSTRATIVE COMPOSITION / NOT EVERY PRODUCT NEEDS EVERY COMPONENT</text>
+<rect x="32" y="107" width="835" height="76" rx="8" fill="#111e30" stroke="#ecf4ff"/>
+<text stroke="none" x="48" y="137" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">SOURCE SYSTEMS &amp; EVENTS</text>
+<text stroke="none" x="48" y="164" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Orders · refunds · customer updates · products · suppliers · shipments</text>
+<rect x="32" y="240" width="250" height="80" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="48" y="270" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">BRONZE</text>
+<text stroke="none" x="48" y="297" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Retain original events</text>
+<path d="M292 280L314 280" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="325" y="240" width="250" height="80" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="341" y="270" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">SILVER</text>
+<text stroke="none" x="341" y="297" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Validate + normalize</text>
+<path d="M585 280L607 280" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="618" y="240" width="250" height="80" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="634" y="270" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">GOLD</text>
+<text stroke="none" x="634" y="297" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Publish usable datasets</text>
+<path d="M145 191L145 230" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="65" y="382" width="335" height="80" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="81" y="412" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">DIMENSIONAL MODEL</text>
+<text stroke="none" x="81" y="439" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Facts + dimensions + declared grain</text>
+<rect x="500" y="382" width="335" height="80" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="516" y="412" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">GRAPH + ONTOLOGY</text>
+<text stroke="none" x="516" y="439" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Entities + relations + shared meaning</text>
+<path d="M720 328L250 372" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M750 328L670 372" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="65" y="505" width="335" height="80" rx="8" fill="#111e30" stroke="#f2cb87"/>
+<text stroke="none" x="81" y="535" fill="#f2cb87" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">SHARED METRIC INTERFACE</text>
+<text stroke="none" x="81" y="562" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Authorized analytical questions</text>
+<rect x="500" y="505" width="335" height="80" rx="8" fill="#111e30" stroke="#f2cb87"/>
+<text stroke="none" x="516" y="535" fill="#f2cb87" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">RELATIONSHIP QUERIES</text>
+<text stroke="none" x="516" y="562" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Authorized graph-aware questions</text>
+<path d="M232 470L232 495" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M667 470L667 495" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M32 607L868 607" fill="none" stroke="#3a526a" stroke-width="2"/>
+<text stroke="none" x="32" y="631" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="start">OWNERSHIP &amp; GOVERNANCE OVERLAY THE DATA PRODUCTS / A ROUTER MAY USE DISTILLATION</text>
+<text stroke="none" x="868" y="631" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="end">TARASH AGARWAL / OCT 2026</text>
+</svg>

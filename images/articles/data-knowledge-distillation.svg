@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" role="img" aria-labelledby="title desc"><title id="title">Knowledge distillation training and evaluation</title><desc id="desc">A teacher creates supervision for a student trained on a narrow routing task; held-out evaluation and deployment measurements determine whether it is useful.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="#b1c4d9"/></marker></defs>
+<rect width="900" height="440" rx="12" fill="#090f1b" stroke="none"/>
+<text stroke="none" x="32" y="43" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start">Distill a task. Evaluate the student.</text>
+<text stroke="none" x="32" y="76" fill="#73e8d1" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="start">MODEL TRAINING / NOT GRAPH COMPRESSION OR RETRIEVAL</text>
+<rect x="32" y="145" width="250" height="120" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="48" y="175" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">TEACHER</text>
+<text stroke="none" x="48" y="202" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Supervision on training tasks</text>
+<text stroke="none" x="48" y="224" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Review labels or soft targets</text>
+<path d="M292 205L314 205" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="325" y="145" width="250" height="120" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="341" y="175" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">STUDENT TRAINING</text>
+<text stroke="none" x="341" y="202" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Update model parameters</text>
+<text stroke="none" x="341" y="224" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Learn the routing taxonomy</text>
+<path d="M585 205L607 205" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="618" y="145" width="250" height="120" rx="8" fill="#111e30" stroke="#f2cb87"/>
+<text stroke="none" x="634" y="175" fill="#f2cb87" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">HELD-OUT EVALUATION</text>
+<text stroke="none" x="634" y="202" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Quality + uncertainty</text>
+<text stroke="none" x="634" y="224" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Latency + serving cost</text>
+<text stroke="none" x="32" y="330" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">Example routes: sales_metric · supplier_relationship · general_support</text>
+<text stroke="none" x="32" y="361" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" text-anchor="start">Fresh order data still comes from authorized data services, not model weights.</text>
+<path d="M32 397L868 397" fill="none" stroke="#3a526a" stroke-width="2"/>
+<text stroke="none" x="32" y="421" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="start">SPLIT EVALUATION DATA BEFORE SUPERVISION / KEEP A FALLBACK FOR AMBIGUOUS REQUESTS</text>
+<text stroke="none" x="868" y="421" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="end">TARASH AGARWAL / OCT 2026</text>
+</svg>

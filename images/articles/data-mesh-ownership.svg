@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" role="img" aria-labelledby="title desc"><title id="title">Data mesh ownership</title><desc id="desc">Three domains own distinct analytical data products; a shared platform supplies tooling and common governance rules maintain interoperability.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="#b1c4d9"/></marker></defs>
+<rect width="900" height="440" rx="12" fill="#090f1b" stroke="none"/>
+<text stroke="none" x="32" y="43" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start">Data products need accountable owners.</text>
+<text stroke="none" x="32" y="76" fill="#73e8d1" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="start">DATA MESH / DOMAIN OWNERSHIP + SHARED PLATFORM CAPABILITIES</text>
+<rect x="32" y="115" width="250" height="142" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="48" y="145" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">COMMERCE</text>
+<text stroke="none" x="48" y="172" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Orders + allocated refunds</text>
+<text stroke="none" x="48" y="194" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Owner, contract, freshness</text>
+<text stroke="none" x="48" y="216" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Consumers: finance analytics</text>
+<path d="M157 270L157 300" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="325" y="115" width="250" height="142" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="341" y="145" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">CATALOG</text>
+<text stroke="none" x="341" y="172" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Products + supplier identities</text>
+<text stroke="none" x="341" y="194" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Owner, contract, provenance</text>
+<text stroke="none" x="341" y="216" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Consumers: support assistant</text>
+<path d="M450 270L450 300" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="618" y="115" width="250" height="142" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="634" y="145" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">FULFILLMENT</text>
+<text stroke="none" x="634" y="172" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Shipment milestones + delays</text>
+<text stroke="none" x="634" y="194" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Owner, contract, freshness</text>
+<text stroke="none" x="634" y="216" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Consumers: operations</text>
+<path d="M743 270L743 300" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="310" width="836" height="75" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="48" y="340" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">SHARED PLATFORM &amp; FEDERATED GOVERNANCE</text>
+<text stroke="none" x="48" y="367" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Identity · access · schemas · deployment tooling · observability · interoperability</text>
+<path d="M32 397L868 397" fill="none" stroke="#3a526a" stroke-width="2"/>
+<text stroke="none" x="32" y="421" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="start">DISTRIBUTED OWNERSHIP / NOT UNCOORDINATED DEFINITIONS</text>
+<text stroke="none" x="868" y="421" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="end">TARASH AGARWAL / OCT 2026</text>
+</svg>

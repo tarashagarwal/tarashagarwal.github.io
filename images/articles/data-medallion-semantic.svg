@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" role="img" aria-labelledby="title desc"><title id="title">Medallion refinement and a semantic layer</title><desc id="desc">Bronze preserves source events, silver cleans and validates, gold publishes usable analytical models, and the semantic layer defines consumer metrics.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="#b1c4d9"/></marker></defs>
+<rect width="900" height="440" rx="12" fill="#090f1b" stroke="none"/>
+<text stroke="none" x="32" y="43" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start">From raw events to shared metrics.</text>
+<text stroke="none" x="32" y="76" fill="#73e8d1" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="start">MEDALLION STAGES ARE LOGICAL QUALITY BOUNDARIES</text>
+<rect x="32" y="112" width="250" height="110" rx="8" fill="#111e30" stroke="#f2cb87"/>
+<text stroke="none" x="48" y="142" fill="#f2cb87" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">BRONZE</text>
+<text stroke="none" x="48" y="169" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Raw events + source metadata</text>
+<text stroke="none" x="48" y="191" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Retain for diagnosis and replay</text>
+<path d="M292 166L314 166" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="325" y="112" width="250" height="110" rx="8" fill="#111e30" stroke="#ecf4ff"/>
+<text stroke="none" x="341" y="142" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">SILVER</text>
+<text stroke="none" x="341" y="169" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Validated, normalized records</text>
+<text stroke="none" x="341" y="191" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Identity + versions + quality</text>
+<path d="M585 166L607 166" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="618" y="112" width="250" height="110" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="634" y="142" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">GOLD</text>
+<text stroke="none" x="634" y="169" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Curated analytical datasets</text>
+<text stroke="none" x="634" y="191" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Facts, dimensions, products</text>
+<rect x="290" y="280" width="380" height="95" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="306" y="310" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">SEMANTIC LAYER</text>
+<text stroke="none" x="306" y="337" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Versioned definitions of business metrics</text>
+<text stroke="none" x="306" y="359" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Shared access for dashboards and agents</text>
+<path d="M743 232L620 270" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M32 397L868 397" fill="none" stroke="#3a526a" stroke-width="2"/>
+<text stroke="none" x="32" y="421" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="start">NAMING THE LAYERS DOES NOT CREATE QUALITY CHECKS OR TRANSACTION GUARANTEES</text>
+<text stroke="none" x="868" y="421" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="end">TARASH AGARWAL / OCT 2026</text>
+</svg>

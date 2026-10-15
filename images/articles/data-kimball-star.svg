@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc"><title id="title">Kimball dimensional modeling at the order-line grain</title><desc id="desc">An order-line fact table joins to date, customer, product, and store dimensions. One completed order line is one fact row.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="#b1c4d9"/></marker></defs>
+<rect width="900" height="520" rx="12" fill="#090f1b" stroke="none"/>
+<text stroke="none" x="32" y="43" fill="#ecf4ff" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" text-anchor="start">Kimball: declare the grain first.</text>
+<text stroke="none" x="32" y="76" fill="#73e8d1" font-family="Consolas,monospace" font-size="12" font-weight="400" text-anchor="start">ILLUSTRATIVE STAR SCHEMA / ONE COMPLETED ORDER LINE PER FACT ROW</text>
+<rect x="315" y="200" width="270" height="160" rx="8" fill="#111e30" stroke="#73e8d1"/>
+<text stroke="none" x="331" y="230" fill="#73e8d1" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">fact_order_line</text>
+<text stroke="none" x="331" y="257" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">order_id · line_id</text>
+<text stroke="none" x="331" y="279" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">date_key · customer_key</text>
+<text stroke="none" x="331" y="301" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">product_key · store_key</text>
+<text stroke="none" x="331" y="323" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">quantity · completed_amount</text>
+<rect x="32" y="115" width="235" height="80" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="48" y="145" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">dim_date</text>
+<text stroke="none" x="48" y="172" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Date, month, year</text>
+<path d="M277 155L305 235" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="633" y="115" width="235" height="80" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="649" y="145" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">dim_product</text>
+<text stroke="none" x="649" y="172" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Product, category</text>
+<path d="M623 155L595 235" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="365" width="235" height="80" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="48" y="395" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">dim_customer</text>
+<text stroke="none" x="48" y="422" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Customer, region history</text>
+<path d="M277 405L305 325" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="633" y="365" width="235" height="80" rx="8" fill="#111e30" stroke="#b6a0f3"/>
+<text stroke="none" x="649" y="395" fill="#b6a0f3" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="600" text-anchor="start">dim_store</text>
+<text stroke="none" x="649" y="422" fill="#b1c4d9" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" text-anchor="start">Store, store region</text>
+<path d="M623 405L595 325" fill="none" stroke="#3a526a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M32 477L868 477" fill="none" stroke="#3a526a" stroke-width="2"/>
+<text stroke="none" x="32" y="501" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="start">FACTS MEASURE / DIMENSIONS DESCRIBE / KEEP ALL FACTS AT THE DECLARED GRAIN</text>
+<text stroke="none" x="868" y="501" fill="#b1c4d9" font-family="Consolas,monospace" font-size="10" font-weight="400" text-anchor="end">TARASH AGARWAL / OCT 2026</text>
+</svg>
