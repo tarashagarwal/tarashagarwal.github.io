@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Zawinski’s law</title><desc id="desc">A report viewer gains comments, then mentions, then inboxes and message search. Each addition seems adjacent, but the product is now operating a communication system.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   17 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Zawinski’s law</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Humorous software observation</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<text x="45" y="168" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">EACH ADDITION INTRODUCES LIFECYCLE RESPONSIBILITIES</text>
+<rect x="40" y="192" width="190" height="94" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="56" y="222" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Report</text>
+<text x="56" y="251" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">View data</text>
+<line x1="231" y1="238" x2="254" y2="258" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="254.0,258.0 243.4,255.1 249.7,247.9" fill="#73e8d1" stroke="none"/>
+<rect x="255" y="212" width="190" height="94" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="271" y="242" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Comments</text>
+<text x="271" y="271" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Store discussion</text>
+<line x1="446" y1="258" x2="469" y2="278" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="469.0,278.0 458.4,275.1 464.7,267.9" fill="#73e8d1" stroke="none"/>
+<rect x="470" y="232" width="190" height="94" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="486" y="262" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Mentions</text>
+<text x="486" y="291" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Notify people</text>
+<line x1="661" y1="278" x2="684" y2="298" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="684.0,298.0 673.4,295.1 679.7,287.9" fill="#73e8d1" stroke="none"/>
+<rect x="685" y="252" width="190" height="94" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="701" y="282" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Inbox</text>
+<text x="701" y="311" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Track + search</text>
+<text x="450" y="370" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#ecf4ff" stroke="none" text-anchor="middle">Build the collaboration layer—or choose a deliberate boundary.</text>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">A scope-growth illustration, not a prediction that every product must become email.</text>
+</svg>

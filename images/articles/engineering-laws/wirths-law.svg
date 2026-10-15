@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Wirth’s law</title><desc id="desc">If a machine becomes twice as fast but a page requires three times the CPU work, its CPU-bound task takes 1.5 times as long under the simplified model.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   12 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Wirth’s law</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Software efficiency observation</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<text x="45" y="175" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">RELATIVE CPU WORK FOR ONE TASK</text>
+<rect x="45" y="197" width="240" height="42" rx="10" fill="#73e8d1" stroke="#73e8d1"/>
+<text x="306" y="225" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#ecf4ff" stroke="none" text-anchor="start">Old task: 1 unit</text>
+<rect x="45" y="260" width="720" height="42" rx="10" fill="#b6a0f3" stroke="#b6a0f3"/>
+<text x="45" y="328" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#ecf4ff" stroke="none" text-anchor="start">New task: 3 units · New hardware: 2× throughput</text>
+<text x="45" y="378" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#f2cb87" stroke="none" text-anchor="start">Relative CPU-bound time = 3 / 2 = 1.5×</text>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Simplified CPU-bound example. Extra features must justify their extra work.</text>
+</svg>

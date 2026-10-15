@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Conway’s law</title><desc id="desc">A checkout change that crosses frontend, backend, and database queues can be redesigned around a team owning the complete customer capability.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   06 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Conway’s law</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Organizational observation</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<text x="40" y="163" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">HANDOFFS BY TECHNICAL LAYER</text>
+<rect x="40" y="184" width="240" height="80" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="56" y="214" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Frontend</text>
+<rect x="330" y="184" width="240" height="80" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="346" y="214" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">API team</text>
+<rect x="620" y="184" width="240" height="80" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="636" y="214" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Database</text>
+<line x1="280" y1="224" x2="330" y2="224" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="330.0,224.0 320.1,228.8 320.1,219.2" fill="#73e8d1" stroke="none"/>
+<line x1="570" y1="224" x2="620" y2="224" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="620.0,224.0 610.1,228.8 610.1,219.2" fill="#73e8d1" stroke="none"/>
+<text x="40" y="301" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">OWNERSHIP AROUND A CAPABILITY</text>
+<rect x="40" y="322" width="530" height="75" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="56" y="352" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Checkout team</text>
+<text x="56" y="381" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">UI + business rules + persistence</text>
+<rect x="620" y="322" width="240" height="75" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="636" y="352" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Delivery team</text>
+<text x="636" y="381" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Reservation contract</text>
+<line x1="570" y1="359" x2="620" y2="359" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="620.0,359.0 610.1,363.8 610.1,354.2" fill="#73e8d1" stroke="none"/>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Illustrative team structures. Choose boundaries to fit the work and coordination needs.</text>
+</svg>

@@ -1,0 +1,120 @@
+- number: 1
+  name: "CAP theorem"
+  title: "CAP theorem: what a network partition forces you to choose"
+  kind: "Theorem"
+  url: /posts/2026/10/cap-theorem/
+  summary: "During a network partition, a distributed read/write system cannot guarantee both linearizable consistency and a response for every request. Make the choice for each operation, using the business consequence of stale data or refusal."
+- number: 2
+  name: "Little’s law"
+  title: "Little’s law: connect throughput, latency, and work in progress"
+  kind: "Queueing relationship"
+  url: /posts/2026/10/littles-law/
+  summary: "L = λW relates average work in a system to its effective throughput and average time inside the same boundary. Use consistent units and stable averages; it does not predict tail latency."
+- number: 3
+  name: "Amdahl’s law"
+  title: "Amdahl’s law: why more workers stop making a fixed job faster"
+  kind: "Parallel speedup model"
+  url: /posts/2026/10/amdahls-law/
+  summary: "For a fixed workload with parallel fraction p, ideal speedup is 1 / ((1 − p) + p/N). The serial portion creates a ceiling even before communication and scheduling overhead."
+- number: 4
+  name: "Gustafson’s law"
+  title: "Gustafson’s law: use more compute to solve a larger problem"
+  kind: "Scaled speedup model"
+  url: /posts/2026/10/gustafsons-law/
+  summary: "Gustafson holds elapsed time roughly fixed while the parallel workload grows. S = N − α(N − 1), where α is the serial fraction measured on the parallel run, describes that different scaling question."
+- number: 5
+  name: "Universal scalability law"
+  title: "Universal scalability law: when adding workers makes throughput worse"
+  kind: "Scalability model"
+  url: /posts/2026/10/universal-scalability-law/
+  summary: "The USL models contention and coordination penalties as concurrency grows. Fit it to measurements, validate it, and use it to investigate a scaling limit rather than treating its name as a universal guarantee."
+- number: 6
+  name: "Conway’s law"
+  title: "Conway’s law: architecture follows the paths people use to communicate"
+  kind: "Organizational observation"
+  url: /posts/2026/10/conways-law/
+  summary: "System boundaries tend to reflect organizational communication boundaries. Improve ownership and collaboration alongside APIs; changing a diagram alone rarely fixes a handoff problem."
+- number: 7
+  name: "Hyrum’s law"
+  title: "Hyrum’s law: your undocumented behavior may already be someone’s API"
+  kind: "Compatibility observation"
+  url: /posts/2026/10/hyrums-law/
+  summary: "At sufficient scale, consumers can depend on observable behavior beyond the documented contract. Discover those dependencies before changing an implementation, and make compatibility a deliberate product decision."
+- number: 8
+  name: "Postel’s law"
+  title: "Postel’s law: where tolerant input becomes dangerous ambiguity"
+  kind: "Protocol design principle"
+  url: /posts/2026/10/postels-law/
+  summary: "Historical advice to accept varied input has limits. Define unambiguous contracts, keep implementations aligned, and avoid silently accepting malformed data whose meaning differs across components."
+- number: 9
+  name: "Murphy’s law"
+  title: "Murphy’s law: turn a pessimistic slogan into a recovery plan"
+  kind: "Engineering aphorism"
+  url: /posts/2026/10/murphys-law/
+  summary: "Murphy’s law is a reminder to examine failure paths, not a probability theorem. Identify credible failures, limit their impact, and prove that recovery works."
+- number: 10
+  name: "Brooks’s law"
+  title: "Brooks’s law: why adding people can delay a late software project"
+  kind: "Project management observation"
+  url: /posts/2026/10/brooks-law/
+  summary: "New people bring capacity and also require onboarding, coordination, and integration. A late project benefits only when added help can relieve its actual bottleneck in time."
+- number: 11
+  name: "Parkinson’s law"
+  title: "Parkinson’s law: give work a clear finish line, not an impossible deadline"
+  kind: "Satirical management observation"
+  url: /posts/2026/10/parkinsons-law/
+  summary: "Vague work can expand to occupy its available time. Timebox learning and define completion, while preserving the real time needed for testing, uncertainty, and safe delivery."
+- number: 12
+  name: "Wirth’s law"
+  title: "Wirth’s law: why faster hardware can still feel slower"
+  kind: "Software efficiency observation"
+  url: /posts/2026/10/wirths-law/
+  summary: "Software growth can consume hardware gains. Track the work required for a user task, establish performance budgets, and spend extra capacity on useful functionality deliberately."
+- number: 13
+  name: "Metcalfe’s law"
+  title: "Metcalfe’s law: potential connections are not guaranteed value"
+  kind: "Network value heuristic"
+  url: /posts/2026/10/metcalfes-law/
+  summary: "Pairwise connection opportunities grow roughly with the square of network size. That explains a possible source of network effects, but useful participation and connection quality determine real product value."
+- number: 14
+  name: "Pareto principle"
+  title: "The Pareto principle: prioritize from evidence, not an automatic 80/20 split"
+  kind: "Prioritization heuristic"
+  url: /posts/2026/10/pareto-principle/
+  summary: "A small number of causes often account for a large share of an outcome. Measure the actual distribution, prioritize high-impact work, and keep rare but severe risks visible."
+- number: 15
+  name: "Gall’s law"
+  title: "Gall’s law: grow a working system through tested increments"
+  kind: "Systems design heuristic"
+  url: /posts/2026/10/galls-law/
+  summary: "Begin with a coherent working system and evolve it through feedback. A small end-to-end slice reveals real integration problems, but simplicity does not excuse skipping essential guarantees."
+- number: 16
+  name: "The law of leaky abstractions"
+  title: "Leaky abstractions: the hidden layer returns when performance or failure matters"
+  kind: "Software design observation"
+  url: /posts/2026/10/leaky-abstractions/
+  summary: "Abstractions simplify ordinary work, but details beneath them can reappear through latency, failure, and semantics. Keep the abstraction and learn which underlying behaviors matter at its boundaries."
+- number: 17
+  name: "Zawinski’s law"
+  title: "Zawinski’s law: when a focused product starts becoming everything"
+  kind: "Humorous software observation"
+  url: /posts/2026/10/zawinskis-law/
+  summary: "The joke about software expanding into email is a useful lens on scope growth. Evaluate adjacent features by the core workflow they improve and the lifecycle costs they introduce."
+- number: 18
+  name: "Reed’s law"
+  title: "Reed’s law: count possible groups, then ask which ones matter"
+  kind: "Group network value heuristic"
+  url: /posts/2026/10/reeds-law/
+  summary: "A network can enable many more groups than pairs. The number of possible groups grows exponentially, but mathematical possibilities do not imply exponential product value or active participation."
+- number: 19
+  name: "Zipf’s law"
+  title: "Zipf’s law: design for a hot head and a long tail"
+  kind: "Empirical rank-frequency pattern"
+  url: /posts/2026/10/zipfs-law/
+  summary: "Rank-frequency patterns often have a few very common items and many rare ones. Use measured demand to plan caches and capacity; a Zipf-like curve is an approximation, not a promise about every workload."
+- number: 20
+  name: "Fallacies of distributed computing"
+  title: "Eight fallacies of distributed computing: design for the network you actually have"
+  kind: "Distributed systems checklist"
+  url: /posts/2026/10/fallacies-of-distributed-computing/
+  summary: "Distributed systems cannot assume reliable, instant, free, secure, or uniform communication. Treat the eight fallacies as a checklist for explicit failure handling and operational boundaries."

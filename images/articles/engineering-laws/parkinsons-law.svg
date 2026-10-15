@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Parkinson’s law</title><desc id="desc">A two-day dashboard decision needs three agreed metrics and one usable chart. An unbounded brief invites cosmetic work before anyone agrees what decision the dashboard supports.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   11 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Parkinson’s law</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Satirical management observation</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<text x="45" y="174" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#f2cb87" stroke="none" text-anchor="start">VAGUE BRIEF</text>
+<rect x="45" y="195" width="810" height="66" rx="10" fill="#111e30" stroke="#f2cb87"/>
+<text x="61" y="225" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#f2cb87" stroke="none" text-anchor="start">“Improve the dashboard” → scope keeps expanding</text>
+<text x="45" y="302" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">BOUNDED DELIVERABLE</text>
+<rect x="45" y="323" width="535" height="66" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="61" y="353" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Three metrics + one operator review</text>
+<text x="615" y="350" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#b1c4d9" stroke="none" text-anchor="start">Defer optional polish</text>
+<text x="615" y="374" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#b1c4d9" stroke="none" text-anchor="start">Keep essential checks</text>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">A defined finish line can constrain scope. Less time cannot erase necessary work.</text>
+</svg>

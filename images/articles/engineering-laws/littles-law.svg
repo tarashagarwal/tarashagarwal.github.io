@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Little’s law</title><desc id="desc">At 200 completed requests per second and 0.25 seconds average response time, the average number of requests in flight is 50.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   02 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Little’s law</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Queueing relationship</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<text x="450" y="171" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#b6a0f3" stroke="none" text-anchor="middle">L = λ × W</text>
+<rect x="40" y="215" width="240" height="133" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="56" y="245" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">200 requests / second</text>
+<text x="56" y="274" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Effective throughput</text>
+<text x="56" y="298" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Same system boundary</text>
+<rect x="330" y="215" width="240" height="133" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="346" y="245" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">0.25 seconds</text>
+<text x="346" y="274" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Average time inside</text>
+<text x="346" y="298" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Includes waiting</text>
+<rect x="620" y="215" width="240" height="133" rx="10" fill="#111e30" stroke="#f2cb87"/>
+<text x="636" y="245" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#f2cb87" stroke="none" text-anchor="start">50 requests</text>
+<text x="636" y="274" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Average in flight</text>
+<text x="636" y="298" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Not a worker limit</text>
+<text x="305" y="289" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#73e8d1" stroke="none" text-anchor="middle">×</text>
+<text x="595" y="289" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#73e8d1" stroke="none" text-anchor="middle">=</text>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Illustrative stable averages. The relationship does not predict p99 latency.</text>
+</svg>

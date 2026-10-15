@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">CAP theorem</title><desc id="desc">Two replicas lose contact. Refusing an uncertain write protects a single order; accepting independent writes preserves responses but can create conflicting state.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   01 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">CAP theorem</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Theorem</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<rect x="55" y="157" width="295" height="100" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="71" y="187" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Replica A</text>
+<text x="71" y="216" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">One seat available</text>
+<text x="71" y="240" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Receives purchase A</text>
+<rect x="550" y="157" width="295" height="100" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="566" y="187" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Replica B</text>
+<text x="566" y="216" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">One seat available</text>
+<text x="566" y="240" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Receives purchase B</text>
+<line x1="350" y1="200" x2="550" y2="200" stroke="#f2cb87" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="450" y="180" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#f2cb87" stroke="none" text-anchor="middle">PARTITION</text>
+<rect x="55" y="288" width="370" height="97" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="71" y="318" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Coordinate or refuse</text>
+<text x="71" y="347" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">An isolated request may not complete.</text>
+<rect x="475" y="288" width="370" height="97" rx="10" fill="#111e30" stroke="#f2cb87"/>
+<text x="491" y="318" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#f2cb87" stroke="none" text-anchor="start">Confirm independently</text>
+<text x="491" y="347" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Both can sell the same seat.</text>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">A partition exposes the trade-off for this purchase operation.</text>
+</svg>

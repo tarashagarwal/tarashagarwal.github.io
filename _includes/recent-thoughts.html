@@ -5,7 +5,7 @@
     <a class="text-link" href="{{ '/year-archive/' | relative_url }}">All writing <span aria-hidden="true">↗</span></a>
   </div>
   <div class="recent-thoughts-grid">
-    {% for thought in site.posts limit:4 %}
+    {% for thought in site.posts limit:3 %}
     <article>
       <a class="recent-thought-card recent-thought-card--text" href="{{ thought.url | relative_url }}" aria-labelledby="recent-thought-title-{{ forloop.index }}">
         <div class="recent-thought-copy">
@@ -18,5 +18,6 @@
     </article>
     {% endfor %}
   </div>
+  <p class="recent-series-link"><a href="{{ '/engineering-laws/' | relative_url }}">Explore the new series: 20 engineering laws, with examples and diagrams <span aria-hidden="true">↗</span></a></p>
 </section>
 {% endif %}

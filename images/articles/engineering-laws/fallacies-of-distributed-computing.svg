@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Fallacies of distributed computing</title><desc id="desc">Eight distributed-system concerns arranged in two rows: delivery, latency, capacity, security, topology, ownership, cost, and compatibility. Each is paired with a practical design consideration.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   20 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Fallacies of distributed computing</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Distributed systems checklist</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<rect x="40" y="156" width="190" height="105" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="56" y="186" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Delivery</text>
+<text x="56" y="215" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Loss + duplicates</text>
+<rect x="255" y="156" width="190" height="105" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="271" y="186" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Latency</text>
+<text x="271" y="215" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Deadlines + timeouts</text>
+<rect x="470" y="156" width="190" height="105" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="486" y="186" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Capacity</text>
+<text x="486" y="215" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Bounded queues</text>
+<rect x="685" y="156" width="190" height="105" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="701" y="186" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Security</text>
+<text x="701" y="215" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Identity + permission</text>
+<rect x="40" y="282" width="190" height="105" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="56" y="312" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Topology</text>
+<text x="56" y="341" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Discovery + failover</text>
+<rect x="255" y="282" width="190" height="105" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="271" y="312" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Ownership</text>
+<text x="271" y="341" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Multiple operators</text>
+<rect x="470" y="282" width="190" height="105" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="486" y="312" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Cost</text>
+<text x="486" y="341" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Data transfer + work</text>
+<rect x="685" y="282" width="190" height="105" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="701" y="312" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Compatibility</text>
+<text x="701" y="341" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Versions + schemas</text>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Eight assumptions to question. A timeout does not tell you whether a side effect committed.</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">The law of leaky abstractions</title><desc id="desc">An ORM loop that loads one parent list and then 100 children creates 101 queries. At an assumed ten milliseconds per sequential round trip, that is about 1,010 milliseconds before other work.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   16 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">The law of leaky abstractions</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Software design observation</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<rect x="45" y="155" width="810" height="66" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="61" y="185" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Convenient interface: iterate through 100 orders</text>
+<line x1="450" y1="222" x2="450" y2="255" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="450.0,255.0 445.2,245.1 454.8,245.1" fill="#73e8d1" stroke="none"/>
+<rect x="45" y="265" width="390" height="121" rx="10" fill="#111e30" stroke="#f2cb87"/>
+<text x="61" y="295" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#f2cb87" stroke="none" text-anchor="start">Hidden network behavior</text>
+<text x="61" y="324" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">1 list query + 100 lazy queries</text>
+<text x="61" y="348" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">101 × 10 ms = 1,010 ms</text>
+<rect x="465" y="265" width="390" height="121" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="481" y="295" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Intentional loading strategy</text>
+<text x="481" y="324" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">2 queries, when appropriate</text>
+<text x="481" y="348" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">2 × 10 ms = 20 ms</text>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Illustrative sequential round-trip cost only; query execution and other work excluded.</text>
+</svg>

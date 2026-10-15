@@ -1,0 +1,23 @@
+---
+layout: portfolio-modern
+permalink: /engineering-laws/
+title: "20 engineering laws, explained."
+kicker: "A FIELD GUIDE / SOFTWARE & SYSTEMS"
+excerpt: "One article per rule. Explore the ideas behind scalability, distributed systems, team structure, network effects, and the complexity of building useful software."
+---
+<div class="series-intro">
+  <p>These rules are different kinds of ideas: some are mathematical results, some are models, and others are practical observations or jokes. Each article explains the distinction, works through an example, includes a diagram, and shows where the rule stops being useful.</p>
+  <p>Published October 14, 2026 · By Tarash Agarwal · Read in order or choose the problem you are working on.</p>
+</div>
+<ol class="engineering-series-list" aria-label="All twenty engineering articles">
+{% for rule in site.data.engineering_laws %}
+  <li>
+    <a class="engineering-series-card" href="{{ rule.url | relative_url }}">
+      <span class="series-card-meta"><span class="series-number">{% if rule.number < 10 %}0{% endif %}{{ rule.number }}</span><span>{{ rule.kind }}</span></span>
+      <h2>{{ rule.name | escape }}</h2>
+      <p>{{ rule.summary | escape }}</p>
+      <span class="series-card-link">Read the article <span aria-hidden="true">↗</span></span>
+    </a>
+  </li>
+{% endfor %}
+</ol>

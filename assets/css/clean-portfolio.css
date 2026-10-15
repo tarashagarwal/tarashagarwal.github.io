@@ -89,11 +89,11 @@ h1 em,h2 em{text-shadow:none}
 @media(max-width:1050px){#ai-work .ai-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){#ai-work .ai-project-grid{grid-template-columns:1fr}}
 
-/* Four newest posts are selected by Jekyll at build time. */
+/* Three newest posts are selected by Jekyll at build time. */
 .recent-thoughts{padding-top:34px;padding-bottom:5px}
 .recent-thoughts-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:18px}
 .recent-thoughts-heading h2{font-size:25px;letter-spacing:-.7px;line-height:1.25}
-.recent-thoughts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.recent-thoughts-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .recent-thoughts-grid>article{min-width:0}
 .recent-thought-card{display:flex;height:100%;border:1px solid #3a5165;border-radius:10px;background:#111d2beb;overflow:hidden;transition:border-color .2s,background .2s}
 .recent-thought-card:hover{border-color:#73b8ad;background:#142332}
@@ -105,3 +105,27 @@ h1 em,h2 em{text-shadow:none}
 .recent-thought-link{font-size:12px;font-weight:600;color:#a8e7dd;margin-top:auto}
 .recent-thought-link span{margin-left:8px}
 @media(max-width:760px){.recent-thoughts{padding-top:28px}.recent-thoughts-heading h2{font-size:23px}.recent-thoughts-grid{grid-template-columns:1fr;gap:16px}.recent-thought-copy{padding:23px}.recent-thought-copy h3{font-size:23px}.recent-thoughts-heading .text-link{font-size:12px}}
+
+@media(min-width:761px) and (max-width:1000px){.recent-thoughts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Engineering series: ordinary Jekyll pages and links, usable without JavaScript. */
+.recent-series-link{font-size:13px;line-height:1.7;margin:18px 0 0;color:#b2ccdc}
+.recent-series-link a,.writing-series-link a{color:#a8e7dd;text-decoration:underline;text-underline-offset:4px}
+.series-intro{max-width:760px;margin-bottom:32px}
+.series-intro p:last-child{font-size:13px;color:#a9bed1}
+.prose .engineering-series-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.prose .engineering-series-list>li{padding:0;margin:0;min-width:0}
+.prose a.engineering-series-card{display:flex;flex-direction:column;height:100%;padding:26px;border:1px solid #3a5165;border-radius:10px;background:#111d2beb;color:#edf4ff;text-decoration:none;transition:border-color .2s,background .2s}
+.engineering-series-card:hover{border-color:#73b8ad;background:#142332}
+.engineering-series-card:focus-visible,.series-trail a:focus-visible,.series-pagination a:focus-visible{outline:2px solid #91efdf;outline-offset:5px}
+.series-card-meta{display:flex;align-items:center;gap:16px;font:11px Consolas,monospace;color:#afc0d3}
+.series-number{font-size:20px;color:#91efdf}
+.prose .engineering-series-card h2{font-size:24px;line-height:1.35;margin:18px 0 12px;color:#edf4ff}
+.prose .engineering-series-card p{font-size:14px;line-height:1.75;margin:0 0 24px;color:#afc0d3}
+.series-card-link{margin-top:auto;font-size:12px;color:#a8e7dd}
+.series-trail,.series-pagination{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px;line-height:1.7}
+.series-trail{margin:28px 0 20px;color:#afc0d3}
+.series-pagination{margin-top:40px;padding-top:24px;border-top:1px solid #3a5165}
+.series-trail a,.series-pagination a{color:#a8e7dd}
+.writing-series-link{margin:0 0 30px}
+@media(max-width:760px){.prose .engineering-series-list{grid-template-columns:1fr;gap:16px}.engineering-series-card{padding:23px}.series-trail,.series-pagination{align-items:flex-start;flex-direction:column}.recent-series-link{font-size:12px}}

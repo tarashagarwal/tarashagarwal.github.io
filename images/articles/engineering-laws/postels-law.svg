@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Postel’s law</title><desc id="desc">A gateway and a service interpret a duplicate amount field differently. A request should have one defined meaning or be rejected before it can trigger a payment.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   08 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Postel’s law</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Protocol design principle</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<rect x="45" y="155" width="310" height="86" rx="10" fill="#111e30" stroke="#f2cb87"/>
+<text x="61" y="185" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#f2cb87" stroke="none" text-anchor="start">Ambiguous request</text>
+<text x="61" y="214" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">amount appears twice</text>
+<rect x="540" y="155" width="315" height="86" rx="10" fill="#111e30" stroke="#f2cb87"/>
+<text x="556" y="185" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#f2cb87" stroke="none" text-anchor="start">Inconsistent interpretation</text>
+<text x="556" y="214" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Gateway ≠ payment service</text>
+<line x1="355" y1="198" x2="540" y2="198" stroke="#f2cb87" stroke-width="2"/>
+<polygon points="540.0,198.0 530.1,202.8 530.1,193.2" fill="#f2cb87" stroke="none"/>
+<rect x="45" y="301" width="310" height="86" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="61" y="331" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Validate one contract</text>
+<text x="61" y="360" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Reject duplicate amount fields</text>
+<rect x="540" y="301" width="315" height="86" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="556" y="331" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Execute the validated value</text>
+<text x="556" y="360" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">One defined interpretation</text>
+<line x1="355" y1="344" x2="540" y2="344" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="540.0,344.0 530.1,348.8 530.1,339.2" fill="#73e8d1" stroke="none"/>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Document supported variation. Do not silently accept conflicting meanings.</text>
+</svg>

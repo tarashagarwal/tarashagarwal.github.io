@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Murphy’s law</title><desc id="desc">A worker writes an output and crashes before acknowledging the queue message. Redelivery must not create a duplicate customer charge or overwrite the wrong artifact.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   09 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Murphy’s law</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Engineering aphorism</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<rect x="40" y="170" width="240" height="100" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="56" y="200" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">1. Receive job</text>
+<text x="56" y="229" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Stable business ID</text>
+<rect x="330" y="170" width="240" height="100" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="346" y="200" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">2. Commit result</text>
+<text x="346" y="229" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Durable completion</text>
+<rect x="620" y="170" width="240" height="100" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="636" y="200" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">3. Acknowledge</text>
+<text x="636" y="229" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Message can be removed</text>
+<line x1="280" y1="216" x2="330" y2="216" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="330.0,216.0 320.1,220.8 320.1,211.2" fill="#73e8d1" stroke="none"/>
+<line x1="570" y1="216" x2="620" y2="216" stroke="#73e8d1" stroke-width="2"/>
+<polygon points="620.0,216.0 610.1,220.8 610.1,211.2" fill="#73e8d1" stroke="none"/>
+<text x="595" y="299" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#f2cb87" stroke="none" text-anchor="middle">CRASH BEFORE ACK</text>
+<line x1="590" y1="275" x2="590" y2="345" stroke="#f2cb87" stroke-width="2"/>
+<line x1="590" y1="345" x2="160" y2="345" stroke="#f2cb87" stroke-width="2"/>
+<line x1="160" y1="345" x2="160" y2="278" stroke="#f2cb87" stroke-width="2"/>
+<polygon points="160.0,278.0 164.8,287.9 155.2,287.9" fill="#f2cb87" stroke="none"/>
+<text x="335" y="376" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#f2cb87" stroke="none" text-anchor="middle">Redelivery must reuse the completed operation.</text>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Failure review example: interruption is possible between every pair of steps.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="title desc"><title id="title">Hyrum’s law</title><desc id="desc">A documented API contract is surrounded by observable error wording, response order, timing, and implicit defaults. Each can become a consumer dependency.</desc>
+<rect width="900" height="470" rx="16" fill="#090f1b" stroke="none"/>
+<text x="36" y="37" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#73e8d1" stroke="none" text-anchor="start">ENGINEERING LAWS   /   07 OF 20</text>
+<text x="36" y="76" font-family="Arial, Helvetica, sans-serif" font-size="29" fill="#ecf4ff" stroke="none" text-anchor="start">Hyrum’s law</text>
+<text x="36" y="104" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Compatibility observation</text>
+<line x1="36" y1="124" x2="864" y2="124" stroke="#3a5165" stroke-width="2"/>
+<rect x="300" y="222" width="300" height="97" rx="10" fill="#111e30" stroke="#73e8d1"/>
+<text x="316" y="252" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#73e8d1" stroke="none" text-anchor="start">Documented contract</text>
+<text x="316" y="281" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#ecf4ff" stroke="none" text-anchor="start">Fields and supported actions</text>
+<rect x="50" y="164" width="200" height="64" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="66" y="194" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Error wording</text>
+<rect x="650" y="164" width="200" height="64" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="666" y="194" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Response order</text>
+<rect x="50" y="326" width="200" height="64" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="66" y="356" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Timing</text>
+<rect x="650" y="326" width="200" height="64" rx="10" fill="#111e30" stroke="#b6a0f3"/>
+<text x="666" y="356" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#b6a0f3" stroke="none" text-anchor="start">Implicit defaults</text>
+<line x1="250" y1="196" x2="300" y2="237" stroke="#b6a0f3" stroke-width="2"/>
+<polygon points="300.0,237.0 289.3,234.4 295.4,227.0" fill="#b6a0f3" stroke="none"/>
+<line x1="650" y1="196" x2="600" y2="237" stroke="#b6a0f3" stroke-width="2"/>
+<polygon points="600.0,237.0 604.6,227.0 610.7,234.4" fill="#b6a0f3" stroke="none"/>
+<line x1="250" y1="358" x2="300" y2="297" stroke="#b6a0f3" stroke-width="2"/>
+<polygon points="300.0,297.0 297.4,307.7 290.0,301.6" fill="#b6a0f3" stroke="none"/>
+<line x1="650" y1="358" x2="600" y2="297" stroke="#b6a0f3" stroke-width="2"/>
+<polygon points="600.0,297.0 610.0,301.6 602.6,307.7" fill="#b6a0f3" stroke="none"/>
+<line x1="36" y1="419" x2="864" y2="419" stroke="#3a5165" stroke-width="2"/>
+<text x="36" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#b1c4d9" stroke="none" text-anchor="start">Observable details outside the intended contract can become consumer dependencies.</text>
+</svg>
